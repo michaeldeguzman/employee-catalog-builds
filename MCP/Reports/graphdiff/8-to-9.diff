@@ -1,0 +1,105 @@
+# Graph diff EmployeeCatalogMCP revision 8 -> revision 9 (nodes by _key; edges by source,target,attributes without index)
+# header a: {"app_key": "debb6b49-7b59-ecf6-b2eb-50a5f78250f3", "source": "stored", "revision": 8, "latest_revision": 8, "root": null, "graphviz": false, "page": 1, "has_more": false, "blocks": ["xre"], "xre_version": "3.1"}
+# header b: {"app_key": "debb6b49-7b59-ecf6-b2eb-50a5f78250f3", "source": "stored", "revision": 9, "latest_revision": 9, "root": null, "graphviz": false, "page": 1, "has_more": false, "blocks": ["xre"], "xre_version": "3.1"}
+# nodes a=11900 b=11914; edges a=22040 b=22064; duplicate _keys in b: 0
+# NODES added=14 removed=0 changed=3
+NODE ADDED peQmZ2O2q0ZDN8dc3sEUDE*HeWq6cFIL1Mg8qn7Oo6hpB IClientScreenAction RunEmployeeDeptOnClick
+   FIELD Description | null
+   FIELD CreatedBy | "developer@example.com"
+   FIELD LastModifiedBy | "developer@example.com"
+   FIELD LastModifiedDate | "2026-11-22T00:59:05"
+   FIELD LastMergedBy | null
+   FIELD LastMergedDate | "0001-01-01T00:00:00"
+   FIELD DisabledNodesCount | 0
+   FIELD Name | "RunEmployeeDeptOnClick"
+   FIELD DisplayName | "RunEmployeeDeptOnClick"
+NODE ADDED peQmZ2O2q0ZDN8dc3sEUDE*1qkweaBqOSNickuJq9NbtN IEndNode 
+   FIELD X | 3196
+   FIELD Y | 5120
+   FIELD IsDisabled | false
+   FIELD DisplayName | "End"
+NODE ADDED peQmZ2O2q0ZDN8dc3sEUDE*CAvaoQP6C2tU2VSj2rzw2V IStartNode 
+   FIELD X | 3196
+   FIELD Y | 800
+   FIELD IsDisabled | false
+   FIELD DisplayName | "Start"
+NODE ADDED peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as OutSystems.Plugin.NRWidgets.Button 
+   FIELD CustomStyle | null
+   FIELD Name | null
+   FIELD WidgetGridType | "None"
+   FIELD FlexDirection | "Row"
+   FIELD FlexWrap | "NoWrap"
+   FIELD JustifyContent | "Start"
+   FIELD AlignItems | "Stretch"
+   FIELD Gap | "8px"
+   FIELD Flexible | "Shrink"
+   FIELD FlexBasis | null
+   FIELD AlignSelf | "Auto"
+   FIELD GridColumns | 3
+   FIELD GridRows | 1
+   FIELD ColumnGap | null
+   FIELD RowGap | null
+   FIELD ColumnSpan | null
+   FIELD RowSpan | null
+   FIELD DisplayName | "Button"
+   FIELD IsDefault | false
+   FIELD Width | null
+   FIELD MarginTop | null
+   FIELD MarginLeft | "Adaptive"
+NODE ADDED peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as::Id RuntimeProperty Id
+   FIELD Name | "Id"
+NODE ADDED peQmZ2O2q0ZDN8dc3sEUDE*8fMLXKzUv3VSWTJdwmoE1Y.#ValueExpression ExpressionAST 
+NODE ADDED peQmZ2O2q0ZDN8dc3sEUDE*8fMLXKzUv3VSWTJdwmoE1Y.#ValueExpression::0 Boolean 
+   FIELD Value | "True"
+NODE ADDED peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as.#Visible ExpressionAST 
+NODE ADDED peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as.#Visible::0 Boolean 
+   FIELD Value | "True"
+NODE ADDED peQmZ2O2q0ZDN8dc3sEUDE*_RJWK1GaSzTYY1NV4rkCmJ.#ValueExpression ExpressionAST 
+NODE ADDED peQmZ2O2q0ZDN8dc3sEUDE*_RJWK1GaSzTYY1NV4rkCmJ.#ValueExpression::0 Text 
+   FIELD TextValue | "btn"
+   FIELD TextHash | "btn"
+   FIELD TextCategory | "Others"
+NODE ADDED peQmZ2O2q0ZDN8dc3sEUDE*dOhG569N2s57NJfd9QXAmK INRTextWidget 
+   FIELD CustomStyle | null
+   FIELD Name | null
+   FIELD Text | "Run Employee Dept"
+   FIELD DisplayName | "Text"
+NODE ADDED peQmZ2O2q0ZDN8dc3sEUDE*dOhG569N2s57NJfd9QXAmK::Id RuntimeProperty Id
+   FIELD Name | "Id"
+NODE ADDED peQmZ2O2q0ZDN8dc3sEUDE*a8YSyRrBPQPiFDPKZADAm1 INRBuiltinEvent 
+   FIELD BuiltInValidations | "None"
+   FIELD Transition | "Inherited"
+   FIELD DisplayName | "On Click"
+NODE CHANGED peQmZ2O2q0ZDN8dc3sEUDE*peQmZ2O2q0ZDN8dc3sEUDE IESpace EmployeeCatalogMCP
+   FIELD LastModifiedByTool | a: "AgentExperience" | b: "ODCStudio"
+NODE CHANGED peQmZ2O2q0ZDN8dc3sEUDE*hOwu163Mv8uheCYjXsJ7CZ IMobileFlow MainFlow
+   FIELD LastModifiedByTool | a: "AgentExperience" | b: "ODCStudio"
+   FIELD LastModifiedDate | a: "2026-11-21T21:00:28" | b: "2026-11-22T00:58:45"
+NODE CHANGED peQmZ2O2q0ZDN8dc3sEUDE*LjPzNYHiBJY16oAKlIztSa IMobileScreen RunTimer
+   FIELD LastModifiedDate | a: "2026-11-21T21:00:52" | b: "2026-11-22T00:59:05"
+# EDGES added=24 removed=0
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*_RJWK1GaSzTYY1NV4rkCmJ.#ValueExpression -> 2tPDqSxvR9SEU6uqLpdNMB*Hzi4fA1d2emwbDCkroUPT4 {"_type": "DataType"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*_RJWK1GaSzTYY1NV4rkCmJ.#ValueExpression -> peQmZ2O2q0ZDN8dc3sEUDE*_RJWK1GaSzTYY1NV4rkCmJ.#ValueExpression::0 {"_type": "Root", "relationType": "Parent"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*_RJWK1GaSzTYY1NV4rkCmJ.#ValueExpression::0 -> 2tPDqSxvR9SEU6uqLpdNMB*Hzi4fA1d2emwbDCkroUPT4 {"_type": "DataType"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*CAvaoQP6C2tU2VSj2rzw2V -> peQmZ2O2q0ZDN8dc3sEUDE*1qkweaBqOSNickuJq9NbtN {"_type": "Connector", "connectorType": "Links.Sequence"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*LjPzNYHiBJY16oAKlIztSa -> peQmZ2O2q0ZDN8dc3sEUDE*HeWq6cFIL1Mg8qn7Oo6hpB {"_type": "ScreenActions", "relationType": "Parent"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*EuFa1jMvY2DsjCL9r0oyGd -> peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as {"_type": "Widgets", "relationType": "Parent"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*dOhG569N2s57NJfd9QXAmK -> peQmZ2O2q0ZDN8dc3sEUDE*dOhG569N2s57NJfd9QXAmK::Id {"_type": "RuntimeProp", "relationType": "Parent"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*dOhG569N2s57NJfd9QXAmK::Id -> 2tPDqSxvR9SEU6uqLpdNMB*Hzi4fA1d2emwbDCkroUPT4 {"_type": "DataType"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as -> peQmZ2O2q0ZDN8dc3sEUDE*_RJWK1GaSzTYY1NV4rkCmJ.#ValueExpression {"_type": "Style"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as -> peQmZ2O2q0ZDN8dc3sEUDE*dOhG569N2s57NJfd9QXAmK {"_type": "Widgets", "relationType": "Parent"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as -> peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as.#Visible {"_type": "Visible", "relationType": "Parent"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as -> peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as::Id {"_type": "RuntimeProp", "relationType": "Parent"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as -> peQmZ2O2q0ZDN8dc3sEUDE*a8YSyRrBPQPiFDPKZADAm1 {"_type": "OnClick", "relationType": "Parent"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as -> peQmZ2O2q0ZDN8dc3sEUDE*8fMLXKzUv3VSWTJdwmoE1Y.#ValueExpression {"_type": "Enabled", "relationType": "Parent"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as.#Visible -> 2tPDqSxvR9SEU6uqLpdNMB*TxhtdHM5hUjPAl3OCa_OEi {"_type": "DataType"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as.#Visible -> peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as.#Visible::0 {"_type": "Root", "relationType": "Parent"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as.#Visible::0 -> 2tPDqSxvR9SEU6uqLpdNMB*TxhtdHM5hUjPAl3OCa_OEi {"_type": "DataType"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*sTJvodJSSP37VC_MxR22as::Id -> 2tPDqSxvR9SEU6uqLpdNMB*Hzi4fA1d2emwbDCkroUPT4 {"_type": "DataType"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*a8YSyRrBPQPiFDPKZADAm1 -> peQmZ2O2q0ZDN8dc3sEUDE*HeWq6cFIL1Mg8qn7Oo6hpB {"_type": "Destination"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*HeWq6cFIL1Mg8qn7Oo6hpB -> peQmZ2O2q0ZDN8dc3sEUDE*CAvaoQP6C2tU2VSj2rzw2V {"_type": "obj.Nodes", "relationType": "Parent"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*HeWq6cFIL1Mg8qn7Oo6hpB -> peQmZ2O2q0ZDN8dc3sEUDE*1qkweaBqOSNickuJq9NbtN {"_type": "obj.Nodes", "relationType": "Parent"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*8fMLXKzUv3VSWTJdwmoE1Y.#ValueExpression -> 2tPDqSxvR9SEU6uqLpdNMB*TxhtdHM5hUjPAl3OCa_OEi {"_type": "DataType"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*8fMLXKzUv3VSWTJdwmoE1Y.#ValueExpression -> peQmZ2O2q0ZDN8dc3sEUDE*8fMLXKzUv3VSWTJdwmoE1Y.#ValueExpression::0 {"_type": "Root", "relationType": "Parent"}
+EDGE ADDED peQmZ2O2q0ZDN8dc3sEUDE*8fMLXKzUv3VSWTJdwmoE1Y.#ValueExpression::0 -> 2tPDqSxvR9SEU6uqLpdNMB*TxhtdHM5hUjPAl3OCa_OEi {"_type": "DataType"}
+# EDGES with changed sibling index=0

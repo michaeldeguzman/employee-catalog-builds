@@ -1,0 +1,214 @@
+# Graph diff EmployeeCatalogMCP: revision 1 -> revision 2
+# Method: semantic diff of 1.xre and 2.xre. Nodes matched by _key, edges by (source _key, target _key, attributes). Node order is ignored.
+# Header r1: revision 1 latest 1 has_more False
+# Header r2: revision 2 latest 2 has_more False
+nodes r1=11220 r2=11587  added=367 removed=0 changed=2
+edges r1=20628 r2=21382  added=754 removed=0
+
+## REMOVED NODES
+
+## REMOVED EDGES
+
+## CHANGED NODES (pre-existing, field differences)
+~ IMobileFlow MainFlow peQmZ2O2q0ZDN8dc3sEUDE*hOwu163Mv8uheCYjXsJ7CZ
+      LastModifiedBy : None -> 'developer@example.com'
+      LastModifiedDate : '0001-01-01T00:00:00' -> '2026-11-21T19:25:37'
+~ IMobileBlock Menu peQmZ2O2q0ZDN8dc3sEUDE*hJG0NYNK9AOUrIKCtOUVdZ
+      LastModifiedBy : None -> 'developer@example.com'
+      LastModifiedDate : '0001-01-01T00:00:00' -> '2026-11-21T19:25:37'
+
+## ADDED EDGES FROM A PRE-EXISTING NODE (attachments to old elements)
++ IESpace EmployeeCatalogMCP [peQmZ2O2q0ZDN8dc3sEUDE*peQmZ2O2q0ZDN8dc3sEUDE] -> IMobileScreen Employee_List [peQmZ2O2q0ZDN8dc3sEUDE*vWdFHkqDcoPNqQRuMZYUZw] {"_type": "DefaultScreen"} x1
++ IMobileFlow MainFlow [peQmZ2O2q0ZDN8dc3sEUDE*hOwu163Mv8uheCYjXsJ7CZ] -> IMobileScreen Employee_List [peQmZ2O2q0ZDN8dc3sEUDE*vWdFHkqDcoPNqQRuMZYUZw] {"_type": "obj.Nodes", "index": 0, "relationType": "Parent"} x1
++ IMobileFlow MainFlow [peQmZ2O2q0ZDN8dc3sEUDE*hOwu163Mv8uheCYjXsJ7CZ] -> IMobileScreen Employee_Detail [peQmZ2O2q0ZDN8dc3sEUDE*TFknL6w377h0g7w7XcRE5S] {"_type": "obj.Nodes", "index": 1, "relationType": "Parent"} x1
++ OutSystems.Plugin.NRWidgets.Container PageLinks [peQmZ2O2q0ZDN8dc3sEUDE*tfygekZ2PCAbCvS5RisGzf] -> OutSystems.Plugin.NRWidgets.Link [peQmZ2O2q0ZDN8dc3sEUDE*2ElBXK3pEkiCypFh4uyaxw] {"_type": "Widgets", "index": 0, "relationType": "Parent"} x1
+
+## ADDED EDGES TO A PRE-EXISTING NODE FROM A NEW NODE, excluding DataType edges to basic types and Root parent edges
++ IMobileBlockInstanceWidget [peQmZ2O2q0ZDN8dc3sEUDE*YkR9jbPFi0Cj6pB9kAkPbQ] -> IMobileBlock LayoutTopMenu [peQmZ2O2q0ZDN8dc3sEUDE*I206EV122J1dk5Q3rA4GXI] {"_type": "SourceBlock"}
++ IScreenAggregate GetEmployees [peQmZ2O2q0ZDN8dc3sEUDE*CP2MSoGTxN4RRjBZLSKK8b] -> IListType Employee Record List [2tPDqSxvR9SEU6uqLpdNMB*mdxUBLxLpm4n5VcfliAeaF] {"_type": "Type"}
++ IPermission [peQmZ2O2q0ZDN8dc3sEUDE*LHytsf4qwkOoO9noGzhZRg] -> IRole Staff [peQmZ2O2q0ZDN8dc3sEUDE*OWsqqzAfIE+gac9dGLB29A] {"_type": "Role"}
++ IArgument [peQmZ2O2q0ZDN8dc3sEUDE*MO1jF6XCU0avWpUE8Ta96g] -> IInputParameter HasFixedHeader [peQmZ2O2q0ZDN8dc3sEUDE*KL0G9zywsL53ZjSQ_3RQoS] {"_type": "Parameter"}
++ IArgument [peQmZ2O2q0ZDN8dc3sEUDE*bnUMo8UVs0mEjBNrM0mRWQ] -> IInputParameter EnableAccessibilityFeatures [peQmZ2O2q0ZDN8dc3sEUDE*GT4zuaoHY9ifv0vrghV_UC] {"_type": "Parameter"}
++ IArgument [peQmZ2O2q0ZDN8dc3sEUDE*t_QSZrK2gUuRd34woxTUhQ] -> IInputParameter ExtendedClass [peQmZ2O2q0ZDN8dc3sEUDE*9HOzQPCa5EJi4TGhSuvdae] {"_type": "Parameter"}
++ INRPlaceholderContentWidget Header [peQmZ2O2q0ZDN8dc3sEUDE*u22t3EpWnkKpksuk70FtZw] -> INRPlaceholderWidget Header [peQmZ2O2q0ZDN8dc3sEUDE*hGjCjQFKJUiZ7wpdztrClA] {"_type": "Placeholder"}
++ INRPlaceholderContentWidget Breadcrumbs [peQmZ2O2q0ZDN8dc3sEUDE*0BGYZTMQqEOgFmHbMreoEA] -> INRPlaceholderWidget Breadcrumbs [peQmZ2O2q0ZDN8dc3sEUDE*uTLFFXWCsUqFVFtPcbUt1A] {"_type": "Placeholder"}
++ INRPlaceholderContentWidget Title [peQmZ2O2q0ZDN8dc3sEUDE*LmG3XeDdg0aI0oZ6hPQAhw] -> INRPlaceholderWidget Title [peQmZ2O2q0ZDN8dc3sEUDE*UhGHUqctjEaECg1GOQrXNg] {"_type": "Placeholder"}
++ INRPlaceholderContentWidget Actions [peQmZ2O2q0ZDN8dc3sEUDE*MIwOITZFwU2NdzW+XnoSdA] -> INRPlaceholderWidget Actions [peQmZ2O2q0ZDN8dc3sEUDE*+NFeHwnLn0yMUFX5dOX6iw] {"_type": "Placeholder"}
++ INRPlaceholderContentWidget MainContent [peQmZ2O2q0ZDN8dc3sEUDE*a_wPb5WNA0O2Gzhglzz4fg] -> INRPlaceholderWidget MainContent [peQmZ2O2q0ZDN8dc3sEUDE*39aEYND42USl0Jn73MK9eQ] {"_type": "Placeholder"}
++ INRPlaceholderContentWidget Footer [peQmZ2O2q0ZDN8dc3sEUDE*EpXQafDv9kmoGmstA9DjPg] -> INRPlaceholderWidget Footer [peQmZ2O2q0ZDN8dc3sEUDE*+efkyrnRiEOilxL5TjBxHw] {"_type": "Placeholder"}
++ IMobileBlockInstanceWidget [peQmZ2O2q0ZDN8dc3sEUDE*vXlnRZ5K40ClzvIdbBi43A] -> IMobileBlock LayoutTopMenu [peQmZ2O2q0ZDN8dc3sEUDE*I206EV122J1dk5Q3rA4GXI] {"_type": "SourceBlock"}
++ IScreenAggregate GetEmployeeById [peQmZ2O2q0ZDN8dc3sEUDE*D0CFl1F2K89iqS7IfyFJlE] -> IListType Employee Record List [2tPDqSxvR9SEU6uqLpdNMB*mdxUBLxLpm4n5VcfliAeaF] {"_type": "Type"}
++ IPermission [peQmZ2O2q0ZDN8dc3sEUDE*aks_+M+1AUuhNlBJt6iehQ] -> IRole Staff [peQmZ2O2q0ZDN8dc3sEUDE*OWsqqzAfIE+gac9dGLB29A] {"_type": "Role"}
++ IMobileBlockInstanceWidget [peQmZ2O2q0ZDN8dc3sEUDE*ECn_dq24O0C5qkN2H6uXoA] -> IMobileBlock Menu [peQmZ2O2q0ZDN8dc3sEUDE*hJG0NYNK9AOUrIKCtOUVdZ] {"_type": "SourceBlock"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*xtWqEhcA806Njo96HbQIIg.#Condition::1] -> IEntityAttribute IsActive [peQmZ2O2q0ZDN8dc3sEUDE*yNZUeTOtkkCD0EY0Rt+uIg] {"_type": "ReferedObject"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*oVU4fmhOdEOopZQh6PZX0Q.#Condition::7] -> IEntityAttribute FirstName [peQmZ2O2q0ZDN8dc3sEUDE*cpkEJhLzB0ywarLPhvhJEw] {"_type": "ReferedObject"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*oVU4fmhOdEOopZQh6PZX0Q.#Condition::15] -> IEntityAttribute LastName [peQmZ2O2q0ZDN8dc3sEUDE*Iitb_cKZVUifVnNjd6zAGQ] {"_type": "ReferedObject"}
++ IArgument [peQmZ2O2q0ZDN8dc3sEUDE*9ut2RK6FLUqVhHu7twcZNA] -> IInputParameter HasFixedHeader [peQmZ2O2q0ZDN8dc3sEUDE*KL0G9zywsL53ZjSQ_3RQoS] {"_type": "Parameter"}
++ IArgument [peQmZ2O2q0ZDN8dc3sEUDE*j1Cdlf1qwkCOIk6im31Grw] -> IInputParameter EnableAccessibilityFeatures [peQmZ2O2q0ZDN8dc3sEUDE*GT4zuaoHY9ifv0vrghV_UC] {"_type": "Parameter"}
++ IArgument [peQmZ2O2q0ZDN8dc3sEUDE*ZG6iJFZO3U2C7bMszC29ig] -> IInputParameter ExtendedClass [peQmZ2O2q0ZDN8dc3sEUDE*9HOzQPCa5EJi4TGhSuvdae] {"_type": "Parameter"}
++ INRPlaceholderContentWidget Header [peQmZ2O2q0ZDN8dc3sEUDE*kc880I8mVU6T5JybTEBJuQ] -> INRPlaceholderWidget Header [peQmZ2O2q0ZDN8dc3sEUDE*hGjCjQFKJUiZ7wpdztrClA] {"_type": "Placeholder"}
++ INRPlaceholderContentWidget Breadcrumbs [peQmZ2O2q0ZDN8dc3sEUDE*Q6rgWKW7BEO4xwxCPIOP5A] -> INRPlaceholderWidget Breadcrumbs [peQmZ2O2q0ZDN8dc3sEUDE*uTLFFXWCsUqFVFtPcbUt1A] {"_type": "Placeholder"}
++ INRPlaceholderContentWidget Title [peQmZ2O2q0ZDN8dc3sEUDE*cquHAIFiSECsrIZ5PWBbeA] -> INRPlaceholderWidget Title [peQmZ2O2q0ZDN8dc3sEUDE*UhGHUqctjEaECg1GOQrXNg] {"_type": "Placeholder"}
++ INRPlaceholderContentWidget Actions [peQmZ2O2q0ZDN8dc3sEUDE*dT2YF_vTkEeRwEmKIVRQRQ] -> INRPlaceholderWidget Actions [peQmZ2O2q0ZDN8dc3sEUDE*+NFeHwnLn0yMUFX5dOX6iw] {"_type": "Placeholder"}
++ INRPlaceholderContentWidget MainContent [peQmZ2O2q0ZDN8dc3sEUDE*E9yK6EoZEEGkzROO9RPOKA] -> INRPlaceholderWidget MainContent [peQmZ2O2q0ZDN8dc3sEUDE*39aEYND42USl0Jn73MK9eQ] {"_type": "Placeholder"}
++ INRPlaceholderContentWidget Footer [peQmZ2O2q0ZDN8dc3sEUDE*HNyovPNMA0qzUMTAHElr0Q] -> INRPlaceholderWidget Footer [peQmZ2O2q0ZDN8dc3sEUDE*+efkyrnRiEOilxL5TjBxHw] {"_type": "Placeholder"}
++ IArgument [peQmZ2O2q0ZDN8dc3sEUDE*vitBROh+jkeWrVM3Qmbp1A] -> IInputParameter ActiveItem [peQmZ2O2q0ZDN8dc3sEUDE*vGGGysGpvhCgVpxxVpPLt2] {"_type": "Parameter"}
++ IArgument [peQmZ2O2q0ZDN8dc3sEUDE*o9ksWTy_WEiX+KQ88ODbLA] -> IInputParameter ActiveSubItem [peQmZ2O2q0ZDN8dc3sEUDE*va6exhVkUGP0ZsC4wgILLl] {"_type": "Parameter"}
++ IAddSource [peQmZ2O2q0ZDN8dc3sEUDE*eeARJIax9UKWUbZvYNRyvQ] -> IEntity Employee [peQmZ2O2q0ZDN8dc3sEUDE*ZRwfJ76NVzMk1xLBYpVVD2] {"_type": "Source"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*OUQAMqou3EiX7MFQENmWtQ.#OriginalAttribute::1] -> IEntityAttribute LastName [peQmZ2O2q0ZDN8dc3sEUDE*Iitb_cKZVUifVnNjd6zAGQ] {"_type": "ReferedObject"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*3O+g5Lo9TkyfyZ5cLQDqIA.#OriginalAttribute::1] -> IEntityAttribute FirstName [peQmZ2O2q0ZDN8dc3sEUDE*cpkEJhLzB0ywarLPhvhJEw] {"_type": "ReferedObject"}
++ IMobileBlockInstanceWidget [peQmZ2O2q0ZDN8dc3sEUDE*ZXLy9FfVpUSNIQSBuL6Aqw] -> IMobileBlock Menu [peQmZ2O2q0ZDN8dc3sEUDE*hJG0NYNK9AOUrIKCtOUVdZ] {"_type": "SourceBlock"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*5iTHEPD2eU2p42Tb6dducA.#Condition::2] -> IEntityAttribute Id [peQmZ2O2q0ZDN8dc3sEUDE*VR3BzRNMXUmdnfvWPbV9qQ] {"_type": "ReferedObject"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*UGE4olEuWFm2g7vWuyYgRb.#Condition::5] -> RuntimeProperty Empty [2tPDqSxvR9SEU6uqLpdNMB*mdxUBLxLpm4n5VcfliAeaF::Empty] {"_type": "ReferedRuntimeProp"}
++ IArgument [peQmZ2O2q0ZDN8dc3sEUDE*DeZ2IG4y5kC1BMsTBEwnlg] -> IInputParameter ActiveItem [peQmZ2O2q0ZDN8dc3sEUDE*vGGGysGpvhCgVpxxVpPLt2] {"_type": "Parameter"}
++ IArgument [peQmZ2O2q0ZDN8dc3sEUDE*yFuiupgCSUC2k_JB374Q6A] -> IInputParameter ActiveSubItem [peQmZ2O2q0ZDN8dc3sEUDE*va6exhVkUGP0ZsC4wgILLl] {"_type": "Parameter"}
++ IAddSource [peQmZ2O2q0ZDN8dc3sEUDE*uv8Oww9TVkCgqSvNpYDU0w] -> IEntity Employee [peQmZ2O2q0ZDN8dc3sEUDE*ZRwfJ76NVzMk1xLBYpVVD2] {"_type": "Source"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*mMx8CARKUvk1BZhO_Tu5f_.#ValueExpression::2] -> RuntimeProperty Current [2tPDqSxvR9SEU6uqLpdNMB*mdxUBLxLpm4n5VcfliAeaF::Current] {"_type": "ReferedRuntimeProp"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*mMx8CARKUvk1BZhO_Tu5f_.#ValueExpression::3] -> IAttribute Employee [peQmZ2O2q0ZDN8dc3sEUDE*_wpJD0aRJYLlhL2dsw0Hmz] {"_type": "ReferedObject"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*mMx8CARKUvk1BZhO_Tu5f_.#ValueExpression::4] -> IEntityAttribute LastName [peQmZ2O2q0ZDN8dc3sEUDE*Iitb_cKZVUifVnNjd6zAGQ] {"_type": "ReferedObject"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*cBFSNmJDzyUKK_hIkEJK7H.#ValueExpression::2] -> RuntimeProperty Current [2tPDqSxvR9SEU6uqLpdNMB*mdxUBLxLpm4n5VcfliAeaF::Current] {"_type": "ReferedRuntimeProp"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*cBFSNmJDzyUKK_hIkEJK7H.#ValueExpression::3] -> IAttribute Employee [peQmZ2O2q0ZDN8dc3sEUDE*_wpJD0aRJYLlhL2dsw0Hmz] {"_type": "ReferedObject"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*cBFSNmJDzyUKK_hIkEJK7H.#ValueExpression::4] -> IEntityAttribute JobTitle [peQmZ2O2q0ZDN8dc3sEUDE*p4FNUbrbhEW4Z+6B5I0FMA] {"_type": "ReferedObject"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*RRnjzdmgZ2ALC6OQizCcr6.#ValueExpression::2] -> RuntimeProperty Current [2tPDqSxvR9SEU6uqLpdNMB*mdxUBLxLpm4n5VcfliAeaF::Current] {"_type": "ReferedRuntimeProp"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*RRnjzdmgZ2ALC6OQizCcr6.#ValueExpression::3] -> IAttribute Employee [peQmZ2O2q0ZDN8dc3sEUDE*_wpJD0aRJYLlhL2dsw0Hmz] {"_type": "ReferedObject"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*RRnjzdmgZ2ALC6OQizCcr6.#ValueExpression::4] -> IEntityAttribute Email [peQmZ2O2q0ZDN8dc3sEUDE*1e+2W15aNES9NUYp22Z3xg] {"_type": "ReferedObject"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*__C9B_18UrfCw16yo2ztQb.#ValueExpression::2] -> RuntimeProperty Current [2tPDqSxvR9SEU6uqLpdNMB*mdxUBLxLpm4n5VcfliAeaF::Current] {"_type": "ReferedRuntimeProp"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*__C9B_18UrfCw16yo2ztQb.#ValueExpression::3] -> IAttribute Employee [peQmZ2O2q0ZDN8dc3sEUDE*_wpJD0aRJYLlhL2dsw0Hmz] {"_type": "ReferedObject"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*__C9B_18UrfCw16yo2ztQb.#ValueExpression::4] -> IEntityAttribute FirstName [peQmZ2O2q0ZDN8dc3sEUDE*cpkEJhLzB0ywarLPhvhJEw] {"_type": "ReferedObject"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*6FEurQyOHL8pDj0ZZ_bATm.#ValueExpression::2] -> RuntimeProperty Current [2tPDqSxvR9SEU6uqLpdNMB*mdxUBLxLpm4n5VcfliAeaF::Current] {"_type": "ReferedRuntimeProp"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*6FEurQyOHL8pDj0ZZ_bATm.#ValueExpression::3] -> IAttribute Employee [peQmZ2O2q0ZDN8dc3sEUDE*_wpJD0aRJYLlhL2dsw0Hmz] {"_type": "ReferedObject"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*6FEurQyOHL8pDj0ZZ_bATm.#ValueExpression::4] -> IEntityAttribute LastName [peQmZ2O2q0ZDN8dc3sEUDE*Iitb_cKZVUifVnNjd6zAGQ] {"_type": "ReferedObject"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*xiIvhEggGMq90YnyVlxz_k.#ValueExpression::2] -> RuntimeProperty Current [2tPDqSxvR9SEU6uqLpdNMB*mdxUBLxLpm4n5VcfliAeaF::Current] {"_type": "ReferedRuntimeProp"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*xiIvhEggGMq90YnyVlxz_k.#ValueExpression::3] -> IAttribute Employee [peQmZ2O2q0ZDN8dc3sEUDE*_wpJD0aRJYLlhL2dsw0Hmz] {"_type": "ReferedObject"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*xiIvhEggGMq90YnyVlxz_k.#ValueExpression::4] -> IEntityAttribute Email [peQmZ2O2q0ZDN8dc3sEUDE*1e+2W15aNES9NUYp22Z3xg] {"_type": "ReferedObject"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*pAxwOX59Ts9bjOMnUEaDe4.#ValueExpression::2] -> RuntimeProperty Current [2tPDqSxvR9SEU6uqLpdNMB*mdxUBLxLpm4n5VcfliAeaF::Current] {"_type": "ReferedRuntimeProp"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*pAxwOX59Ts9bjOMnUEaDe4.#ValueExpression::3] -> IAttribute Employee [peQmZ2O2q0ZDN8dc3sEUDE*_wpJD0aRJYLlhL2dsw0Hmz] {"_type": "ReferedObject"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*pAxwOX59Ts9bjOMnUEaDe4.#ValueExpression::4] -> IEntityAttribute JobTitle [peQmZ2O2q0ZDN8dc3sEUDE*p4FNUbrbhEW4Z+6B5I0FMA] {"_type": "ReferedObject"}
++ Call [peQmZ2O2q0ZDN8dc3sEUDE*q4jTnI16SbHA6O2ARBXHOp.#ValueExpression::0] -> BuiltInFunction If [If] {"_type": "ReferedObject"}
++ Argument [peQmZ2O2q0ZDN8dc3sEUDE*q4jTnI16SbHA6O2ARBXHOp.#ValueExpression::1] -> BuiltInFunctionInputParameter value [If:value] {"_type": "ReferedObject"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*q4jTnI16SbHA6O2ARBXHOp.#ValueExpression::4] -> RuntimeProperty Current [2tPDqSxvR9SEU6uqLpdNMB*mdxUBLxLpm4n5VcfliAeaF::Current] {"_type": "ReferedRuntimeProp"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*q4jTnI16SbHA6O2ARBXHOp.#ValueExpression::5] -> IAttribute Employee [peQmZ2O2q0ZDN8dc3sEUDE*_wpJD0aRJYLlhL2dsw0Hmz] {"_type": "ReferedObject"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*q4jTnI16SbHA6O2ARBXHOp.#ValueExpression::6] -> IEntityAttribute IsActive [peQmZ2O2q0ZDN8dc3sEUDE*yNZUeTOtkkCD0EY0Rt+uIg] {"_type": "ReferedObject"}
++ Argument [peQmZ2O2q0ZDN8dc3sEUDE*q4jTnI16SbHA6O2ARBXHOp.#ValueExpression::7] -> BuiltInFunctionInputParameter true_return [If:true_return] {"_type": "ReferedObject"}
++ Argument [peQmZ2O2q0ZDN8dc3sEUDE*q4jTnI16SbHA6O2ARBXHOp.#ValueExpression::9] -> BuiltInFunctionInputParameter false_return [If:false_return] {"_type": "ReferedObject"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*RzWk5rrIaobBFLpL7uBh6V.#ValueExpression::2] -> RuntimeProperty Current [2tPDqSxvR9SEU6uqLpdNMB*mdxUBLxLpm4n5VcfliAeaF::Current] {"_type": "ReferedRuntimeProp"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*RzWk5rrIaobBFLpL7uBh6V.#ValueExpression::3] -> IAttribute Employee [peQmZ2O2q0ZDN8dc3sEUDE*_wpJD0aRJYLlhL2dsw0Hmz] {"_type": "ReferedObject"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*RzWk5rrIaobBFLpL7uBh6V.#ValueExpression::4] -> IEntityAttribute FirstName [peQmZ2O2q0ZDN8dc3sEUDE*cpkEJhLzB0ywarLPhvhJEw] {"_type": "ReferedObject"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*U3I2g2KeUYQgT_ZYaJUKL0.#Value::2] -> RuntimeProperty Current [2tPDqSxvR9SEU6uqLpdNMB*mdxUBLxLpm4n5VcfliAeaF::Current] {"_type": "ReferedRuntimeProp"}
++ CompoundIdentifier [peQmZ2O2q0ZDN8dc3sEUDE*U3I2g2KeUYQgT_ZYaJUKL0.#Value::3] -> IAttribute Employee [peQmZ2O2q0ZDN8dc3sEUDE*_wpJD0aRJYLlhL2dsw0Hmz] {"_type": "ReferedObject"}
++ Identifier [peQmZ2O2q0ZDN8dc3sEUDE*U3I2g2KeUYQgT_ZYaJUKL0.#Value::4] -> IEntityAttribute Id [peQmZ2O2q0ZDN8dc3sEUDE*VR3BzRNMXUmdnfvWPbV9qQ] {"_type": "ReferedObject"}
+
+## ADDED NODES, structural (excluding expression/literal/identifier helpers)
++ IMobileScreen Employee_List | peQmZ2O2q0ZDN8dc3sEUDE*vWdFHkqDcoPNqQRuMZYUZw
++ ILocalVariable SearchKeyword | peQmZ2O2q0ZDN8dc3sEUDE*WGUzQoHDOEK2oyHXyVOtgA
++ IMobileBlockInstanceWidget | peQmZ2O2q0ZDN8dc3sEUDE*YkR9jbPFi0Cj6pB9kAkPbQ
++ IUILifeCycleEvent | peQmZ2O2q0ZDN8dc3sEUDE*vWdFHkqDcoPNqQRuMZYUZw.#OnInitialize
++ IUILifeCycleEvent | peQmZ2O2q0ZDN8dc3sEUDE*vWdFHkqDcoPNqQRuMZYUZw.#OnReady
++ IUILifeCycleEvent | peQmZ2O2q0ZDN8dc3sEUDE*vWdFHkqDcoPNqQRuMZYUZw.#OnRender
++ IUILifeCycleEvent | peQmZ2O2q0ZDN8dc3sEUDE*vWdFHkqDcoPNqQRuMZYUZw.#OnDestroy
++ IScreenAggregate GetEmployees | peQmZ2O2q0ZDN8dc3sEUDE*CP2MSoGTxN4RRjBZLSKK8b
++ IClientScreenAction Search | peQmZ2O2q0ZDN8dc3sEUDE*34Suzq_J44IT7iTGZvADpu
++ IPermission | peQmZ2O2q0ZDN8dc3sEUDE*LHytsf4qwkOoO9noGzhZRg
++ IMobileScreen Employee_Detail | peQmZ2O2q0ZDN8dc3sEUDE*TFknL6w377h0g7w7XcRE5S
++ IArgument | peQmZ2O2q0ZDN8dc3sEUDE*MO1jF6XCU0avWpUE8Ta96g
++ IArgument | peQmZ2O2q0ZDN8dc3sEUDE*bnUMo8UVs0mEjBNrM0mRWQ
++ IArgument | peQmZ2O2q0ZDN8dc3sEUDE*t_QSZrK2gUuRd34woxTUhQ
++ INRPlaceholderContentWidget Header | peQmZ2O2q0ZDN8dc3sEUDE*u22t3EpWnkKpksuk70FtZw
++ INRPlaceholderContentWidget Breadcrumbs | peQmZ2O2q0ZDN8dc3sEUDE*0BGYZTMQqEOgFmHbMreoEA
++ INRPlaceholderContentWidget Title | peQmZ2O2q0ZDN8dc3sEUDE*LmG3XeDdg0aI0oZ6hPQAhw
++ INRPlaceholderContentWidget Actions | peQmZ2O2q0ZDN8dc3sEUDE*MIwOITZFwU2NdzW+XnoSdA
++ INRPlaceholderContentWidget MainContent | peQmZ2O2q0ZDN8dc3sEUDE*a_wPb5WNA0O2Gzhglzz4fg
++ INRPlaceholderContentWidget Footer | peQmZ2O2q0ZDN8dc3sEUDE*EpXQafDv9kmoGmstA9DjPg
++ ICombineSources Employees | peQmZ2O2q0ZDN8dc3sEUDE*EpfZh6OYnTBAYQodd7y7tQ
++ IUILifeCycleEvent | peQmZ2O2q0ZDN8dc3sEUDE*CP2MSoGTxN4RRjBZLSKK8b.#OnAfterFetch
++ IRefreshDataNode | peQmZ2O2q0ZDN8dc3sEUDE*aMjUERqWh0iPTr9ZRfSRmw
++ IStartNode | peQmZ2O2q0ZDN8dc3sEUDE*9YINu_xD20yNJXWbsR3tAw
++ IEndNode | peQmZ2O2q0ZDN8dc3sEUDE*5nks24BmLUaHZAMY71cCnw
++ IMobileBlockInstanceWidget | peQmZ2O2q0ZDN8dc3sEUDE*vXlnRZ5K40ClzvIdbBi43A
++ IInputParameter EmployeeId | peQmZ2O2q0ZDN8dc3sEUDE*e8rgiwjGGUi8Qljw0PmqvQ
++ IUILifeCycleEvent | peQmZ2O2q0ZDN8dc3sEUDE*TFknL6w377h0g7w7XcRE5S.#OnInitialize
++ IUILifeCycleEvent | peQmZ2O2q0ZDN8dc3sEUDE*TFknL6w377h0g7w7XcRE5S.#OnReady
++ IUILifeCycleEvent | peQmZ2O2q0ZDN8dc3sEUDE*TFknL6w377h0g7w7XcRE5S.#OnRender
++ IUILifeCycleEvent | peQmZ2O2q0ZDN8dc3sEUDE*TFknL6w377h0g7w7XcRE5S.#OnDestroy
++ IScreenAggregate GetEmployeeById | peQmZ2O2q0ZDN8dc3sEUDE*D0CFl1F2K89iqS7IfyFJlE
++ IPermission | peQmZ2O2q0ZDN8dc3sEUDE*aks_+M+1AUuhNlBJt6iehQ
++ IMobileBlockInstanceWidget | peQmZ2O2q0ZDN8dc3sEUDE*ECn_dq24O0C5qkN2H6uXoA
++ INRTextWidget | peQmZ2O2q0ZDN8dc3sEUDE*86PLmB4w4UeTmD92j4hp1w
++ OutSystems.Plugin.NRWidgets.Container ListCard | peQmZ2O2q0ZDN8dc3sEUDE*66HMLbWu20W4dIJHhktrGA
++ IAliasedSource Employee | peQmZ2O2q0ZDN8dc3sEUDE*JJlrdkFjO4FNUcwruFYcf_
++ ISort | peQmZ2O2q0ZDN8dc3sEUDE*OUQAMqou3EiX7MFQENmWtQ
++ ISort | peQmZ2O2q0ZDN8dc3sEUDE*3O+g5Lo9TkyfyZ5cLQDqIA
++ IArgument | peQmZ2O2q0ZDN8dc3sEUDE*9ut2RK6FLUqVhHu7twcZNA
++ IArgument | peQmZ2O2q0ZDN8dc3sEUDE*j1Cdlf1qwkCOIk6im31Grw
++ IArgument | peQmZ2O2q0ZDN8dc3sEUDE*ZG6iJFZO3U2C7bMszC29ig
++ INRPlaceholderContentWidget Header | peQmZ2O2q0ZDN8dc3sEUDE*kc880I8mVU6T5JybTEBJuQ
++ INRPlaceholderContentWidget Breadcrumbs | peQmZ2O2q0ZDN8dc3sEUDE*Q6rgWKW7BEO4xwxCPIOP5A
++ INRPlaceholderContentWidget Title | peQmZ2O2q0ZDN8dc3sEUDE*cquHAIFiSECsrIZ5PWBbeA
++ INRPlaceholderContentWidget Actions | peQmZ2O2q0ZDN8dc3sEUDE*dT2YF_vTkEeRwEmKIVRQRQ
++ INRPlaceholderContentWidget MainContent | peQmZ2O2q0ZDN8dc3sEUDE*E9yK6EoZEEGkzROO9RPOKA
++ INRPlaceholderContentWidget Footer | peQmZ2O2q0ZDN8dc3sEUDE*HNyovPNMA0qzUMTAHElr0Q
++ ICombineSources Employees | peQmZ2O2q0ZDN8dc3sEUDE*ja2RrtySKrHySkjkxI3v8s
++ IUILifeCycleEvent | peQmZ2O2q0ZDN8dc3sEUDE*D0CFl1F2K89iqS7IfyFJlE.#OnAfterFetch
++ OutSystems.Plugin.NRWidgets.Link | peQmZ2O2q0ZDN8dc3sEUDE*2ElBXK3pEkiCypFh4uyaxw
++ IArgument | peQmZ2O2q0ZDN8dc3sEUDE*vitBROh+jkeWrVM3Qmbp1A
++ IArgument | peQmZ2O2q0ZDN8dc3sEUDE*o9ksWTy_WEiX+KQ88ODbLA
++ OutSystems.Plugin.NRWidgets.Container | peQmZ2O2q0ZDN8dc3sEUDE*Fa2vApaC06slURBAdG5r1S
++ OutSystems.Plugin.NRWidgets.TableRecords EmployeesTable | peQmZ2O2q0ZDN8dc3sEUDE*5gGgB0gUwvAboy0SZ4znZo
++ INRIfWidget | peQmZ2O2q0ZDN8dc3sEUDE*UGE4olEuWFm2g7vWuyYgRb
++ IAddSource | peQmZ2O2q0ZDN8dc3sEUDE*eeARJIax9UKWUbZvYNRyvQ
++ IMobileBlockInstanceWidget | peQmZ2O2q0ZDN8dc3sEUDE*ZXLy9FfVpUSNIQSBuL6Aqw
++ INRTextWidget | peQmZ2O2q0ZDN8dc3sEUDE*FYNLO58OeEWAuwrWxtyDXw
++ OutSystems.Plugin.NRWidgets.Link | peQmZ2O2q0ZDN8dc3sEUDE*Sl0tnXQ5l0OV+k43i4v+ug
++ OutSystems.Plugin.NRWidgets.Container DetailCard | peQmZ2O2q0ZDN8dc3sEUDE*bmRSpRuVQCkc0TDPwrQ8AC
++ IAliasedSource Employee | peQmZ2O2q0ZDN8dc3sEUDE*QhlJYlvHQevWuMizGh5S8Q
++ INRTextWidget | peQmZ2O2q0ZDN8dc3sEUDE*5T5bWntpjEKcWnwp20U8NA
++ INRBuiltinEvent | peQmZ2O2q0ZDN8dc3sEUDE*PqUkRiHcd0u103mIYYdeBw
++ OutSystems.Plugin.NRWidgets.Input Input_Search | peQmZ2O2q0ZDN8dc3sEUDE*ymaJKkcKE0OZROGqVp4cQw
++ OutSystems.Plugin.NRWidgets.HeaderCell | peQmZ2O2q0ZDN8dc3sEUDE*3DfLjmX9REmsWanA4fcFzg
++ OutSystems.Plugin.NRWidgets.HeaderCell | peQmZ2O2q0ZDN8dc3sEUDE*MIzUTbgykk+j9bImv3VrAw
++ OutSystems.Plugin.NRWidgets.HeaderCell | peQmZ2O2q0ZDN8dc3sEUDE*XjL+pbuQJEeAr8s0pvGYFQ
++ OutSystems.Plugin.NRWidgets.HeaderCell | peQmZ2O2q0ZDN8dc3sEUDE*GRGbHLQlZUWzR51twyC3Zg
++ OutSystems.Plugin.NRWidgets.RowCell | peQmZ2O2q0ZDN8dc3sEUDE*xofVtPkJrEKEvNb8BoLTWw
++ OutSystems.Plugin.NRWidgets.RowCell | peQmZ2O2q0ZDN8dc3sEUDE*fNaR5j7Ou0i8JPQGTMl5qA
++ OutSystems.Plugin.NRWidgets.RowCell | peQmZ2O2q0ZDN8dc3sEUDE*FifKFl6BFEyiXALaTKXV0w
++ OutSystems.Plugin.NRWidgets.RowCell | peQmZ2O2q0ZDN8dc3sEUDE*a4+3nSR900S7lxCedpku1w
++ INRBuiltinEvent | peQmZ2O2q0ZDN8dc3sEUDE*pigQnU3Ji0eCQUk+M8+CYg
++ INRIfBranchWidget | peQmZ2O2q0ZDN8dc3sEUDE*vHqdKoJMXEmAndMowUAF9Q
++ INRIfBranchWidget | peQmZ2O2q0ZDN8dc3sEUDE*lfDbmACbeEer3m+zuOj8tA
++ IArgument | peQmZ2O2q0ZDN8dc3sEUDE*DeZ2IG4y5kC1BMsTBEwnlg
++ IArgument | peQmZ2O2q0ZDN8dc3sEUDE*yFuiupgCSUC2k_JB374Q6A
++ INRTextWidget | peQmZ2O2q0ZDN8dc3sEUDE*bCqoBKYluEmLWDqzcZDHaQ
++ INRBuiltinEvent | peQmZ2O2q0ZDN8dc3sEUDE*9hXcpXChEkqzBNlK9K2aNQ
++ OutSystems.Plugin.NRWidgets.Container | peQmZ2O2q0ZDN8dc3sEUDE*JJ__RvlYZESa8VKul+6bSQ
++ OutSystems.Plugin.NRWidgets.Container | peQmZ2O2q0ZDN8dc3sEUDE*a5Mg09QrLkKtMXKHc7R1DA
++ OutSystems.Plugin.NRWidgets.Container | peQmZ2O2q0ZDN8dc3sEUDE*fJb9vmOxDUWJxmW7nqviJg
++ OutSystems.Plugin.NRWidgets.Container | peQmZ2O2q0ZDN8dc3sEUDE*sPisIxlX_EyfVBo566D4ng
++ OutSystems.Plugin.NRWidgets.Container | peQmZ2O2q0ZDN8dc3sEUDE*sfp0RMpAMk6M0Wxv1w9HrQ
++ IAddSource | peQmZ2O2q0ZDN8dc3sEUDE*uv8Oww9TVkCgqSvNpYDU0w
++ INRBuiltinEvent | peQmZ2O2q0ZDN8dc3sEUDE*laPYItOFVkG_7VvMWYleQw
++ INRTextWidget | peQmZ2O2q0ZDN8dc3sEUDE*EG8Lguy_gECBFGb4EfCn8Q
++ INRTextWidget | peQmZ2O2q0ZDN8dc3sEUDE*RxHg_55Di0yj+0UCbFWFsA
++ INRTextWidget | peQmZ2O2q0ZDN8dc3sEUDE*HZ5Xqh1tuEu8VC6hpAKp1Q
++ INRTextWidget | peQmZ2O2q0ZDN8dc3sEUDE*MetA2qfzykia5FFXmlZqWQ
++ OutSystems.Plugin.NRWidgets.Link | peQmZ2O2q0ZDN8dc3sEUDE*kXbly0qUWEeTKffu2ZXVkA
++ OutSystems.Plugin.NRWidgets.Expression | peQmZ2O2q0ZDN8dc3sEUDE*Zwu_GmCxjkGs_wWQyi0ojw
++ OutSystems.Plugin.NRWidgets.Expression | peQmZ2O2q0ZDN8dc3sEUDE*zvLGMgIiFkGMstBIzAveHQ
++ OutSystems.Plugin.NRWidgets.Expression | peQmZ2O2q0ZDN8dc3sEUDE*B93QNKbIvky0xvG56_Zv_A
++ INRTextWidget | peQmZ2O2q0ZDN8dc3sEUDE*F+m+KL5Qr0Oyn5oKVNIO8A
++ INRTextWidget | peQmZ2O2q0ZDN8dc3sEUDE*C4vONxvm4EmoHLP4ntFBFA
++ OutSystems.Plugin.NRWidgets.Expression | peQmZ2O2q0ZDN8dc3sEUDE*ms5iG5qbl0OXzMeYCQSmFg
++ INRTextWidget | peQmZ2O2q0ZDN8dc3sEUDE*ysAcOR27b0+y_AMUA4j4Nw
++ OutSystems.Plugin.NRWidgets.Expression | peQmZ2O2q0ZDN8dc3sEUDE*SeJ8b2+pLky93QDLFwO2Eg
++ INRTextWidget | peQmZ2O2q0ZDN8dc3sEUDE*SNQvO9HUYk6I+Hbn9pLtTg
++ OutSystems.Plugin.NRWidgets.Expression | peQmZ2O2q0ZDN8dc3sEUDE*it08dgmnIEO6xOap8dDrqw
++ INRTextWidget | peQmZ2O2q0ZDN8dc3sEUDE*W4h4LN7Lf0Sacn7Dsu1upQ
++ OutSystems.Plugin.NRWidgets.Expression | peQmZ2O2q0ZDN8dc3sEUDE*iXHZ0L+gSUmiyep5qOIS1g
++ INRTextWidget | peQmZ2O2q0ZDN8dc3sEUDE*x4KSpW8C60CON1dx45V5jw
++ OutSystems.Plugin.NRWidgets.Expression | peQmZ2O2q0ZDN8dc3sEUDE*Y1Q_G54zCE2en1nhoShvLg
++ OutSystems.Plugin.NRWidgets.Expression | peQmZ2O2q0ZDN8dc3sEUDE*uS8IAL9OL0Wm4ZdJycrxpg
++ INRBuiltinEvent | peQmZ2O2q0ZDN8dc3sEUDE*Fhm7_VlEsUSmdXkZDpNKXA
++ Call | peQmZ2O2q0ZDN8dc3sEUDE*q4jTnI16SbHA6O2ARBXHOp.#ValueExpression::0
++ IArgument | peQmZ2O2q0ZDN8dc3sEUDE*U3I2g2KeUYQgT_ZYaJUKL0
+
+## ADDED NODES, helper counts by type
+{'RuntimeProperty': 58, 'ExpressionAST': 59, 'Integer': 3, 'CompoundIdentifier': 54, 'Identifier': 28, 'BinaryOperation': 11, 'Text': 25, 'Boolean': 16, 'Argument': 3}

@@ -1,0 +1,20 @@
+{
+  "intervention": "I-1 (publish)",
+  "promptFile": "MCP/Prompts/011-publish-fix-department-record-names.md",
+  "sessionId": "2a37df04-4249-c799-44b7-22c99914b5c1",
+  "runId": "e495a911-fd93-1356-d402-5f29aaf99fd7",
+  "status": "succeeded",
+  "workedFor": "28s",
+  "events": [
+    {"MsgType": "publishStarted", "assetKey": "debb6b49-7b59-ecf6-b2eb-50a5f78250f3"},
+    {"MsgType": "publishAutoMerged", "mergedRevision": 6, "mergedRevisionUser": "Developer", "mergedRevisionDateTime": "2026-11-21T22:49:05.120546Z"},
+    {"MsgType": "publishAccepted", "revision": 7, "publicationKey": "027d5b64-ff46-b1b9-b0c5-af6eaa7c5070"},
+    {"MsgType": "publishSucceeded", "revision": 7}
+  ],
+  "mentorSummary": "I published EmployeeCatalogMCP, and revision 7 is now live. I used your publish note and made no other changes to the model. Someone else had published revision 6 (Developer, 2026-11-21 22:49 UTC) after the revision my changes were based on. The two sets of changes were merged automatically before publishing. I haven't checked what revision 6 contained, so it's worth a quick look to confirm the merged result is what you expect.",
+  "assetFacts": [
+    {"assetKey": "debb6b49-7b59-ecf6-b2eb-50a5f78250f3", "attemptedChange": true, "changeApplied": true,
+     "validation": {"errorCount": 0, "warningCount": 18, "firstMessages": []}}
+  ],
+  "note": "Kiro condensed this file from the poll response. The publish produced revision 7, not 6, because revision 6 had been published by the user (Developer) in ODC Studio at 2026-11-21T22:49:05Z, after the session's base revision 5. Mentor auto-merged it."
+}

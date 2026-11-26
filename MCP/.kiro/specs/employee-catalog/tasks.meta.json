@@ -1,0 +1,169 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "2. Run validate-spec (flow step 2)": [
+      {
+        "executionId": "abfae3b1-b401-0e4f-8ffd-ecdae18f9ad8",
+        "chatSessionId": "sess_896f4b33-5bae-dbb5-1f11-d8226a22ba75",
+        "timestamp": 1795286117183
+      },
+      {
+        "executionId": "abfae3b1-b401-0e4f-8ffd-ecdae18f9ad8",
+        "chatSessionId": "sess_896f4b33-5bae-dbb5-1f11-d8226a22ba75",
+        "timestamp": 1795286151157
+      }
+    ],
+    "3. Show the spec and get the go/no-go (flow step 3)": [
+      {
+        "executionId": "fc223e9f-b406-836e-6747-4eb019b64b65",
+        "chatSessionId": "sess_9101fb3e-4d93-c913-073e-965d3dd8987d",
+        "timestamp": 1795286262891
+      },
+      {
+        "executionId": "fc223e9f-b406-836e-6747-4eb019b64b65",
+        "chatSessionId": "sess_9101fb3e-4d93-c913-073e-965d3dd8987d",
+        "timestamp": 1795286349210
+      }
+    ],
+    "4. Create the app from the standard Web template (flow step 4)": [
+      {
+        "executionId": "a642078a-b91f-cfa7-aedb-b0bd4139b837",
+        "chatSessionId": "sess_1e51d3fb-64e9-70fc-f5bc-883904881c54",
+        "timestamp": 1795286459763
+      },
+      {
+        "executionId": "a642078a-b91f-cfa7-aedb-b0bd4139b837",
+        "chatSessionId": "sess_1e51d3fb-64e9-70fc-f5bc-883904881c54",
+        "timestamp": 1795286605179
+      },
+      {
+        "executionId": "c68e49b4-e091-97a2-fb93-2b2cccbf7be0",
+        "chatSessionId": "sess_b0bd3c92-6061-f574-36c7-0d1b71056d95",
+        "timestamp": 1795287123309
+      },
+      {
+        "executionId": "c68e49b4-e091-97a2-fb93-2b2cccbf7be0",
+        "chatSessionId": "sess_b0bd3c92-6061-f574-36c7-0d1b71056d95",
+        "timestamp": 1795287363335
+      }
+    ],
+    "5. Mentor part 1: data model and sample data bootstrap (flow step 5)": [
+      {
+        "executionId": "0582ed10-9af9-c649-fb3b-bb8d5e2b688c",
+        "chatSessionId": "sess_b0bd3c92-6061-f574-36c7-0d1b71056d95",
+        "timestamp": 1795286703182
+      },
+      {
+        "executionId": "c68e49b4-e091-97a2-fb93-2b2cccbf7be0",
+        "chatSessionId": "sess_b0bd3c92-6061-f574-36c7-0d1b71056d95",
+        "timestamp": 1795287123280
+      },
+      {
+        "executionId": "c68e49b4-e091-97a2-fb93-2b2cccbf7be0",
+        "chatSessionId": "sess_b0bd3c92-6061-f574-36c7-0d1b71056d95",
+        "timestamp": 1795287366569
+      },
+      {
+        "executionId": "c68e49b4-e091-97a2-fb93-2b2cccbf7be0",
+        "chatSessionId": "sess_b0bd3c92-6061-f574-36c7-0d1b71056d95",
+        "timestamp": 1795287638220
+      }
+    ],
+    "6. Publish part 1 (flow step 6)": [
+      {
+        "executionId": "ec2de2d4-60d3-62e4-cc26-af824e47d3a5",
+        "chatSessionId": "sess_b0bd3c92-6061-f574-36c7-0d1b71056d95",
+        "timestamp": 1795287861289
+      },
+      {
+        "executionId": "ec2de2d4-60d3-62e4-cc26-af824e47d3a5",
+        "chatSessionId": "sess_b0bd3c92-6061-f574-36c7-0d1b71056d95",
+        "timestamp": 1795288440353
+      }
+    ],
+    "8. Sample data check (flow step 7)": [
+      {
+        "executionId": "6e6058a3-9d33-251b-4b31-2982e9a49d9c",
+        "chatSessionId": "sess_b0bd3c92-6061-f574-36c7-0d1b71056d95",
+        "timestamp": 1795288527845
+      },
+      {
+        "executionId": "6e6058a3-9d33-251b-4b31-2982e9a49d9c",
+        "chatSessionId": "sess_b0bd3c92-6061-f574-36c7-0d1b71056d95",
+        "timestamp": 1795288766664
+      }
+    ],
+    "7. User task: give the test user the Staff role": [
+      {
+        "executionId": "7796b0d9-4009-62ba-e0a1-e4838e0545cf",
+        "chatSessionId": "sess_b0bd3c92-6061-f574-36c7-0d1b71056d95",
+        "timestamp": 1795288852291
+      },
+      {
+        "executionId": "7796b0d9-4009-62ba-e0a1-e4838e0545cf",
+        "chatSessionId": "sess_b0bd3c92-6061-f574-36c7-0d1b71056d95",
+        "timestamp": 1795288882481
+      }
+    ],
+    "9. Mentor part 2: screens and access (flow step 8)": [
+      {
+        "executionId": "fd898e81-82e5-bc1a-b264-ebc08cc32e01",
+        "chatSessionId": "sess_661d9b02-c039-528d-3fdd-9940438052b0",
+        "timestamp": 1795288975671
+      },
+      {
+        "executionId": "fd898e81-82e5-bc1a-b264-ebc08cc32e01",
+        "chatSessionId": "sess_661d9b02-c039-528d-3fdd-9940438052b0",
+        "timestamp": 1795289291791
+      }
+    ],
+    "10. Publish part 2 (flow step 9)": [
+      {
+        "executionId": "983e1959-f4e2-fcae-8a2e-e72bcebd345e",
+        "chatSessionId": "sess_2f185b32-a002-1323-25d0-48f4f7636ec7",
+        "timestamp": 1795289607297
+      },
+      {
+        "executionId": "983e1959-f4e2-fcae-8a2e-e72bcebd345e",
+        "chatSessionId": "sess_2f185b32-a002-1323-25d0-48f4f7636ec7",
+        "timestamp": 1795290016982
+      }
+    ],
+    "11. The skill's checks and build report (flow step 10)": [
+      {
+        "executionId": "3da959e8-ff19-7e3b-4e1f-61b8f359406c",
+        "chatSessionId": "sess_ffe097b5-e127-4960-b74b-4c466f026cbf",
+        "timestamp": 1795295571250
+      },
+      {
+        "executionId": "3da959e8-ff19-7e3b-4e1f-61b8f359406c",
+        "chatSessionId": "sess_ffe097b5-e127-4960-b74b-4c466f026cbf",
+        "timestamp": 1795295776714
+      }
+    ],
+    "12. Check the app against the requirements (flow step 11)": [
+      {
+        "executionId": "91fb29b5-7be7-1a88-99aa-145bf9805a2b",
+        "chatSessionId": "sess_db64c569-4437-4769-63ff-5401060605f9",
+        "timestamp": 1795295877160
+      },
+      {
+        "executionId": "91fb29b5-7be7-1a88-99aa-145bf9805a2b",
+        "chatSessionId": "sess_db64c569-4437-4769-63ff-5401060605f9",
+        "timestamp": 1795296410935
+      }
+    ],
+    "13. Final scope check": [
+      {
+        "executionId": "8ed7312c-4428-3f58-914e-7e5f313488d8",
+        "chatSessionId": "sess_98a20a97-1137-9af1-a5d3-c649d82f0189",
+        "timestamp": 1795296505789
+      },
+      {
+        "executionId": "8ed7312c-4428-3f58-914e-7e5f313488d8",
+        "chatSessionId": "sess_98a20a97-1137-9af1-a5d3-c649d82f0189",
+        "timestamp": 1795296777769
+      }
+    ]
+  }
+}

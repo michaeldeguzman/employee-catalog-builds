@@ -1,0 +1,89 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Generate the BRD and save its generation prompt": [
+      {
+        "executionId": "6634f4e3-d33d-f3a9-310a-80b8e3fec871",
+        "chatSessionId": "sess_3bc145c1-5f8c-0f79-adc4-336caeeb8f48",
+        "timestamp": 1795245740407
+      },
+      {
+        "executionId": "6634f4e3-d33d-f3a9-310a-80b8e3fec871",
+        "chatSessionId": "sess_3bc145c1-5f8c-0f79-adc4-336caeeb8f48",
+        "timestamp": 1795245821833
+      }
+    ],
+    "2. USER STEP (gate): upload the BRD and generate the app in Mentor Web": [
+      {
+        "executionId": "132a369f-e222-7382-f52c-90039bacacf7",
+        "chatSessionId": "sess_ccff37a9-02b9-d236-2033-8ed902b41c38",
+        "timestamp": 1795255029257
+      },
+      {
+        "executionId": "132a369f-e222-7382-f52c-90039bacacf7",
+        "chatSessionId": "sess_ccff37a9-02b9-d236-2033-8ed902b41c38",
+        "timestamp": 1795255057318
+      }
+    ],
+    "3. Read-only inspection of EmployeeCatalogMW": [
+      {
+        "executionId": "a140649e-3a98-a261-e314-df537bd0aeee",
+        "chatSessionId": "sess_a713983a-cc0b-4496-20dc-8891ccf2c1cd",
+        "timestamp": 1795255106990
+      },
+      {
+        "executionId": "a140649e-3a98-a261-e314-df537bd0aeee",
+        "chatSessionId": "sess_a713983a-cc0b-4496-20dc-8891ccf2c1cd",
+        "timestamp": 1795255447856
+      }
+    ],
+    "4. Check AC-01 to AC-06 against the generated app": [
+      {
+        "executionId": "03b5eaaa-57d3-81ae-846a-acc879f813d6",
+        "chatSessionId": "sess_49956553-f431-e8b1-30cf-b7dcc27f38bd",
+        "timestamp": 1795255534317
+      },
+      {
+        "executionId": "03b5eaaa-57d3-81ae-846a-acc879f813d6",
+        "chatSessionId": "sess_49956553-f431-e8b1-30cf-b7dcc27f38bd",
+        "timestamp": 1795255603716
+      }
+    ],
+    "5.1 Fallback for AC-02 and AC-05 (search), only if either fails": [
+      {
+        "executionId": "abaa01ac-26ea-5167-30e7-ceecc8ada8e8",
+        "chatSessionId": "sess_49956553-f431-e8b1-30cf-b7dcc27f38bd",
+        "timestamp": 1795255717488
+      },
+      {
+        "executionId": "005deefb-2fba-35f4-3b74-a40a1865dfb7",
+        "chatSessionId": "sess_49956553-f431-e8b1-30cf-b7dcc27f38bd",
+        "timestamp": 1795256467367
+      }
+    ],
+    "5.3 Fallback for AC-06 (sample data), only if it fails": [
+      {
+        "executionId": "005deefb-2fba-35f4-3b74-a40a1865dfb7",
+        "chatSessionId": "sess_49956553-f431-e8b1-30cf-b7dcc27f38bd",
+        "timestamp": 1795256024647
+      },
+      {
+        "executionId": "9a5dd280-e20c-2b32-6b83-21892e202fe8",
+        "chatSessionId": "sess_49956553-f431-e8b1-30cf-b7dcc27f38bd",
+        "timestamp": 1795256699401
+      }
+    ],
+    "7. Checkpoint - Scope check": [
+      {
+        "executionId": "fcd43f29-773f-97bb-2e93-0bbcfeefb2ff",
+        "chatSessionId": "sess_3865d770-c2e5-bfdd-9bb9-3c1846ff6758",
+        "timestamp": 1795283018658
+      },
+      {
+        "executionId": "fcd43f29-773f-97bb-2e93-0bbcfeefb2ff",
+        "chatSessionId": "sess_3865d770-c2e5-bfdd-9bb9-3c1846ff6758",
+        "timestamp": 1795283189249
+      }
+    ]
+  }
+}

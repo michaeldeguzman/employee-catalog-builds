@@ -1,0 +1,8 @@
+title = "Employee Catalog public repo"
+[extend]
+useDefault = true
+[[allowlists]]
+description = "OutSystems model object/asset keys are pseudonymised identifiers, not secrets"
+regexTarget = "match"
+rules = ["generic-api-key"]
+regexes = ['''(?i)(asset|app|application|build|deployment|env|publication|reference|userproviderespace)?_?key"?\s*[:=]''']

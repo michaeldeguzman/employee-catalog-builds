@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+.history/
+.vscode/
+*.code-workspace
+
+# Local tool caches and homes
+.home/
+.cache/
+
+# Raw agent session logs, recordings, archives
+*.jsonl
+*.zip
+*.mov
+*.mp4
+sess_*/
+Development/
+
+# Large binary graph exports
+*.xre
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+*.pfx

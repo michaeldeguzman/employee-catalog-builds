@@ -1,0 +1,33 @@
+Rev3 nodes 11592 edges 21389 | Rev4 nodes 11630 edges 21457
+added nodes 38 removed 0 changed 2 | added edges 69 removed edges 1
+ADDED by type: [('INRPlaceholderContentWidget', 6), ('RuntimeProperty', 4), ('IUILifeCycleEvent', 4), ('IArgument', 4), ('ExpressionAST', 4), ('IMobileBlockInstanceWidget', 2), ('Text', 2), ('Boolean', 2), ('IMobileScreen', 1), ('IClientScreenAction', 1), ('IPermission', 1), ('IMessageNode', 1), ('IStartNode', 1), ('IExecuteServerActionNode', 1), ('IEndNode', 1), ('OutSystems.Plugin.NRWidgets.Button', 1), ('INRTextWidget', 1), ('INRBuiltinEvent', 1)]
+REMOVED by type: []
+CHANGED IMobileFlow MainFlow peQmZ2O2q0ZDN8dc3sEUDE*hOwu163Mv8uheCYjXsJ7CZ {"LastModifiedByTool": ["AgentExperience", "ODCStudio"], "LastModifiedDate": ["2026-11-21T19:25:37", "2026-11-21T21:00:28"]}
+CHANGED IEntity Employee peQmZ2O2q0ZDN8dc3sEUDE*ZRwfJ76NVzMk1xLBYpVVD2 {"LastModifiedByTool": ["AgentExperience", "ODCStudio"], "LastModifiedDate": ["2026-11-21T18:58:09", "2026-11-21T20:13:51"], "ModifiedByTools": ["AgentExperience", "ODCStudio, AgentExperience"]}
+ADDED IMobileScreen RunTimer peQmZ2O2q0ZDN8dc3sEUDE*LjPzNYHiBJY16oAKlIztSa
+ADDED IMobileBlockInstanceWidget Layouts\Layout peQmZ2O2q0ZDN8dc3sEUDE*5DDO7NmKb0yi9_+Rvb6uSQ
+ADDED IUILifeCycleEvent On Initialize peQmZ2O2q0ZDN8dc3sEUDE*LjPzNYHiBJY16oAKlIztSa.#OnInitialize
+ADDED IUILifeCycleEvent On Ready peQmZ2O2q0ZDN8dc3sEUDE*LjPzNYHiBJY16oAKlIztSa.#OnReady
+ADDED IUILifeCycleEvent On Render peQmZ2O2q0ZDN8dc3sEUDE*LjPzNYHiBJY16oAKlIztSa.#OnRender
+ADDED IUILifeCycleEvent On Destroy peQmZ2O2q0ZDN8dc3sEUDE*LjPzNYHiBJY16oAKlIztSa.#OnDestroy
+ADDED IClientScreenAction RunTimerOnClick peQmZ2O2q0ZDN8dc3sEUDE*N8mHGMMPKUuOVJUfzF1VnQ
+ADDED IPermission Staff peQmZ2O2q0ZDN8dc3sEUDE*hj7dOht5a0Oovr1CqX8uoQ
+ADDED IArgument EnableAccessibilityFeatures peQmZ2O2q0ZDN8dc3sEUDE*mpkrRx8NHkyPqHbf53xRzA
+ADDED IArgument ExtendedClass peQmZ2O2q0ZDN8dc3sEUDE*AuBTZa9MQUC7mayzRg8UQQ
+ADDED INRPlaceholderContentWidget Navigation peQmZ2O2q0ZDN8dc3sEUDE*qtkJ2v7LRUqdEzwOtjMxGQ
+ADDED INRPlaceholderContentWidget Breadcrumbs peQmZ2O2q0ZDN8dc3sEUDE*8jhWDVDdMUCDXz3CAUm+SQ
+ADDED INRPlaceholderContentWidget Title peQmZ2O2q0ZDN8dc3sEUDE*G3efy_FeI02Y_wirUVtuHg
+ADDED INRPlaceholderContentWidget Actions peQmZ2O2q0ZDN8dc3sEUDE*OhrxVUv6R0KhwvMFd10iDw
+ADDED INRPlaceholderContentWidget MainContent peQmZ2O2q0ZDN8dc3sEUDE*EuFa1jMvY2DsjCL9r0oyGd
+ADDED INRPlaceholderContentWidget Footer peQmZ2O2q0ZDN8dc3sEUDE*VQk2Sp0XSUWCvLQ6ehEX1g
+ADDED IMessageNode "Employees Bootstrapped." peQmZ2O2q0ZDN8dc3sEUDE*eTTMEWrfsECaM8ScLhyRyw
+ADDED IStartNode Start peQmZ2O2q0ZDN8dc3sEUDE*4i_EKRIk2ESxpCj3m2XCog
+ADDED IExecuteServerActionNode BootstrapData peQmZ2O2q0ZDN8dc3sEUDE*K5fbekXBkk2a4VJwIV3xfA
+ADDED IEndNode End peQmZ2O2q0ZDN8dc3sEUDE*_2Z+9A0JD028h_DG9aQTYg
+ADDED IMobileBlockInstanceWidget Common\Menu peQmZ2O2q0ZDN8dc3sEUDE*L13FRkhbnk+fNFKeL0FyqA
+ADDED OutSystems.Plugin.NRWidgets.Button Button peQmZ2O2q0ZDN8dc3sEUDE*75tQdLloC0uJx424yfBvPQ
+ADDED IArgument ActiveItem peQmZ2O2q0ZDN8dc3sEUDE*unjsB1hJz0yHoznQjjyQGg
+ADDED IArgument ActiveSubItem peQmZ2O2q0ZDN8dc3sEUDE*xU4voxyqdUa3ZH_xZRAFZw
+ADDED INRTextWidget Text peQmZ2O2q0ZDN8dc3sEUDE*+F9tx2jLT0+Ne_C3OPQOrQ
+ADDED INRBuiltinEvent On Click peQmZ2O2q0ZDN8dc3sEUDE*ndZ3AhrV8kKaYlENTv_PRg
+EDGE REMOVED IMobileFlow MainFlow -> IMobileScreen Employee_Detail {"_type": "obj.Nodes", "index": 1, "relationType": "Parent"}

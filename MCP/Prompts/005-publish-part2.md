@@ -1,0 +1,1 @@
+Publish the application EmployeeCatalogMCP (app key debb6b49-7b59-ecf6-b2eb-50a5f78250f3) to the development environment now. Publish only this app. Make no other change to the model in this turn. Use this publish note: "Part 2: screens (Employee_List, Employee_Detail), menu entry, Staff access."

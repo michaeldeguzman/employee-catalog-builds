@@ -1,0 +1,190 @@
+=== scope.py rev7 rev9 ===
+?                                                            {'changed': 11}
+IESpace:EmployeeCatalogMW                                    {'changed': 1, 'added': 2}
+IEntity:Employee                                             {'changed': 1}
+IMobileScreen:Employee_Details                               {'changed': 2, 'added': 31}
+IMobileScreen:Employees                                      {'changed': 2, 'added': 95}
+LIBRARY/2UmDme                                               {'added': 15}
+
+=== diff.py rev7 rev9 (first 200 detail lines) ===
+A 7 11447 21165 B 9 11590 21471
+dup keys A 0 B 0
+nodes added 143 removed 0 changed 17
+top-level keys equal: {'v': True, 'key': True, 'roots': True}
+ADDED {'IAnonymousStructure': 1, 'IListType': 2, 'RuntimeProperty': 28, 'ILocalVariable': 1, 'IScreenAggregate': 1, 'IClientScreenAction': 1, 'IAttribute': 2, 'ExpressionAST': 26, 'Integer': 2, 'ICombineSources': 1, 'IUILifeCycleEvent': 1, 'IStartNode': 1, 'IRefreshDataNode': 1, 'IEndNode': 1, 'IAssignNode': 1, 'IAliasedSource': 3, 'IJoin': 2, 'BinaryOperation': 5, 'Identifier': 18, 'Call': 1, 'CompoundIdentifier': 18, 'ISort': 1, 'IAssignment': 1, 'OutSystems.Plugin.NRWidgets.Container': 2, 'IAddSource': 3, 'Boolean': 4, 'Text': 6, 'OutSystems.Plugin.NRWidgets.Dropdown': 1, 'OutSystems.Plugin.NRWidgets.HeaderCell': 1, 'OutSystems.Plugin.NRWidgets.RowCell': 1, 'INRBuiltinEvent': 1, 'INRTextWidget': 2, 'OutSystems.Plugin.NRWidgets.Expression': 2, 'OutSystems.Plugin.NRWidgets.Label': 1}
+ owners {'6XqNfVJoDep_q9g0xKExlQ': 9, 'YDgAbR4GPa030fInFhpmdh': 7, 'C2eDd18iP3zlOLJ0zmbsAA': 7, 'E4wUI7eleH6QCS7Aeu5khZ': 6, '9ZumcFu5zLb5p9wDtadmHc': 6, '6ntXiihkpRvUAEn9k5_b2g': 5, 'So1ceLc_ZpUPf6fdSxg7gW': 5, 'ceEC0lw4IBdSCwbC_eBK9h': 4, 'dGoCllX_mjVjati5xkchp9': 4, 'XCNGe0pZiKYPss_v9yrHdZ': 3, 'BiHgc1orT1De4fxMbAT7zt': 3, '8zqNHNefxC_G9eBSKJ8S8f': 3, 'ruvQyuuKUq57VT8OlGKzMX': 3, 'cSwQvve1I57rgJhW6hywDG': 3, 'l0ilNcWRgTXsO358LzFqdP': 3}
+REMOVED {}
+ owners {}
+CHANGED {'IESpace': 1, 'IValidationMessage': 11, 'IMobileScreen': 2, 'IEntity': 1, 'IScreenAggregate': 2}
+ owners {'7skC5R_8TVsV6FYAotkxDn': 12, 'PcXaT2qKBR9BLbXhuFoTI4': 1, '2M9b5F0ac9Rjm8haCPmQGy': 1, 'YTC5lcKnT_0XcGjNampZge': 1, 'rmym93ZTl3mHj05LJWZTmn': 1, '79fYVlz6B_4suG1Gq8Ase2': 1}
+edges added 479 removed 173
+ edge owners added {'7skC5R_8TVsV6FYAotkxDn': 119, '6XqNfVJoDep_q9g0xKExlQ': 22, 'YDgAbR4GPa030fInFhpmdh': 18, 'C2eDd18iP3zlOLJ0zmbsAA': 18, 'E4wUI7eleH6QCS7Aeu5khZ': 16, '9ZumcFu5zLb5p9wDtadmHc': 16, '6ntXiihkpRvUAEn9k5_b2g': 12, 'IdIRi7LSXd4NRTItM9Um3S': 12, 'ceEC0lw4IBdSCwbC_eBK9h': 11, 'So1ceLc_ZpUPf6fdSxg7gW': 9, 'dGoCllX_mjVjati5xkchp9': 8, 'l0ilNcWRgTXsO358LzFqdP': 8, 'r_5HvkyDqGGYHpu9pk4Rvv': 7, 'gEC3WSCj086cF_m9LFgotx': 7, 'XCNGe0pZiKYPss_v9yrHdZ': 7}
+ edge owners removed {'7skC5R_8TVsV6FYAotkxDn': 116, 'K6O520DXigHn1b9wf3FE57': 4, '7ojIKkLza0odB4fxh30oSq': 4, 'dOD8BGzNz7dYOms4DPx30e': 3, 'DUfuUyx_zvcCRsg3X5p2A6': 3, 'M7Uh5oUJowarzADFDik1kh': 3, 'XCsSBDjADHdl9o_rBaIZgf': 3, 'aJ82LqzxSui74Nr73dAAsI': 3, 'oeS2IcurelOm6xNwfCFeVC': 2, 'DTDClpUkHP3KTLlFzwI1zm': 2, 'AyqxuJtOPioLHlRCBp2ri_': 2, 'woe9WtV7FI2OiyNMdvNDm4': 2, 'wqZEOjsk7se7Viq3Y99pWA': 2, 'dv1Jk6gXbUci0VjfYIWsAX': 2, 'x_nrhTHJfDncQVva4WMVRF': 2}
+2tPDqSxvR9SEU6uqLpdNMB*Gl66kgXv0pg5JrCyCSolLH {"DisplayName": "Department, Employee Record", "IsDisabled": false, "Name": "Department, Employee Record", "UnderlyingType": "Record", "_key": "2tPDqSxvR9SEU6uqLpdNMB*Gl66kgXv0pg5JrCyCSolLH", "_type": "IAnonymousStructure"}
+2tPDqSxvR9SEU6uqLpdNMB*r_5HvkyDqGGYHpu9pk4Rvv {"DisplayName": "Department, Employee Record List", "IsDisabled": false, "Name": "Department, Employee Record List", "UnderlyingType": "RecordList", "_key": "2tPDqSxvR9SEU6uqLpdNMB*r_5HvkyDqGGYHpu9pk4Rvv", "_type": "IListType"}
+2tPDqSxvR9SEU6uqLpdNMB*r_5HvkyDqGGYHpu9pk4Rvv::Current {"Name": "Current", "_key": "2tPDqSxvR9SEU6uqLpdNMB*r_5HvkyDqGGYHpu9pk4Rvv::Current", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*r_5HvkyDqGGYHpu9pk4Rvv::EOF {"Name": "EOF", "_key": "2tPDqSxvR9SEU6uqLpdNMB*r_5HvkyDqGGYHpu9pk4Rvv::EOF", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*r_5HvkyDqGGYHpu9pk4Rvv::BOF {"Name": "BOF", "_key": "2tPDqSxvR9SEU6uqLpdNMB*r_5HvkyDqGGYHpu9pk4Rvv::BOF", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*r_5HvkyDqGGYHpu9pk4Rvv::CurrentRowNumber {"Name": "CurrentRowNumber", "_key": "2tPDqSxvR9SEU6uqLpdNMB*r_5HvkyDqGGYHpu9pk4Rvv::CurrentRowNumber", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*r_5HvkyDqGGYHpu9pk4Rvv::Length {"Name": "Length", "_key": "2tPDqSxvR9SEU6uqLpdNMB*r_5HvkyDqGGYHpu9pk4Rvv::Length", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*r_5HvkyDqGGYHpu9pk4Rvv::Empty {"Name": "Empty", "_key": "2tPDqSxvR9SEU6uqLpdNMB*r_5HvkyDqGGYHpu9pk4Rvv::Empty", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*gEC3WSCj086cF_m9LFgotx {"DisplayName": "Department List", "IsDisabled": false, "Name": "Department List", "UnderlyingType": "RecordList", "_key": "2tPDqSxvR9SEU6uqLpdNMB*gEC3WSCj086cF_m9LFgotx", "_type": "IListType"}
+2tPDqSxvR9SEU6uqLpdNMB*gEC3WSCj086cF_m9LFgotx::Current {"Name": "Current", "_key": "2tPDqSxvR9SEU6uqLpdNMB*gEC3WSCj086cF_m9LFgotx::Current", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*gEC3WSCj086cF_m9LFgotx::EOF {"Name": "EOF", "_key": "2tPDqSxvR9SEU6uqLpdNMB*gEC3WSCj086cF_m9LFgotx::EOF", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*gEC3WSCj086cF_m9LFgotx::BOF {"Name": "BOF", "_key": "2tPDqSxvR9SEU6uqLpdNMB*gEC3WSCj086cF_m9LFgotx::BOF", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*gEC3WSCj086cF_m9LFgotx::CurrentRowNumber {"Name": "CurrentRowNumber", "_key": "2tPDqSxvR9SEU6uqLpdNMB*gEC3WSCj086cF_m9LFgotx::CurrentRowNumber", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*gEC3WSCj086cF_m9LFgotx::Length {"Name": "Length", "_key": "2tPDqSxvR9SEU6uqLpdNMB*gEC3WSCj086cF_m9LFgotx::Length", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*gEC3WSCj086cF_m9LFgotx::Empty {"Name": "Empty", "_key": "2tPDqSxvR9SEU6uqLpdNMB*gEC3WSCj086cF_m9LFgotx::Empty", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*25NJbs4_wS479IDYWfwPwK {"CreatedBy": "developer@example.com", "Description": null, "DisplayName": "SelectedDepartmentId", "LastMergedBy": null, "LastMergedDate": "0001-01-01T00:00:00", "LastModifiedBy": "developer@example.com", "LastModifiedDate": "2026-11-22T02:40:16", "Name": "SelectedDepartmentI
+7skC5R_8TVsV6FYAotkxDn*ceEC0lw4IBdSCwbC_eBK9h {"CacheInMinutes": null, "Description": null, "DisplayName": "GetDepartments", "Fetch": "AtStart", "IsClientSide": false, "IsDisabled": false, "LastModifiedBy": "developer@example.com", "LastModifiedDate": "2026-11-22T02:40:16", "Name": "GetDepartments", "TestMaxRecords": null, "Timeout"
+7skC5R_8TVsV6FYAotkxDn*ceEC0lw4IBdSCwbC_eBK9h::List {"Name": "List", "_key": "7skC5R_8TVsV6FYAotkxDn*ceEC0lw4IBdSCwbC_eBK9h::List", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*ceEC0lw4IBdSCwbC_eBK9h::Count {"Name": "Count", "_key": "7skC5R_8TVsV6FYAotkxDn*ceEC0lw4IBdSCwbC_eBK9h::Count", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*ceEC0lw4IBdSCwbC_eBK9h::IsDataFetched {"Name": "IsDataFetched", "_key": "7skC5R_8TVsV6FYAotkxDn*ceEC0lw4IBdSCwbC_eBK9h::IsDataFetched", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*ceEC0lw4IBdSCwbC_eBK9h::HasFetchError {"Name": "HasFetchError", "_key": "7skC5R_8TVsV6FYAotkxDn*ceEC0lw4IBdSCwbC_eBK9h::HasFetchError", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*JNAbDHhyggTVNFxN9UmgOF {"CreatedBy": "developer@example.com", "Description": null, "DisabledNodesCount": 0, "DisplayName": "OnDepartmentChange", "LastMergedBy": null, "LastMergedDate": "0001-01-01T00:00:00", "LastModifiedBy": "developer@example.com", "LastModifiedDate": "2026-11-22T02:40:16", "Name
+7skC5R_8TVsV6FYAotkxDn*1AEQNmtJDA_Y5ibVfgEjTF {"Decimals": null, "Description": null, "DisplayName": "Department", "IsMandatory": false, "Length": null, "Name": "Department", "_key": "7skC5R_8TVsV6FYAotkxDn*1AEQNmtJDA_Y5ibVfgEjTF", "_type": "IAttribute"}
+7skC5R_8TVsV6FYAotkxDn*n5L6IJKbeauNp98add_AlA {"Decimals": null, "Description": null, "DisplayName": "Employee", "IsMandatory": false, "Length": null, "Name": "Employee", "_key": "7skC5R_8TVsV6FYAotkxDn*n5L6IJKbeauNp98add_AlA", "_type": "IAttribute"}
+7skC5R_8TVsV6FYAotkxDn*ceEC0lw4IBdSCwbC_eBK9h.#MaxRecords {"_key": "7skC5R_8TVsV6FYAotkxDn*ceEC0lw4IBdSCwbC_eBK9h.#MaxRecords", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*ceEC0lw4IBdSCwbC_eBK9h.#MaxRecords::0 {"Value": "50", "_key": "7skC5R_8TVsV6FYAotkxDn*ceEC0lw4IBdSCwbC_eBK9h.#MaxRecords::0", "_type": "Integer"}
+7skC5R_8TVsV6FYAotkxDn*0xP0pVKzfTwS7HQ2i0yXps {"DisplayName": "Departments", "Name": "Departments", "_key": "7skC5R_8TVsV6FYAotkxDn*0xP0pVKzfTwS7HQ2i0yXps", "_type": "ICombineSources"}
+7skC5R_8TVsV6FYAotkxDn*ceEC0lw4IBdSCwbC_eBK9h.#OnAfterFetch {"DisplayName": "On After Fetch", "_key": "7skC5R_8TVsV6FYAotkxDn*ceEC0lw4IBdSCwbC_eBK9h.#OnAfterFetch", "_type": "IUILifeCycleEvent"}
+7skC5R_8TVsV6FYAotkxDn*fEFcmPokl_bxvXFsPao6go {"DisplayName": "Start", "IsDisabled": false, "X": 3196, "Y": 800, "_key": "7skC5R_8TVsV6FYAotkxDn*fEFcmPokl_bxvXFsPao6go", "_type": "IStartNode"}
+7skC5R_8TVsV6FYAotkxDn*6ntXiihkpRvUAEn9k5_b2g {"DisplayName": "Refresh GetEmployees", "IsDisabled": false, "X": 3196, "Y": 4346, "_key": "7skC5R_8TVsV6FYAotkxDn*6ntXiihkpRvUAEn9k5_b2g", "_type": "IRefreshDataNode"}
+7skC5R_8TVsV6FYAotkxDn*tslt9dExtYiBF9li31bZC5 {"DisplayName": "End", "IsDisabled": false, "X": 3196, "Y": 6119, "_key": "7skC5R_8TVsV6FYAotkxDn*tslt9dExtYiBF9li31bZC5", "_type": "IEndNode"}
+7skC5R_8TVsV6FYAotkxDn*2GPtbpe0PWejAodJo74W7L {"DisplayName": "StartIndex = 0", "IsDisabled": false, "Label": "StartIndex = 0", "X": 3196, "Y": 2573, "_key": "7skC5R_8TVsV6FYAotkxDn*2GPtbpe0PWejAodJo74W7L", "_type": "IAssignNode"}
+7skC5R_8TVsV6FYAotkxDn*kx6SrcBEFrPsltpP6Q0P0s {"DisplayName": "Department", "Name": "Department", "_key": "7skC5R_8TVsV6FYAotkxDn*kx6SrcBEFrPsltpP6Q0P0s", "_type": "IAliasedSource"}
+7skC5R_8TVsV6FYAotkxDn*YDgAbR4GPa030fInFhpmdh {"DisplayName": "Employee.DepartmentId = Department.Id (Employee with or without Department)", "JoinType": "Left", "_key": "7skC5R_8TVsV6FYAotkxDn*YDgAbR4GPa030fInFhpmdh", "_type": "IJoin"}
+7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition {"_key": "7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::0 {"Operator": "Or", "_key": "7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::0", "_type": "BinaryOperation"}
+7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::1 {"Operator": "Eq", "_key": "7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::1", "_type": "BinaryOperation"}
+7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::2 {"_key": "7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::2", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::3 {"_key": "7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::3", "_type": "Call"}
+7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::4 {"Operator": "Eq", "_key": "7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::4", "_type": "BinaryOperation"}
+7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::5 {"_key": "7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::5", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::6 {"_key": "7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::6", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::7 {"_key": "7skC5R_8TVsV6FYAotkxDn*6XqNfVJoDep_q9g0xKExlQ.#Condition::7", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*MkjYfSW6wnmSHluFXoMAhx {"DisplayName": "Department", "Name": "Department", "_key": "7skC5R_8TVsV6FYAotkxDn*MkjYfSW6wnmSHluFXoMAhx", "_type": "IAliasedSource"}
+7skC5R_8TVsV6FYAotkxDn*dGoCllX_mjVjati5xkchp9 {"DisplayName": "Department.Label", "SortDirection": "Ascending", "_key": "7skC5R_8TVsV6FYAotkxDn*dGoCllX_mjVjati5xkchp9", "_type": "ISort"}
+7skC5R_8TVsV6FYAotkxDn*6ntXiihkpRvUAEn9k5_b2g.#MaxRecords {"_key": "7skC5R_8TVsV6FYAotkxDn*6ntXiihkpRvUAEn9k5_b2g.#MaxRecords", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*6ntXiihkpRvUAEn9k5_b2g.#MaxRecords::0 {"_key": "7skC5R_8TVsV6FYAotkxDn*6ntXiihkpRvUAEn9k5_b2g.#MaxRecords::0", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*6ntXiihkpRvUAEn9k5_b2g.#StartIndex {"_key": "7skC5R_8TVsV6FYAotkxDn*6ntXiihkpRvUAEn9k5_b2g.#StartIndex", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*6ntXiihkpRvUAEn9k5_b2g.#StartIndex::0 {"_key": "7skC5R_8TVsV6FYAotkxDn*6ntXiihkpRvUAEn9k5_b2g.#StartIndex::0", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*So1ceLc_ZpUPf6fdSxg7gW {"DisplayName": "StartIndex = 0", "_key": "7skC5R_8TVsV6FYAotkxDn*So1ceLc_ZpUPf6fdSxg7gW", "_type": "IAssignment"}
+7skC5R_8TVsV6FYAotkxDn*XCNGe0pZiKYPss_v9yrHdZ {"Align": "Default", "AlignItems": "Stretch", "AlignSelf": "Auto", "Animate": false, "ColumnGap": null, "ColumnSpan": null, "CustomStyle": null, "DisplayName": "Container", "FlexBasis": null, "FlexDirection": "Row", "FlexWrap": "NoWrap", "Flexible": "Shrink", "Gap": "8px", "GridColumns": 3, "GridRow
+7skC5R_8TVsV6FYAotkxDn*XCNGe0pZiKYPss_v9yrHdZ::Id {"Name": "Id", "_key": "7skC5R_8TVsV6FYAotkxDn*XCNGe0pZiKYPss_v9yrHdZ::Id", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*lcqMELCNpFiF6C3338bG1f {"DisplayName": "Department", "_key": "7skC5R_8TVsV6FYAotkxDn*lcqMELCNpFiF6C3338bG1f", "_type": "IAddSource"}
+7skC5R_8TVsV6FYAotkxDn*YDgAbR4GPa030fInFhpmdh.#Condition {"_key": "7skC5R_8TVsV6FYAotkxDn*YDgAbR4GPa030fInFhpmdh.#Condition", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*YDgAbR4GPa030fInFhpmdh.#Condition::0 {"Operator": "Eq", "_key": "7skC5R_8TVsV6FYAotkxDn*YDgAbR4GPa030fInFhpmdh.#Condition::0", "_type": "BinaryOperation"}
+7skC5R_8TVsV6FYAotkxDn*YDgAbR4GPa030fInFhpmdh.#Condition::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*YDgAbR4GPa030fInFhpmdh.#Condition::1", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*YDgAbR4GPa030fInFhpmdh.#Condition::2 {"_key": "7skC5R_8TVsV6FYAotkxDn*YDgAbR4GPa030fInFhpmdh.#Condition::2", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*YDgAbR4GPa030fInFhpmdh.#Condition::3 {"_key": "7skC5R_8TVsV6FYAotkxDn*YDgAbR4GPa030fInFhpmdh.#Condition::3", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*YDgAbR4GPa030fInFhpmdh.#Condition::4 {"_key": "7skC5R_8TVsV6FYAotkxDn*YDgAbR4GPa030fInFhpmdh.#Condition::4", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*Kal0bbz3TCxroJGIz6RazK {"DisplayName": "Department", "_key": "7skC5R_8TVsV6FYAotkxDn*Kal0bbz3TCxroJGIz6RazK", "_type": "IAddSource"}
+7skC5R_8TVsV6FYAotkxDn*dGoCllX_mjVjati5xkchp9.#OriginalAttribute {"_key": "7skC5R_8TVsV6FYAotkxDn*dGoCllX_mjVjati5xkchp9.#OriginalAttribute", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*dGoCllX_mjVjati5xkchp9.#OriginalAttribute::0 {"_key": "7skC5R_8TVsV6FYAotkxDn*dGoCllX_mjVjati5xkchp9.#OriginalAttribute::0", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*dGoCllX_mjVjati5xkchp9.#OriginalAttribute::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*dGoCllX_mjVjati5xkchp9.#OriginalAttribute::1", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*So1ceLc_ZpUPf6fdSxg7gW.#Variable {"_key": "7skC5R_8TVsV6FYAotkxDn*So1ceLc_ZpUPf6fdSxg7gW.#Variable", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*So1ceLc_ZpUPf6fdSxg7gW.#Variable::0 {"_key": "7skC5R_8TVsV6FYAotkxDn*So1ceLc_ZpUPf6fdSxg7gW.#Variable::0", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*So1ceLc_ZpUPf6fdSxg7gW.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*So1ceLc_ZpUPf6fdSxg7gW.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*So1ceLc_ZpUPf6fdSxg7gW.#Value::0 {"Value": "0", "_key": "7skC5R_8TVsV6FYAotkxDn*So1ceLc_ZpUPf6fdSxg7gW.#Value::0", "_type": "Integer"}
+7skC5R_8TVsV6FYAotkxDn*MWXnJTZZssUN1Eqc6eSz_F {"DisplayName": "Department", "Name": "Department", "_key": "7skC5R_8TVsV6FYAotkxDn*MWXnJTZZssUN1Eqc6eSz_F", "_type": "IAliasedSource"}
+7skC5R_8TVsV6FYAotkxDn*C2eDd18iP3zlOLJ0zmbsAA {"DisplayName": "Employee.DepartmentId = Department.Id (Employee with or without Department)", "JoinType": "Left", "_key": "7skC5R_8TVsV6FYAotkxDn*C2eDd18iP3zlOLJ0zmbsAA", "_type": "IJoin"}
+7skC5R_8TVsV6FYAotkxDn*XCNGe0pZiKYPss_v9yrHdZ.#Visible {"_key": "7skC5R_8TVsV6FYAotkxDn*XCNGe0pZiKYPss_v9yrHdZ.#Visible", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*XCNGe0pZiKYPss_v9yrHdZ.#Visible::0 {"Value": "True", "_key": "7skC5R_8TVsV6FYAotkxDn*XCNGe0pZiKYPss_v9yrHdZ.#Visible::0", "_type": "Boolean"}
+7skC5R_8TVsV6FYAotkxDn*q79yG_zyM1083msZJPfTsB.#ValueExpression {"_key": "7skC5R_8TVsV6FYAotkxDn*q79yG_zyM1083msZJPfTsB.#ValueExpression", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*q79yG_zyM1083msZJPfTsB.#ValueExpression::0 {"TextCategory": "Others", "TextHash": "margin-bottom-base filterchild", "TextValue": "margin-bottom-base filterchild", "_key": "7skC5R_8TVsV6FYAotkxDn*q79yG_zyM1083msZJPfTsB.#ValueExpression::0", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*IdIRi7LSXd4NRTItM9Um3S {"AlignItems": "Stretch", "AlignSelf": "Auto", "ColumnGap": null, "ColumnSpan": null, "CustomStyle": null, "DisplayName": "DepartmentDropdown", "DropdownMode": "Text", "FlexBasis": null, "FlexDirection": "Row", "FlexWrap": "NoWrap", "Flexible": "Shrink", "Gap": "8px", "GridColumns": 3, "GridRows": 1
+7skC5R_8TVsV6FYAotkxDn*IdIRi7LSXd4NRTItM9Um3S::Id {"Name": "Id", "_key": "7skC5R_8TVsV6FYAotkxDn*IdIRi7LSXd4NRTItM9Um3S::Id", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*IdIRi7LSXd4NRTItM9Um3S::Valid {"Name": "Valid", "_key": "7skC5R_8TVsV6FYAotkxDn*IdIRi7LSXd4NRTItM9Um3S::Valid", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*IdIRi7LSXd4NRTItM9Um3S::ValidationMessage {"Name": "ValidationMessage", "_key": "7skC5R_8TVsV6FYAotkxDn*IdIRi7LSXd4NRTItM9Um3S::ValidationMessage", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*Zu9aYmJRoS7xTHJxyugDUC {"AlignItems": "Stretch", "AlignSelf": "Auto", "ColumnGap": null, "ColumnSpan": null, "CustomStyle": null, "DisplayName": "Header Cell", "FlexBasis": null, "FlexDirection": "Row", "FlexWrap": "NoWrap", "Flexible": "Shrink", "Gap": "8px", "GridColumns": 3, "GridRows": 1, "JustifyContent": "Start", "N
+7skC5R_8TVsV6FYAotkxDn*Zu9aYmJRoS7xTHJxyugDUC::Id {"Name": "Id", "_key": "7skC5R_8TVsV6FYAotkxDn*Zu9aYmJRoS7xTHJxyugDUC::Id", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*BcDZtItF7UxQ1XCtH816yw {"AlignItems": "Stretch", "AlignSelf": "Auto", "ColumnGap": null, "ColumnSpan": null, "CustomStyle": null, "DisplayName": "Row Cell", "FlexBasis": null, "FlexDirection": "Row", "FlexWrap": "NoWrap", "Flexible": "Shrink", "Gap": "8px", "GridColumns": 3, "GridRows": 1, "JustifyContent": "Start", "Name
+7skC5R_8TVsV6FYAotkxDn*BcDZtItF7UxQ1XCtH816yw::Id {"Name": "Id", "_key": "7skC5R_8TVsV6FYAotkxDn*BcDZtItF7UxQ1XCtH816yw::Id", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*kN79fspxGBkUM6Nv5XqBwK {"DisplayName": "Department", "_key": "7skC5R_8TVsV6FYAotkxDn*kN79fspxGBkUM6Nv5XqBwK", "_type": "IAddSource"}
+7skC5R_8TVsV6FYAotkxDn*C2eDd18iP3zlOLJ0zmbsAA.#Condition {"_key": "7skC5R_8TVsV6FYAotkxDn*C2eDd18iP3zlOLJ0zmbsAA.#Condition", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*C2eDd18iP3zlOLJ0zmbsAA.#Condition::0 {"Operator": "Eq", "_key": "7skC5R_8TVsV6FYAotkxDn*C2eDd18iP3zlOLJ0zmbsAA.#Condition::0", "_type": "BinaryOperation"}
+7skC5R_8TVsV6FYAotkxDn*C2eDd18iP3zlOLJ0zmbsAA.#Condition::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*C2eDd18iP3zlOLJ0zmbsAA.#Condition::1", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*C2eDd18iP3zlOLJ0zmbsAA.#Condition::2 {"_key": "7skC5R_8TVsV6FYAotkxDn*C2eDd18iP3zlOLJ0zmbsAA.#Condition::2", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*C2eDd18iP3zlOLJ0zmbsAA.#Condition::3 {"_key": "7skC5R_8TVsV6FYAotkxDn*C2eDd18iP3zlOLJ0zmbsAA.#Condition::3", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*C2eDd18iP3zlOLJ0zmbsAA.#Condition::4 {"_key": "7skC5R_8TVsV6FYAotkxDn*C2eDd18iP3zlOLJ0zmbsAA.#Condition::4", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*MHXwb5iHz_QAJITYOw10No.#ValueExpression {"_key": "7skC5R_8TVsV6FYAotkxDn*MHXwb5iHz_QAJITYOw10No.#ValueExpression", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*MHXwb5iHz_QAJITYOw10No.#ValueExpression::0 {"_key": "7skC5R_8TVsV6FYAotkxDn*MHXwb5iHz_QAJITYOw10No.#ValueExpression::0", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*BiHgc1orT1De4fxMbAT7zt.#ValueExpression {"_key": "7skC5R_8TVsV6FYAotkxDn*BiHgc1orT1De4fxMbAT7zt.#ValueExpression", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*BiHgc1orT1De4fxMbAT7zt.#ValueExpression::0 {"_key": "7skC5R_8TVsV6FYAotkxDn*BiHgc1orT1De4fxMbAT7zt.#ValueExpression::0", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*BiHgc1orT1De4fxMbAT7zt.#ValueExpression::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*BiHgc1orT1De4fxMbAT7zt.#ValueExpression::1", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*8zqNHNefxC_G9eBSKJ8S8f.#ValueExpression {"_key": "7skC5R_8TVsV6FYAotkxDn*8zqNHNefxC_G9eBSKJ8S8f.#ValueExpression", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*8zqNHNefxC_G9eBSKJ8S8f.#ValueExpression::0 {"_key": "7skC5R_8TVsV6FYAotkxDn*8zqNHNefxC_G9eBSKJ8S8f.#ValueExpression::0", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*8zqNHNefxC_G9eBSKJ8S8f.#ValueExpression::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*8zqNHNefxC_G9eBSKJ8S8f.#ValueExpression::1", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*ruvQyuuKUq57VT8OlGKzMX.#ValueExpression {"_key": "7skC5R_8TVsV6FYAotkxDn*ruvQyuuKUq57VT8OlGKzMX.#ValueExpression", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*ruvQyuuKUq57VT8OlGKzMX.#ValueExpression::0 {"_key": "7skC5R_8TVsV6FYAotkxDn*ruvQyuuKUq57VT8OlGKzMX.#ValueExpression::0", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*ruvQyuuKUq57VT8OlGKzMX.#ValueExpression::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*ruvQyuuKUq57VT8OlGKzMX.#ValueExpression::1", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*XOHnNmgNWBl2Twv4VGjSKF.#ValueExpression {"_key": "7skC5R_8TVsV6FYAotkxDn*XOHnNmgNWBl2Twv4VGjSKF.#ValueExpression", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*XOHnNmgNWBl2Twv4VGjSKF.#ValueExpression::0 {"Value": "False", "_key": "7skC5R_8TVsV6FYAotkxDn*XOHnNmgNWBl2Twv4VGjSKF.#ValueExpression::0", "_type": "Boolean"}
+7skC5R_8TVsV6FYAotkxDn*BxfP7hQ0Pduv9w4wz0BTxB.#ValueExpression {"_key": "7skC5R_8TVsV6FYAotkxDn*BxfP7hQ0Pduv9w4wz0BTxB.#ValueExpression", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*BxfP7hQ0Pduv9w4wz0BTxB.#ValueExpression::0 {"Value": "True", "_key": "7skC5R_8TVsV6FYAotkxDn*BxfP7hQ0Pduv9w4wz0BTxB.#ValueExpression::0", "_type": "Boolean"}
+7skC5R_8TVsV6FYAotkxDn*v9fjR1v7zPXYUJiXA29gsM.#ValueExpression {"_key": "7skC5R_8TVsV6FYAotkxDn*v9fjR1v7zPXYUJiXA29gsM.#ValueExpression", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*v9fjR1v7zPXYUJiXA29gsM.#ValueExpression::0 {"TextCategory": "Others", "TextHash": "All departments", "TextValue": "All departments", "_key": "7skC5R_8TVsV6FYAotkxDn*v9fjR1v7zPXYUJiXA29gsM.#ValueExpression::0", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*FZUIGZgsx2aKFjFxiSLgD5.#ValueExpression {"_key": "7skC5R_8TVsV6FYAotkxDn*FZUIGZgsx2aKFjFxiSLgD5.#ValueExpression", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*FZUIGZgsx2aKFjFxiSLgD5.#ValueExpression::0 {"TextCategory": "Others", "TextHash": "dropdown", "TextValue": "dropdown", "_key": "7skC5R_8TVsV6FYAotkxDn*FZUIGZgsx2aKFjFxiSLgD5.#ValueExpression::0", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*R5hajXKpKFcAQd6DL4_A2W {"BuiltInValidations": "None", "DisplayName": "On Change", "Transition": "Inherited", "_key": "7skC5R_8TVsV6FYAotkxDn*R5hajXKpKFcAQd6DL4_A2W", "_type": "INRBuiltinEvent"}
+7skC5R_8TVsV6FYAotkxDn*cSwQvve1I57rgJhW6hywDG.#ValueExpression {"_key": "7skC5R_8TVsV6FYAotkxDn*cSwQvve1I57rgJhW6hywDG.#ValueExpression", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*cSwQvve1I57rgJhW6hywDG.#ValueExpression::0 {"_key": "7skC5R_8TVsV6FYAotkxDn*cSwQvve1I57rgJhW6hywDG.#ValueExpression::0", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*cSwQvve1I57rgJhW6hywDG.#ValueExpression::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*cSwQvve1I57rgJhW6hywDG.#ValueExpression::1", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*2Ne8hpTNxRIneXEX6T20BY {"CustomStyle": null, "DisplayName": "Text", "Name": null, "Text": "Department", "_key": "7skC5R_8TVsV6FYAotkxDn*2Ne8hpTNxRIneXEX6T20BY", "_type": "INRTextWidget"}
+7skC5R_8TVsV6FYAotkxDn*2Ne8hpTNxRIneXEX6T20BY::Id {"Name": "Id", "_key": "7skC5R_8TVsV6FYAotkxDn*2Ne8hpTNxRIneXEX6T20BY::Id", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*TjwfWQlNP0Ezz2RoyVUm7Y {"AlignItems": "Stretch", "AlignSelf": "Auto", "ColumnGap": null, "ColumnSpan": null, "CustomStyle": "white-space: nowrap;", "DisplayName": "Expression", "Example": null, "FlexBasis": null, "FlexDirection": "Row", "FlexWrap": "NoWrap", "Flexible": "Shrink", "Gap": "8px", "GridColumns": 3, "GridRows"
+7skC5R_8TVsV6FYAotkxDn*TjwfWQlNP0Ezz2RoyVUm7Y::Id {"Name": "Id", "_key": "7skC5R_8TVsV6FYAotkxDn*TjwfWQlNP0Ezz2RoyVUm7Y::Id", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*E4wUI7eleH6QCS7Aeu5khZ.#ValueExpression {"_key": "7skC5R_8TVsV6FYAotkxDn*E4wUI7eleH6QCS7Aeu5khZ.#ValueExpression", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*E4wUI7eleH6QCS7Aeu5khZ.#ValueExpression::0 {"_key": "7skC5R_8TVsV6FYAotkxDn*E4wUI7eleH6QCS7Aeu5khZ.#ValueExpression::0", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*E4wUI7eleH6QCS7Aeu5khZ.#ValueExpression::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*E4wUI7eleH6QCS7Aeu5khZ.#ValueExpression::1", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*E4wUI7eleH6QCS7Aeu5khZ.#ValueExpression::2 {"_key": "7skC5R_8TVsV6FYAotkxDn*E4wUI7eleH6QCS7Aeu5khZ.#ValueExpression::2", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*E4wUI7eleH6QCS7Aeu5khZ.#ValueExpression::3 {"_key": "7skC5R_8TVsV6FYAotkxDn*E4wUI7eleH6QCS7Aeu5khZ.#ValueExpression::3", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*E4wUI7eleH6QCS7Aeu5khZ.#ValueExpression::4 {"_key": "7skC5R_8TVsV6FYAotkxDn*E4wUI7eleH6QCS7Aeu5khZ.#ValueExpression::4", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*l0ilNcWRgTXsO358LzFqdP {"Align": "Default", "AlignItems": "Stretch", "AlignSelf": "Auto", "Animate": false, "ColumnGap": null, "ColumnSpan": null, "CustomStyle": null, "DisplayName": "Container", "FlexBasis": null, "FlexDirection": "Row", "FlexWrap": "NoWrap", "Flexible": "Shrink", "Gap": "8px", "GridColumns": 3, "GridRow
+7skC5R_8TVsV6FYAotkxDn*l0ilNcWRgTXsO358LzFqdP::Id {"Name": "Id", "_key": "7skC5R_8TVsV6FYAotkxDn*l0ilNcWRgTXsO358LzFqdP::Id", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*l0ilNcWRgTXsO358LzFqdP.#Visible {"_key": "7skC5R_8TVsV6FYAotkxDn*l0ilNcWRgTXsO358LzFqdP.#Visible", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*l0ilNcWRgTXsO358LzFqdP.#Visible::0 {"Value": "True", "_key": "7skC5R_8TVsV6FYAotkxDn*l0ilNcWRgTXsO358LzFqdP.#Visible::0", "_type": "Boolean"}
+7skC5R_8TVsV6FYAotkxDn*ySYZzpAKuTXNRYSAsdb27P.#ValueExpression {"_key": "7skC5R_8TVsV6FYAotkxDn*ySYZzpAKuTXNRYSAsdb27P.#ValueExpression", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*ySYZzpAKuTXNRYSAsdb27P.#ValueExpression::0 {"TextCategory": "Others", "TextHash": "text-decoration-inherit margin-bottom-base", "TextValue": "text-decoration-inherit margin-bottom-base", "_key": "7skC5R_8TVsV6FYAotkxDn*ySYZzpAKuTXNRYSAsdb27P.#ValueExpression::0", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*3YHNraPPV4VNG7srFObOW8 {"AlignItems": "Stretch", "AlignSelf": "Auto", "ColumnGap": null, "ColumnSpan": null, "CustomStyle": "vertical-align: top;", "DisplayName": "Label", "FlexBasis": null, "FlexDirection": "Row", "FlexWrap": "NoWrap", "Flexible": "Shrink", "Gap": "8px", "GridColumns": 3, "GridRows": 1, "JustifyContent":
+7skC5R_8TVsV6FYAotkxDn*3YHNraPPV4VNG7srFObOW8::Id {"Name": "Id", "_key": "7skC5R_8TVsV6FYAotkxDn*3YHNraPPV4VNG7srFObOW8::Id", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*AuPZbtJmGJbcP75UDAsA3M {"AlignItems": "Stretch", "AlignSelf": "Auto", "ColumnGap": null, "ColumnSpan": null, "CustomStyle": null, "DisplayName": "Expression", "Example": null, "FlexBasis": null, "FlexDirection": "Row", "FlexWrap": "NoWrap", "Flexible": "Shrink", "Gap": "8px", "GridColumns": 3, "GridRows": 1, "JustifyConte
+7skC5R_8TVsV6FYAotkxDn*AuPZbtJmGJbcP75UDAsA3M::Id {"Name": "Id", "_key": "7skC5R_8TVsV6FYAotkxDn*AuPZbtJmGJbcP75UDAsA3M::Id", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*2Za5F2P2WClWOjv8te4Gg7.#ValueExpression {"_key": "7skC5R_8TVsV6FYAotkxDn*2Za5F2P2WClWOjv8te4Gg7.#ValueExpression", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*2Za5F2P2WClWOjv8te4Gg7.#ValueExpression::0 {"TextCategory": "Others", "TextHash": "display-inline-block", "TextValue": "display-inline-block", "_key": "7skC5R_8TVsV6FYAotkxDn*2Za5F2P2WClWOjv8te4Gg7.#ValueExpression::0", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*LdJ1PjrWBbX3caL1ZYkitJ {"CustomStyle": null, "DisplayName": "Text", "Name": null, "Text": "Department", "_key": "7skC5R_8TVsV6FYAotkxDn*LdJ1PjrWBbX3caL1ZYkitJ", "_type": "INRTextWidget"}
+7skC5R_8TVsV6FYAotkxDn*LdJ1PjrWBbX3caL1ZYkitJ::Id {"Name": "Id", "_key": "7skC5R_8TVsV6FYAotkxDn*LdJ1PjrWBbX3caL1ZYkitJ::Id", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*9ZumcFu5zLb5p9wDtadmHc.#ValueExpression {"_key": "7skC5R_8TVsV6FYAotkxDn*9ZumcFu5zLb5p9wDtadmHc.#ValueExpression", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*9ZumcFu5zLb5p9wDtadmHc.#ValueExpression::0 {"_key": "7skC5R_8TVsV6FYAotkxDn*9ZumcFu5zLb5p9wDtadmHc.#ValueExpression::0", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*9ZumcFu5zLb5p9wDtadmHc.#ValueExpression::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*9ZumcFu5zLb5p9wDtadmHc.#ValueExpression::1", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*9ZumcFu5zLb5p9wDtadmHc.#ValueExpression::2 {"_key": "7skC5R_8TVsV6FYAotkxDn*9ZumcFu5zLb5p9wDtadmHc.#ValueExpression::2", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*9ZumcFu5zLb5p9wDtadmHc.#ValueExpression::3 {"_key": "7skC5R_8TVsV6FYAotkxDn*9ZumcFu5zLb5p9wDtadmHc.#ValueExpression::3", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*9ZumcFu5zLb5p9wDtadmHc.#ValueExpression::4 {"_key": "7skC5R_8TVsV6FYAotkxDn*9ZumcFu5zLb5p9wDtadmHc.#ValueExpression::4", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*zR1gA8_q4RQf0Zuvvc0w2O.#ValueExpression {"_key": "7skC5R_8TVsV6FYAotkxDn*zR1gA8_q4RQf0Zuvvc0w2O.#ValueExpression", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*zR1gA8_q4RQf0Zuvvc0w2O.#ValueExpression::0 {"TextCategory": "Others", "TextHash": "display-inline-block text-decoration-inherit", "TextValue": "display-inline-block text-decoration-inherit", "_key": "7skC5R_8TVsV6FYAotkxDn*zR1gA8_q4RQf0Zuvvc0w2O.#ValueExpression::0", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn {"ActivationCode": "", "CreatedByAgent": null, "CreatedByTool": "AppGenerator", "DBMS": "All", "DefaultTransition": "Fade", "Description": "Generated By AI", "DisplayName": "EmployeeCatalogMW", "ESpaceType": "CrossDevice", "HideWidgetsDistributedWithIDE": false, "Icon": {"Hash": "b7de928a0ae276d9299
+7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{0} {"Detail": "Resource 'Employee.json' is never used. Consider deleting it.", "HelpRef": 17001, "Hidden": false, "Id": "UnusedResource", "Message": "Unused Resource", "Type": "Warning", "_key": "7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{0}", "_type": "IValidationMessage"}
+7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{1} {"Detail": "Icon \"lock\" is not available in the current icon library (Phosphor2.0)", "HelpRef": 0, "Hidden": false, "Id": "CustomObjectWarning", "Message": "Non Existing Icon", "Type": "Warning", "_key": "7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{1}", "_type": "IValidationMessage"}
+7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{3} {"Detail": "You're exposing a Server Action for public access and without authentication. Consider restricting Screen accessibility to Authenticated Users.", "HelpRef": 30234, "Hidden": true, "Id": "ServerActionInScreenAccessibleByEveryone", "Message": "Security Warning", "Type": "Warning", "_key": 
+7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{4} {"Detail": "Icon \"eye-slash\" is not available in the current icon library (Phosphor2.0)", "HelpRef": 0, "Hidden": false, "Id": "CustomObjectWarning", "Message": "Non Existing Icon", "Type": "Warning", "_key": "7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{4}", "_type": "IValidationMessage"}
+7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{5} {"Detail": "Icon \"eye\" is not available in the current icon library (Phosphor2.0)", "HelpRef": 0, "Hidden": false, "Id": "CustomObjectWarning", "Message": "Non Existing Icon", "Type": "Warning", "_key": "7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{5}", "_type": "IValidationMessage"}
+7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{6} {"Detail": "Icon \"eye-slash\" is not available in the current icon library (Phosphor2.0)", "HelpRef": 0, "Hidden": false, "Id": "CustomObjectWarning", "Message": "Non Existing Icon", "Type": "Warning", "_key": "7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{6}", "_type": "IValidationMessage"}
+7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{7} {"Detail": "Icon \"eye\" is not available in the current icon library (Phosphor2.0)", "HelpRef": 0, "Hidden": false, "Id": "CustomObjectWarning", "Message": "Non Existing Icon", "Type": "Warning", "_key": "7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{7}", "_type": "IValidationMessage"}
+7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{8} {"Detail": "Icon \"eye-slash\" is not available in the current icon library (Phosphor2.0)", "HelpRef": 0, "Hidden": false, "Id": "CustomObjectWarning", "Message": "Non Existing Icon", "Type": "Warning", "_key": "7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{8}", "_type": "IValidationMessage"}
+7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{9} {"Detail": "Icon \"eye\" is not available in the current icon library (Phosphor2.0)", "HelpRef": 0, "Hidden": false, "Id": "CustomObjectWarning", "Message": "Non Existing Icon", "Type": "Warning", "_key": "7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{9}", "_type": "IValidationMessage"}
+7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{10} {"Detail": "Icon \"angle-down\" is not available in the current icon library (Phosphor2.0)", "HelpRef": 0, "Hidden": false, "Id": "CustomObjectWarning", "Message": "Non Existing Icon", "Type": "Warning", "_key": "7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{10}", "_type": "IValidationMessage
+7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{11} {"Detail": "Icon \"sign-in\" is not available in the current icon library (Phosphor2.0)", "HelpRef": 0, "Hidden": false, "Id": "CustomObjectWarning", "Message": "Non Existing Icon", "Type": "Warning", "_key": "7skC5R_8TVsV6FYAotkxDn*7skC5R_8TVsV6FYAotkxDn.verify{11}", "_type": "IValidationMessage"}
+7skC5R_8TVsV6FYAotkxDn*PcXaT2qKBR9BLbXhuFoTI4 {"AccessibleBy": false, "CreatedBy": null, "CreatedByAgent": null, "CreatedByTool": "AppGenerator", "CustomURL": false, "Description": null, "DisplayName": "Employees", "Icon": null, "IsDisabled": false, "LastMergedBy": null, "LastMergedDate": "0001-01-01T00:00:00", "LastModifiedBy": "michael.deguzm
+7skC5R_8TVsV6FYAotkxDn*2M9b5F0ac9Rjm8haCPmQGy {"CreatedBy": null, "CreatedByAgent": null, "CreatedByTool": "AppGenerator", "Description": "Represents an employee in the staff directory, including personal and job-related information.", "DisplayName": "Employee", "ExposeProcessEvents": false, "ExposeReadOnly": true, "IsClientEntity": false, "IsD
+7skC5R_8TVsV6FYAotkxDn*YTC5lcKnT_0XcGjNampZge {"CacheInMinutes": null, "Description": null, "DisplayName": "GetEmployees", "Fetch": "AtStart", "IsClientSide": false, "IsDisabled": false, "LastModifiedBy": "developer@example.com", "LastModifiedDate": "2026-11-22T02:40:16", "Name": "GetEmployees", "TestMaxRecords": null, "Timeout": nu
+7skC5R_8TVsV6FYAotkxDn*rmym93ZTl3mHj05LJWZTmn {"AccessibleBy": false, "CreatedBy": null, "CreatedByAgent": null, "CreatedByTool": "AppGenerator", "CustomURL": false, "Description": null, "DisplayName": "Employee_Details", "Icon": null, "IsDisabled": false, "LastMergedBy": null, "LastMergedDate": "0001-01-01T00:00:00", "LastModifiedBy": "michael
+7skC5R_8TVsV6FYAotkxDn*79fYVlz6B_4suG1Gq8Ase2 {"CacheInMinutes": null, "Description": null, "DisplayName": "GetEmployeeById", "Fetch": "AtStart", "IsClientSide": false, "IsDisabled": false, "LastModifiedBy": "developer@example.com", "LastModifiedDate": "2026-11-22T02:40:16", "Name": "GetEmployeeById", "TestMaxRecords": null, "Timeou
+
+=== task 7 notes (written by hand after reading rev9; rev8 itself could not be read, see below) ===
+Revisions: rev7 = publish 1 (task 4). rev8 = publish 2 (Mentor run 958b88c6, 2026-11-22T02:45:05Z). rev9 = 2026-11-22T02:48:33Z, NOT sent by Kiro.
+context_graph has no revision argument and always serves the latest revision, so only rev9 could be saved. rev8 has no graph file.
+Evidence that rev9 holds the model of rev8 plus stamps only: every content node added or changed carries LastModifiedDate 2026-11-22T02:40:16 (Mentor session, before rev8).
+The only nodes stamped after rev8 are the module EmployeeCatalogMW (LastModifiedByTool ODCStudio) and the entity Employee (02:48:26, LastModifiedByTool ODCStudio). Their other fields are unchanged.
+Stamps: 6 nodes (module, entity Employee, screens Employees and Employee_Details, aggregates GetEmployees and GetEmployeeById). Regenerated validation messages: 11 nodes changed, same 16 messages as rev7. Layout X/Y shifts: 0.
+Text literals: UI strings (header text, labels, dropdown EmptyValue, style classes) are readable. Literals inside aggregate filters and actions are hidden (length and hash only), for example the "%" and "" of the search filter and the " DESC" of OnSort.

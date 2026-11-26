@@ -1,0 +1,32 @@
+# Graph diff EmployeeCatalogMCP revision 5 -> revision 7 (nodes by _key; edges by source,target,attributes without index)
+# header a: {"app_key": "debb6b49-7b59-ecf6-b2eb-50a5f78250f3", "source": "stored", "revision": 5, "latest_revision": 5, "root": null, "graphviz": false, "page": 1, "has_more": false, "blocks": ["xre"], "xre_version": "3.1"}
+# header b: {"app_key": "debb6b49-7b59-ecf6-b2eb-50a5f78250f3", "source": "stored", "revision": 7, "latest_revision": 7, "root": null, "graphviz": false, "page": 1, "has_more": false, "blocks": ["xre"], "xre_version": "3.1"}
+# nodes a=11778 b=11778; edges a=21778 b=21778
+# NODES added=0 removed=0 changed=7
+NODE CHANGED peQmZ2O2q0ZDN8dc3sEUDE*kmAGBi76wyIqCXuxHcGpiq IServerAction BootstrapData
+   FIELD LastModifiedByTool | "AgentExperience" -> "ODCStudio"
+   FIELD LastModifiedDate | "2026-11-21T22:33:53" -> "2026-11-21T22:44:54"
+   FIELD ModifiedByTools | "AgentExperience" -> "ODCStudio, AgentExperience"
+NODE CHANGED peQmZ2O2q0ZDN8dc3sEUDE*cFaXqRsQH4MPM2UmIz2Wy5 IExecuteServerActionNode UpdateEmployee
+   FIELD X | 6742 -> 5029
+   FIELD Y | 13211 -> 11429
+NODE CHANGED peQmZ2O2q0ZDN8dc3sEUDE*mSJq_K3yIDoFeP71qjZcob IForEachNode 
+   FIELD X | 4969 -> 5029
+   FIELD Y | 7892 -> 8000
+NODE CHANGED peQmZ2O2q0ZDN8dc3sEUDE*xAb20WWrxRqQnrGBiHeUbb IStaticEntityRecord 
+   FIELD DisplayName | "Finance" -> "Engineering"
+   FIELD Identifier | "Finance" -> "Engineering"
+   FIELD LastModifiedDate | "2026-11-21T22:32:18" -> "2026-11-21T22:55:15"
+NODE CHANGED peQmZ2O2q0ZDN8dc3sEUDE*mKEXanOCnNx1BFMzaiH08O IStaticEntityRecord 
+   FIELD DisplayName | "HumanResources" -> "Finance"
+   FIELD Identifier | "HumanResources" -> "Finance"
+   FIELD LastModifiedDate | "2026-11-21T22:32:18" -> "2026-11-21T22:55:11"
+NODE CHANGED peQmZ2O2q0ZDN8dc3sEUDE*5h5M1UjNZzaVB95Nat8H6k IStaticEntityRecord 
+   FIELD DisplayName | "Engineering" -> "Sales"
+   FIELD Identifier | "Engineering" -> "Sales"
+   FIELD LastModifiedDate | "2026-11-21T22:32:18" -> "2026-11-21T22:55:11"
+NODE CHANGED peQmZ2O2q0ZDN8dc3sEUDE*Z8HRISjnjjQurMMV572NlR IStaticEntityRecord 
+   FIELD DisplayName | "Sales" -> "HumanResources"
+   FIELD Identifier | "Sales" -> "HumanResources"
+   FIELD LastModifiedDate | "2026-11-21T22:32:18" -> "2026-11-21T22:55:11"
+# EDGES added=0 removed=0 index-changed=0

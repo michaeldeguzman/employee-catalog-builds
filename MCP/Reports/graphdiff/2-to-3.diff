@@ -1,0 +1,101 @@
+Rev2 nodes 11587 unique keys 11587 edges 21382 | Rev3 nodes 11592 unique keys 11592 edges 21389
+added nodes 5 removed 0 changed 70
+added edges 15 removed edges 8
+ADDED ReferenceIStaticEntityRecord AgentActivity BoynGjPhWab_D_0AQLSZXS*PnRy1dMmuU61wXLS0I85ow
+ADDED ReferenceIRecordAttributeValue Id peQmZ2O2q0ZDN8dc3sEUDE*VplzaEEDnkaYwWQZmj989w
+ADDED ReferenceIRecordAttributeValue Name peQmZ2O2q0ZDN8dc3sEUDE*XfzujVJ_00ObR+IQcFx6vA
+ADDED ReferenceExpression  peQmZ2O2q0ZDN8dc3sEUDE*VplzaEEDnkaYwWQZmj989w.#Value
+ADDED ReferenceExpression  peQmZ2O2q0ZDN8dc3sEUDE*XfzujVJ_00ObR+IQcFx6vA.#Value
+CHANGED IESpace EmployeeCatalogMCP peQmZ2O2q0ZDN8dc3sEUDE*peQmZ2O2q0ZDN8dc3sEUDE {"LastModifiedByTool": ["AgentExperience", "ODCStudio"]}
+CHANGED IReference OutSystemsMaps peQmZ2O2q0ZDN8dc3sEUDE*P4NVOjEPnEOrw+I_E6hCXw {"LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED IReference OutSystemsCharts peQmZ2O2q0ZDN8dc3sEUDE*kPh9RJjqlEmX6iHgmCXU_w {"LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED IReference OutSystemsUI peQmZ2O2q0ZDN8dc3sEUDE*KhBFfIXHMUKgK7kGt1Kasg {"LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED IReference (System) peQmZ2O2q0ZDN8dc3sEUDE*n8RX0RwGmr_ipIrqimp37q {"Revision": ["4", "5"], "CreatedBy": [null, "developer@example.com"], "Hash": ["f87ce6c0-e663-38b7-93c6-e0673b0f873f", "3c780e61-16fb-fb0f-8c82-d1acf8f0de4d"], "LastModifiedDate": ["0001-01-01T00:00:00", "2026-11-21T19:46:00"], "LastModifiedBy": [null, "developer@example.com"]}
+CHANGED ReferenceIMobileFlow Styles rrmHi5NPfL6r6Cev5C3Ctx*mkTdut5dDMq71abgrIErKn {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["0001-01-01T00:00:00", "2026-11-21T19:45:59"], "LastModifiedBy": [null, "developer@example.com"]}
+CHANGED ReferenceIImage ToolPolyline rrmHi5NPfL6r6Cev5C3Ctx*4MOg10WwWViYrN8D9CbOZv {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage iconMarkerEvent rrmHi5NPfL6r6Cev5C3Ctx*Uy22kVX6tkRP3yCmuP_sxh {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage controlfull rrmHi5NPfL6r6Cev5C3Ctx*grf9OdJH6eTluMBE6juM8s {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage searchPlacesIcon rrmHi5NPfL6r6Cev5C3Ctx*dA5TCzOHcnk7F50K9dlcrB {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage ToolPolygon rrmHi5NPfL6r6Cev5C3Ctx*W2QULxQUO1d_DitvpxkOaU {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage MapPolyline rrmHi5NPfL6r6Cev5C3Ctx*Uem1F_vTYQqeTNMXd974jl {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage MapPolygon rrmHi5NPfL6r6Cev5C3Ctx*6morchXTKDBRYiU_lIADts {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage iconMarker rrmHi5NPfL6r6Cev5C3Ctx*lCqPBNg7cobzV11yJxHjqW {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage ToolMarker rrmHi5NPfL6r6Cev5C3Ctx*SKsm8sWvjGCSSqvxRoMThB {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage MapRectangle rrmHi5NPfL6r6Cev5C3Ctx*rjonOwlYCD7o8yAmq0bN2Y {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage Heatmap rrmHi5NPfL6r6Cev5C3Ctx*AgSx67GzYMOYTjPiyiglC4 {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage MapPreview rrmHi5NPfL6r6Cev5C3Ctx*7p9bC1mnujCiHpRH7TrdKA {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage FileLayer rrmHi5NPfL6r6Cev5C3Ctx*FcHxJSK5jmI4uexA9AGUSD {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage iconMapEvent rrmHi5NPfL6r6Cev5C3Ctx*1TmVfLfdpzcM2FqupHvvLu {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage ToolRectangle rrmHi5NPfL6r6Cev5C3Ctx*PSCSSyvuorMecViZcjT6l4 {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage controlzoom rrmHi5NPfL6r6Cev5C3Ctx*Qk4EOGFYb52COHNGJ2d5Ie {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage MapCircle rrmHi5NPfL6r6Cev5C3Ctx*gR1SqN_5t2KTM2cXOnyNi2 {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage ToolHand rrmHi5NPfL6r6Cev5C3Ctx*mIdzvSSnRM3cAD2yZm9EnK {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage MapShapeEvent rrmHi5NPfL6r6Cev5C3Ctx*kz0O_4BFGv8wKbsFehiEmi {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage ToolCircle rrmHi5NPfL6r6Cev5C3Ctx*KD3nNrgMIzh3vszZWGs0nN {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage controltype rrmHi5NPfL6r6Cev5C3Ctx*IF8EBQ_kGRmCqzWt3uVKJ9 {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIMobileFlow Styles2 Xgzxdp2dOC6QX9SsgaG7oW*wicvgr4kGtF21ZH9GmcdwL {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["0001-01-01T00:00:00", "2026-11-21T19:45:59"], "LastModifiedBy": [null, "developer@example.com"]}
+CHANGED ReferenceIImage bar Xgzxdp2dOC6QX9SsgaG7oW*SA9eijqY9XjOG0rXsPQbSn {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage YAxis Xgzxdp2dOC6QX9SsgaG7oW*Ta5x0f2eGFHhAPzEVdzImO {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage HighChartsModule Xgzxdp2dOC6QX9SsgaG7oW*yNmdeAwztBTCFboF51dwxu {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage osradarchart Xgzxdp2dOC6QX9SsgaG7oW*ruhID5Nrwz19PqNIu9P4SI {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage oslinechart Xgzxdp2dOC6QX9SsgaG7oW*dSHLxMSez3gDSjYJHVJaBp {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage line Xgzxdp2dOC6QX9SsgaG7oW*gH4SWJkBu95FXQpX6aE0ml {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage eyeoff Xgzxdp2dOC6QX9SsgaG7oW*ZfjJPL4zTMrRF8lNvm3XOR {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage ospiechart Xgzxdp2dOC6QX9SsgaG7oW*UEroxWVChtPkmZEbckrY4j {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage osbarchart Xgzxdp2dOC6QX9SsgaG7oW*lAjPC6KLBT081atykd0lU9 {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage area Xgzxdp2dOC6QX9SsgaG7oW*ZZzgyHI19BDjcVG3hnsBad {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage radar Xgzxdp2dOC6QX9SsgaG7oW*RqrjYKPQZMTPgNGO6smRxA {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage oscolumnchart Xgzxdp2dOC6QX9SsgaG7oW*ZdKHqe2tFYHbTiDUhKOKu3 {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage XAxis Xgzxdp2dOC6QX9SsgaG7oW*1jC_qh3fGNDjyd_uMqPVp3 {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage osareachart Xgzxdp2dOC6QX9SsgaG7oW*JjvBeIm18zYOc1gu7dMvWL {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage column Xgzxdp2dOC6QX9SsgaG7oW*iV2qMMJTz2Qvobw7PejQrB {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage SeriesStyling Xgzxdp2dOC6QX9SsgaG7oW*TWrdskyRucVTBsdgeP9BVO {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage donut Xgzxdp2dOC6QX9SsgaG7oW*mx1pC9KbFvHanpO94ucU0x {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage osdonutchart Xgzxdp2dOC6QX9SsgaG7oW*ZNh2awUkMCp8GMbPzoFKBU {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage ChartExport Xgzxdp2dOC6QX9SsgaG7oW*rK7kugAwPRcxxP3XGpe9NU {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage pie Xgzxdp2dOC6QX9SsgaG7oW*FlUplzZUoD7oIOuV7LXtyQ {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage Legend Xgzxdp2dOC6QX9SsgaG7oW*I1Mcm99E1gv6__LjkrJA_M {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage sidebar2 PVacJ8Wo7JHtNdquuzv822*wkcfXHVZz8vw2DeiFRcbZs {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage Search PVacJ8Wo7JHtNdquuzv822*zXYpYhVk1vhTsKeekzJxs1 {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage NotificationLeft2 PVacJ8Wo7JHtNdquuzv822*B7G7owTxomiLLhdBcYocN6 {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage NotificationTopRight2 PVacJ8Wo7JHtNdquuzv822*ppeltu7M0ftaYbEohmrM_K {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage TouchEvents PVacJ8Wo7JHtNdquuzv822*iZMIv7FXyyx6jksNBRjU7t {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage NotificationBottom2 PVacJ8Wo7JHtNdquuzv822*FMOwnNygMFdoLycmk8D6SL {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage NotificationBottomRight2 PVacJ8Wo7JHtNdquuzv822*TWX1yVwcEGkpYZ4XrbsD9Q {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage InlineSVG2 PVacJ8Wo7JHtNdquuzv822*AyXG7pGEEn0ixs7yN2Yr7Q {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage NotificationBottomLeft2 PVacJ8Wo7JHtNdquuzv822*zYrRG6kJdHymAJn7gKA1FS {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage NotificationTopLeft2 PVacJ8Wo7JHtNdquuzv822*6UXXJ1pDrvEgXjBQknbZVv {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage Floatingcontent PVacJ8Wo7JHtNdquuzv822*F8gCCsJMaUZBcadziP_aEf {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage NotificationCenter2 PVacJ8Wo7JHtNdquuzv822*njSuXy65xZ14_z8pQH8CkX {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage PhotoswipeSkin PVacJ8Wo7JHtNdquuzv822*ROO7Cyve1b2FUmfSCM7vtk {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage NotificationRight2 PVacJ8Wo7JHtNdquuzv822*9EewWmpVeky_zHMxRYAKdu {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage Carousel2 PVacJ8Wo7JHtNdquuzv822*Aw2x_HVEfwYnQODvV3A49e {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage NotificationTop2 PVacJ8Wo7JHtNdquuzv822*dg3dINC7aCcBODvBNyMmg4 {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIImage PhotoswipePreloader PVacJ8Wo7JHtNdquuzv822*GYPc0oYaWbIkUyBUWwyxsN {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["2026-11-21T18:54:54", "2026-11-21T19:46:00"]}
+CHANGED ReferenceIEntity Role BoynGjPhWab_D_0AQLSZXS*VMAtV1hPo3sEddfG0nQPPr {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["0001-01-01T00:00:00", "2026-11-21T19:45:59"], "LastModifiedBy": [null, "developer@example.com"]}
+CHANGED ReferenceIEntity ActivityInstance BoynGjPhWab_D_0AQLSZXS*hg460+gk0UGzMRTFlEBTOQ {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["0001-01-01T00:00:00", "2026-11-21T19:46:00"], "LastModifiedBy": [null, "developer@example.com"]}
+CHANGED ReferenceIEntity ActivityKind BoynGjPhWab_D_0AQLSZXS*UQW32fAh_YpXze8uu013lQ {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["0001-01-01T00:00:00", "2026-11-21T19:45:59"], "LastModifiedBy": [null, "developer@example.com"]}
+CHANGED ReferenceIEntity ProcessInstance BoynGjPhWab_D_0AQLSZXS*rk1aJNDvckKT91HxgCaO6w {"CreatedBy": [null, "developer@example.com"], "LastModifiedDate": ["0001-01-01T00:00:00", "2026-11-21T19:46:00"], "LastModifiedBy": [null, "developer@example.com"]}
+EDGE REMOVED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord Start {"_type": "Records", "index": 0, "relationType": "Parent"}
+EDGE REMOVED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord HumanActivity {"_type": "Records", "index": 3, "relationType": "Parent"}
+EDGE REMOVED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord AutomaticActivity {"_type": "Records", "index": 5, "relationType": "Parent"}
+EDGE REMOVED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord Wait {"_type": "Records", "index": 2, "relationType": "Parent"}
+EDGE REMOVED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord Decision {"_type": "Records", "index": 1, "relationType": "Parent"}
+EDGE REMOVED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord Terminate {"_type": "Records", "index": 4, "relationType": "Parent"}
+EDGE REMOVED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord ConditionalStart {"_type": "Records", "index": 6, "relationType": "Parent"}
+EDGE REMOVED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord End {"_type": "Records", "index": 7, "relationType": "Parent"}
+EDGE ADDED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord ConditionalStart {"_type": "Records", "index": 7, "relationType": "Parent"}
+EDGE ADDED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord Wait {"_type": "Records", "index": 3, "relationType": "Parent"}
+EDGE ADDED ReferenceIStaticEntityRecord AgentActivity -> ReferenceIRecordAttributeValue Id {"_type": "AttributeValues", "index": 0, "relationType": "Parent"}
+EDGE ADDED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord End {"_type": "Records", "index": 8, "relationType": "Parent"}
+EDGE ADDED ReferenceIRecordAttributeValue Name -> ReferenceExpression  {"_type": "Value", "relationType": "Parent"}
+EDGE ADDED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord Decision {"_type": "Records", "index": 2, "relationType": "Parent"}
+EDGE ADDED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord AutomaticActivity {"_type": "Records", "index": 6, "relationType": "Parent"}
+EDGE ADDED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord Terminate {"_type": "Records", "index": 5, "relationType": "Parent"}
+EDGE ADDED ReferenceIRecordAttributeValue Id -> ReferenceExpression  {"_type": "Value", "relationType": "Parent"}
+EDGE ADDED ReferenceIStaticEntityRecord AgentActivity -> ReferenceIRecordAttributeValue Name {"_type": "AttributeValues", "index": 1, "relationType": "Parent"}
+EDGE ADDED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord HumanActivity {"_type": "Records", "index": 4, "relationType": "Parent"}
+EDGE ADDED ReferenceIRecordAttributeValue Id -> ReferenceIEntityAttribute Id {"_type": "Attribute"}
+EDGE ADDED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord Start {"_type": "Records", "index": 1, "relationType": "Parent"}
+EDGE ADDED ReferenceIEntity ActivityKind -> ReferenceIStaticEntityRecord AgentActivity {"_type": "Records", "index": 0, "relationType": "Parent"}
+EDGE ADDED ReferenceIRecordAttributeValue Name -> ReferenceIEntityAttribute Name {"_type": "Attribute"}

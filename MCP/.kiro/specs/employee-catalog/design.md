@@ -1,0 +1,166 @@
+# Design Document
+
+## Overview
+
+This design describes how Kiro builds EmployeeCatalogMCP through the OutSystems MCP with the Power's outsystems-spec-driven-build skill (a Beta Feature; Kiro tells the user so and links the Beta agreement the first time it uses the skill). This build uses no knowledge of build A's results. Shared inputs: requirements.md and the 20 sample records.
+
+The input is `requirements.md` in this folder. The output is a published Reactive Web app on the ODC tenant, a build report, and a check report against AC-01 to AC-06.
+
+Nothing in this design touches the tenant. All tenant writes happen later, one at a time, each after the user confirms.
+
+### Sources used
+
+- `requirements.md` (this folder): the source of truth.
+- `Employee Catalog/MentorWeb/BRD/EmployeeCatalogMW-BRD.md` (build A's BRD, outside the workspace): read for one purpose only, to copy its 20 sample records into spec.md (see "Sample data"). `requirements.md` is not changed.
+- SKILL.md of outsystems-spec-driven-build v1.5.0 and its `scripts/build.py` guardrail text, and SKILL.md of the main outsystems skill.
+- SDD Base `mentor-standards.md` (cached 2026-09-04) and `Mentor-Requirement-Doc-Standards.md`. These are written for Mentor Web BRD upload. Only the UI pattern vocabulary applies here. `AI-Agent-Enhancement.md` does not apply because no AI agent is in scope.
+- outsystems-docs MCP, source "odc". `last_updated` returned 2026-10-28T09:05:12Z, the same sync as the Research notes in `requirements.md`. The docs were searched again for this design. They confirm that Mentor Studio and the MCP path document prompts for filtering an aggregate, creating an entity with attribute lengths, adding and deleting roles, and creating a Timer that runs when the app is published (sources: `eap/building-apps/data/fetch-data/filter-results.md`, `eap/building-apps/data/modeling/entity-create.md`, `eap/agentic-development/mentor-web/prompts.md` (Authorization prompts), `eap/building-apps/timers/timer-create-run.md`). The Research notes in `requirements.md` were written for Mentor Web. The build here uses the Mentor session of the OutSystems MCP, so the Research flags are treated as risk indicators, not as facts about this path.
+
+## Build flow
+
+The numbers are the skill's own steps. Kiro confirms with the user before every item marked **[confirm]**.
+
+0. **Save every prompt.** Each Mentor prompt Kiro sends is first written to `MCP/Prompts/` as one file, named `NNN-<short-name>.md` (for example `001-create-app.md`, `002-part1-data.md`). The file holds the exact text sent.
+
+1. **Convert requirements.md to spec.md (skill Step 1, Mode A).** Kiro writes `MCP/spec-driven-build/EmployeeCatalogMCP/spec.md` in the skill's template (`templates/spec-template.md`, sections 1 to 10) from `requirements.md`. Section 9 holds AC-01 to AC-06 word for word, and every Text length is kept. The 20 sample records are copied exactly from build A's BRD into spec.md section 10 (see "Sample data"). The section-by-section mapping is in "spec.md content". spec.md is generated, never hand-edited. Every regeneration repeats the same copy from the same BRD file for the same purpose.
+
+2. **validate-spec (Step 2).** `python3 "<skill>/scripts/build.py" validate-spec --spec ".../spec.md"`. Errors must be zero. Warnings are shown to the user.
+
+3. **Show the spec and ask for the go/no-go (Step 3) [confirm].** Kiro runs `show-spec`, displays it, and asks whether to fire Mentor. The question names the target app, says a new Web app is created from the standard template, and says the build runs in two parts with a publish after each.
+
+4. **Create the app from the standard Web template (Step 4) [confirm].**
+   - Kiro first searches the tenant's apps for the exact name EmployeeCatalogMCP. If it exists, Kiro stops and asks. It never touches EmployeeCatalogMW or any other app, and picks a search result only when the name matches exactly.
+   - The portfolio is the one EmployeeCatalogMW belongs to. Kiro reads it from the app listing or app info for EmployeeCatalogMW (read-only, nothing about EmployeeCatalogMW is changed), states the portfolio name and key, and asks the user to confirm it. If it cannot be read, Kiro asks and does not guess.
+   - After confirmation, one Mentor session is opened and the creation is sent as a turn of its own: create a new Web application named EmployeeCatalogMCP in the named portfolio from the standard Web application template, and do nothing else. Kiro polls it to terminal and keeps `app_key` from the run's per-app facts. A new app is listed only after its first publish, so a lost key is never answered by creating the app again; Kiro asks the user to check ODC Studio.
+
+5. **Mentor part 1: data model and sample data bootstrap (Step 5).** Kiro sends the output of `build-prompt --part data` unchanged, in the same session, with `app_key` in the asset references. The prompt carries spec sections 1, 2, 3, 6, 8, 9 and 10 and the skill's data guardrails: data only, exact attribute types, roles by exact name, Timer-based bootstrap, no duplicates, do not publish. Kiro polls to terminal, saves `result-data.json`, renders the report, and checks that Mentor did not publish on its own. If the turn did not land, one fix turn is allowed.
+
+6. **Publish part 1 [confirm].** Kiro restates "publish the data model of EmployeeCatalogMCP to its development environment", then sends a publish turn with a short note and reads the outcome from the run. It never publishes again while the outcome is unknown.
+
+7. **Sample data check (skill Step 5, item 5).** `BootstrapTimer` runs after the publish. `BootstrapEmployee` returns its "inserted N rows" as an output Message and writes no log line (deviation D-1), so there is no log line to expect. Kiro reads `app_logs`, only lines written after the publish finished, for errors or warnings from the bootstrap elements. If it finds one, Kiro does not start part 2. It sends the skill's one fix turn (ending with "Never create a second Bootstrap<Entity>, BootstrapData or BootstrapTimer. Do NOT publish the app in this turn."), then asks for confirmation to publish it. The data is checked by hand in the browser after part 2 (after task 10, with AC-06 in task 12), against the list in spec.md section 10 (see AC-06 below).
+
+8. **Mentor part 2: screens and access (Step 6).** After the part 1 publish, Kiro sends `build-prompt --part screens` unchanged in the same session. Guardrails: role per screen exactly as in section 4, OutSystems UI, out-of-scope respected, build on the data part without changing bootstrap, mandatory inputs, tables bound to aggregates, do not publish. Same handling as part 1.
+
+9. **Publish part 2 [confirm].** Same rules as item 6.
+
+10. **The skill's checks and build report (Steps 7 and 8).** Kiro takes the runtime URL from the environment's app info, compares each screen's roles with section 4 using the screens and roles lookups, releases the session, and writes `build-report.md` in the working folder. The skill's report to the user states revision numbers, what was built, what Mentor added or skipped, and that `BootstrapTimer` refills empty sample-data tables on every publish, deployment and automatic patch.
+
+11. **Check against the requirements.** Kiro compares the published app with `requirements.md` for each AC and writes `MCP/Reports/check-<revision>-<yyyy-mm-dd>.md`. The report lists each deviation. It does not change the app or `requirements.md`. If the check finds a real failure, Kiro writes the fix prompt then, using the real names from the built app (see "Interventions"). No fix prompt is written in advance.
+
+Working files stay in `MCP/spec-driven-build/EmployeeCatalogMCP/`: `spec.md`, `result-data.json`, `result-screens.json`, one `result-*-fix.json` per fix turn, and `build-report.md`.
+
+### Verification after every publish
+
+`context_graph` returns only the latest revision's graph, and it has no revision argument. The previous revision therefore cannot be read after the next publish. Kiro saves the full graph of each published revision, so the next publish has something to compare with.
+
+- After each publish Kiro reads the whole-app graph (no `root`, because `@DataModel` and `@ScreenModel` as `root` are refused), follows `next_cursor` until `has_more` is false, checks that the header `revision` equals the revision just published, and saves the pages to `MCP/Reports/graphdiff/<revision>.xre`. Codes such as `graph_pending` are retried as the tool description says, one call at a time.
+- The comparison is a full diff of the new file against the previous revision's file, saved as `MCP/Reports/graphdiff/<previous>-to-<new>.diff`. The first publish has no previous revision, so it is recorded as the baseline.
+- Kiro reports every difference outside the intended scope for that publish:
+  - Publish 1 (baseline): Employee, Staff, the bootstrap actions and `BootstrapTimer`, plus whatever the standard Web template carries.
+  - Publish 2: only the Employee_List and Employee_Detail screens, their menu entries, their role assignments and the Staff access to Employee. Any change to Employee attributes, roles, or `Bootstrap*` elements is out of scope.
+  - A fix publish: only the element the fix names.
+- Any file written by the harness outside MCP when a result is too large is copied into MCP; Kiro writes nothing itself to `/tmp` or any folder outside MCP.
+
+## spec.md content
+
+| spec.md section | Content, derived only from requirements.md |
+|---|---|
+| 1 Overview | Purpose and target users from the Introduction and the Staff glossary entry. Target app: `EmployeeCatalogMCP (new)`. Style direction: Apply OutSystems UI defaults. |
+| 2 Roles | One role, **Staff**: view-only access to Employee, no create, edit or delete. No other role is listed. |
+| 3 Data model | Entity **Employee**: Id (implicit primary key), FirstName (Text, 50), LastName (Text, 50), Email (Email, 250), JobTitle (Text, 100), IsActive (Boolean). Relationships: none, single entity. Static enums: none. Mandatory flags are not set, because the requirements do not state them. The records are not in this section. |
+| 4 Screens + RBAC | Employee_List (Staff), Employee_Detail (Staff). No Login row: the sign-in screen is the platform's, not a requirement. |
+| 5 Server actions | "None. Screens read data with aggregates. The only actions are the bootstrap actions the skill adds for AC-06." This stops Mentor from deriving actions from the screens. |
+| 6 Integrations | "None." |
+| 7 UI/UX direction | Omitted (optional). The requirements state no theme, layout or responsive rule. |
+| 8 Out of scope | The six items of the requirements' Out of scope list, word for word, plus one restatement of the Glossary: no role other than Staff ("The only role"). |
+| 9 Acceptance criteria | AC-01 to AC-06 verbatim, unchanged. |
+| 10 Notes for Mentor | Restatements of `requirements.md` only: (a) Employee_List is a Table with the columns FirstName, LastName, JobTitle, Email. (b) The table shows only Employee records where IsActive is true. (c) The search input matches FirstName or LastName only. (d) Employee_Detail shows FirstName, LastName, Email, JobTitle and IsActive of the employee, and Employee Catalog is a read-only staff directory. (e) Do not use the patterns "Master detail" or "List with popup". This note comes from the SDD Base `mentor-standards.md` (these patterns add editing), not from `requirements.md`. (f) Seed exactly the 20 records listed under "Sample data" in this section, in that order, with the values as given and no others. |
+
+Section 10 also holds the **Sample data** table (FirstName, LastName, JobTitle, Email, IsActive) with the 20 records from build A's BRD. Section 10 is sent in the part 1 prompt, and the skill seeds "any value the spec gives exactly as given".
+
+The notes add no requirement. Notes (a) to (d) and (f) restate `requirements.md`. Note (e) is a pattern limit from the SDD Base mentor-standards file.
+
+## Sample data
+
+The 20 records come from build A's BRD (`Employee Catalog/MentorWeb/BRD/EmployeeCatalogMW-BRD.md`), so both builds use identical data. Kiro copies them into spec.md section 10 exactly: names, job titles, emails and IsActive values, with nothing added, removed, reordered or reworded. While copying, Kiro checks that there are 20 records, at least 2 with IsActive False, one active record with FirstName Alice, every value fits its attribute length, and the records look fictional. If any check fails, or a record looks like a real person, Kiro stops and tells the user and does not edit the records. The records are not added to `requirements.md`, which still states AC-06 only.
+
+## Expected result
+
+**Data model** (local entity, Reactive Web app):
+
+| Attribute | Type | Length |
+|---|---|---|
+| Id | Long Integer, primary key, automatic | not applicable |
+| FirstName | Text | 50 |
+| LastName | Text | 50 |
+| Email | Email | 250 |
+| JobTitle | Text | 100 |
+| IsActive | Boolean | not applicable |
+
+**Role and access:** one role, Staff, with View access to Employee and nothing else. No other role. Both screens require Staff.
+
+**Screens:**
+
+- **Employee_List**: a Table of Active_Employee records with columns FirstName, LastName, JobTitle, Email, one row per active employee, and a search input that matches FirstName or LastName. Opening a row navigates to Employee_Detail.
+- **Employee_Detail**: shows FirstName, LastName, Email, JobTitle and IsActive of the selected employee, read-only.
+
+**Sample data:** the 20 records of build A's BRD, created by `BootstrapEmployee`, called by `BootstrapData`, run by `BootstrapTimer` when the app is published. They satisfy AC-06: at least 2 have IsActive False and one active record has FirstName Alice.
+
+**Elements allowed beyond the requirements** (nothing else): `BootstrapEmployee`, `BootstrapData`, `BootstrapTimer` (required by the skill to meet AC-06), the template's own login and layout, and the menu entries of the two screens. There are no other server actions, timers or screens.
+
+## Traceability
+
+| AC | Design element | How Kiro verifies it |
+|---|---|---|
+| AC-01 list loads | Employee_List table, columns FirstName, LastName, JobTitle, Email | `context_screens` for the screen and its role. In the browser, a Staff user sees the four columns and one row per active employee. |
+| AC-02 search | Search input on Employee_List, matching FirstName or LastName | In the browser, search "Alice": only matching rows. Then search a term that occurs only in a JobTitle or Email: no rows. |
+| AC-03 inactive hidden | Aggregate filter IsActive = True | Visible rows equal 20 minus the number of inactive records. No inactive person appears. |
+| AC-04 detail | Employee_Detail, five attributes, read-only | In the browser, open a row: five values shown, no edit control. |
+| AC-05 empty search | Same search as AC-02 | In the browser, search a text that matches nothing: no rows. |
+| AC-06 sample data | `BootstrapEmployee`, `BootstrapData`, `BootstrapTimer`, and the records in spec.md section 10 | No log line is written (deviation D-1). The data is checked by hand in the browser after part 2 (after task 10, with AC-06 in task 12). The visible rows equal 20 minus the number of IsActive False records in the list, and Alice is found by search. If the table paginates, Kiro adds up the pages. A data view in ODC Studio or the ODC Portal settles the exact records, which Kiro compares with the list. |
+
+Items in `requirements.md` that have no AC (Staff has View access to Employee only, Staff is the only role, only the two screens, no create, edit or delete) are also checked in task 12. They are reported as findings, not as AC results.
+
+## Test user setup
+
+The browser checks use the same test user as build A. After the app is created and the Staff role is published (part 1), the user gives that test user the Staff role for EmployeeCatalogMCP in the ODC Portal. This is setup, not an intervention, and it is not logged as one. The user does it in their own session; Kiro does not assign roles.
+
+Kiro cannot sign in as the test user. The user runs the browser steps for AC-01 to AC-06 from a checklist Kiro provides and reports what they see, and Kiro records the results in the check report.
+
+## Expected gaps after generation
+
+The basis for this section is the Research notes in `requirements.md` and the skill's own documentation and guardrails (`SKILL.md`, `scripts/build.py`, `templates/spec-template.md`). "Prevented?" is Kiro's expectation from reading the guardrails, not a result.
+
+| # | Possible gap | Basis | Prevented by the skill's guardrails? | What Kiro checks |
+|---|---|---|---|---|
+| 1 | Search (AC-02, AC-05) is missing, or matches fields other than FirstName and LastName | Research Q2 flag: search inputs need manual configuration | **No.** No guardrail covers search logic. Only spec note (c) helps. | Task 12, AC-02 and AC-05 browser steps. |
+| 2 | Inactive employees appear in the list (AC-03, and AC-01's "one row per Active_Employee") | Research Q2 flag: no documented Boolean filter on a generated list | **No.** `BIND_TO_AGGREGATES` only requires tables to be bound to an aggregate. Spec note (b) helps. | Task 12, AC-03: visible rows equal 20 minus the inactive records in the list. |
+| 3 | Sample data differs from the list in spec.md section 10 (count, values, IsActive, active Alice) | Research Q1 flag: the documents do not say Mentor follows given counts or IsActive values | **Mostly.** `BOOTSTRAP` forces a seeding Timer and says to seed values the spec gives exactly as given. The skill's check proves the row count only. The action skips a table that already has rows, so wrong rows stay after a re-publish. | No log line is written (deviation D-1). The data is checked by hand in the browser after task 10, with AC-06 in task 12 (count and values compared with the list). |
+| 4 | A screen is not restricted to Staff (for example open to anonymous users) | `SKILL.md` and `build.py`: `ROLE_PER_SCREEN` calls this "the single most common failure mode" | **Yes, expected.** `ROLE_PER_SCREEN` and `validate-spec` (every screen names a defined role). | Task 11: screens and roles lookups against section 4. |
+| 5 | The bootstrap does not run, seeds nothing, or exists twice | `build.py`: SQL inserts "have failed at runtime on ODC and left every table empty"; `NO_DUPLICATES` | **Yes, expected.** `BOOTSTRAP` forbids SQL inserts and names one action per entity, `BootstrapData` and `BootstrapTimer`. `NO_DUPLICATES` forbids a second copy. | Task 8: `app_logs` errors and warnings from the bootstrap elements (no log line is written, deviation D-1; the data is checked by hand in the browser after task 10, with AC-06 in task 12), and the actions lookup for one copy of each element. |
+| 6 | An attribute type or length differs from spec.md section 3 | `build.py`: `EXACT_TYPES` ("type mismatches cause build failures") | **Partly.** `EXACT_TYPES` names data types, not lengths. The spec states every length. | Tasks 5 and 12: entities lookup against section 3. |
+| 7 | Mentor builds something spec.md section 8 does not name (another role, screen or attribute, or an access level above View for Staff) | `spec-template.md`: section 8 is "critical for stopping Mentor from over-building" | **Partly.** `OUT_OF_SCOPE` and `ROLES` apply to what the spec names. Nothing stops an element the spec does not mention. | Tasks 5, 9 and 12: roles, screens and entities lookups against the Glossary and the Out of scope list. |
+| 8 | A turn ends without applying its changes (for example a plan, or validation errors) | `COMMON_RULES` and the main skill: "`succeeded` means the turn ended, not that the change landed" | **Mostly.** The prompt says not to reply with a plan. The completion signals in the result detect a turn that did not land. | Tasks 5 and 9: render-report Landed lines. |
+| 9 | Mentor publishes on its own | `SKILL.md`: "The prompt forbids it, but a build turn can still end in a publish" | **Partly.** `NO_PUBLISH` forbids it. The result is checked for a publication key. | Tasks 5 and 9. |
+
+No fallback prompts are written in this design. If a check finds a real failure, Kiro writes one Mentor prompt for it at that time, using the real names from the built app (screens, entities, attributes, roles, keys), shows it to the user, and sends it only after the user confirms. Each fix prompt is sent in its own Mentor session on EmployeeCatalogMCP (`app_key` in the asset references) and ends with "Do NOT publish the app in this turn." If a fix turn does not land, the skill's rule applies: one fix turn per part, then stop and report. A Mentor reply that only gives a plan counts as not landed.
+
+## Interventions
+
+- Every fix prompt sent after the two build publishes is an intervention. Each is written after a check finds a real failure.
+- Each intervention is logged in `MCP/Reports/interventions.md` with: number, date, the finding, the exact prompt (also saved as its own file in `MCP/Prompts/`), `sessionId`, `runId`, whether it landed, the publish revision, and the graph comparison result.
+- Before each intervention Kiro shows the user the exact prompt and waits for confirmation. It confirms again before the publish that follows.
+- After the publish, Kiro runs the verification above and reports any change outside the intervention's scope.
+- Manual work in ODC Studio is a last resort, used only when a Mentor prompt has been tried and did not land. It is logged in the same file as a manual intervention: what was changed, why Mentor could not do it, and the graph comparison result of the next publish.
+- Neither `requirements.md` nor the app is changed to hide a deviation. If the app and the requirements disagree after the interventions, the check report says so.
+
+## Decisions
+
+1. **Portfolio:** the same portfolio as EmployeeCatalogMW, read from that app (see build flow, item 4).
+2. **Sample records:** the exact 20 records of build A's BRD, in spec.md section 10. `requirements.md` is unchanged.
+3. **Logging:** `MCP/Reports/interventions.md` and the `MCP/Prompts/NNN-<short-name>.md` naming are accepted.
+4. **Test user:** the same as build A, with the Staff role set up by the user in the ODC Portal (see "Test user setup").
+
+## Open point
+
+The screens of the standard Web template are known only after the app exists. Kiro reports any screen beyond Employee_List and Employee_Detail as a finding (gap 7).

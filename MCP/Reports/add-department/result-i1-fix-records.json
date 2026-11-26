@@ -1,0 +1,26 @@
+{
+  "intervention": "I-1",
+  "promptFile": "MCP/Prompts/010-fix-department-record-names.md",
+  "sessionId": "2a37df04-4249-c799-44b7-22c99914b5c1",
+  "runId": "2c7fa05a-1824-3ae7-6ae3-40a20fb6b548",
+  "status": "succeeded",
+  "workedFor": "20s",
+  "pendingModelChanges": [
+    {"step": 1, "changes": [
+      {"changeKind": "Modified", "elementType": "IStaticEntityRecord", "displayName": "Engineering2"},
+      {"changeKind": "Modified", "elementType": "IStaticEntityRecord", "displayName": "Finance"},
+      {"changeKind": "Modified", "elementType": "IStaticEntityRecord", "displayName": "HumanResources"},
+      {"changeKind": "Modified", "elementType": "IStaticEntityRecord", "displayName": "Sales"}]},
+    {"step": 2, "changes": [
+      {"changeKind": "Modified", "elementType": "IStaticEntityRecord", "displayName": "Engineering"},
+      {"changeKind": "Modified", "elementType": "IStaticEntityRecord", "displayName": "Finance"},
+      {"changeKind": "Modified", "elementType": "IStaticEntityRecord", "displayName": "HumanResources"},
+      {"changeKind": "Modified", "elementType": "IStaticEntityRecord", "displayName": "Sales"}]}
+  ],
+  "mentorSummary": "The Department records now have the names you asked for, and I didn't publish the app. They appear in this order, with their Id and Label values unchanged: 1 Engineering (Engineering), 2 Finance (Finance), 3 HumanResources (Human Resources), 4 Sales (Sales). Before this change, the first three records had names that didn't match their labels (Finance, HumanResources and Engineering), and the last two were in the wrong order. I changed nothing else.",
+  "assetFacts": [
+    {"assetKey": "debb6b49-7b59-ecf6-b2eb-50a5f78250f3", "attemptedChange": true, "changeApplied": true,
+     "validation": {"errorCount": 0, "warningCount": 18, "firstMessages": []}}
+  ],
+  "note": "Kiro condensed this file from the poll response. The four changed elements are all IStaticEntityRecord. The first pending-changes event shows an intermediate name Engineering2 (a temporary name to avoid a clash); the second shows the final names."
+}

@@ -1,0 +1,83 @@
+# Implementation Plan
+## Standing rules for every task
+- Tasks run in order. None starts until the user approves this plan.
+- **[CONFIRM]** marks a point where Kiro states the exact action and waits for the user's explicit yes. Every Mentor send and every publish is one. A yes for one send or one publish covers only that one.
+- The prompts are the texts in design.md ("Prompt A", "Publish prompt A2", "Prompt B", "Publish prompt B2"), sent unchanged. Before sending, Kiro saves each one as its own file in `MCP/Prompts/` (006 to 009, names in design.md). If a prompt needs a change, Kiro stops and asks the user. It does not edit a prompt on its own.
+- One Mentor session for tasks 2, 3, 5 and 6, with the app key debb6b49-7b59-ecf6-b2eb-50a5f78250f3 in the asset references. One turn at a time. Poll every run to terminal, then read the completion signals for the app before reporting.
+- After every publish, Kiro runs the graph verification from design.md ("Verification after every publish") and reports every change outside the intended scope.
+- Kiro works only on EmployeeCatalogMCP. It never touches EmployeeCatalogMW or any other app.
+- ODC Studio is not opened in this change. There is no data check between the two prompts.
+- Every new file goes in `MCP/`. SDD Base is read-only. Working files of this change go to `MCP/Reports/add-department/`.
+- The reference graphs in `MCP/Reports/graphdiff/reference/` are for checking only. Nothing from them goes into a prompt.
+- A fix prompt is an intervention: Kiro writes it with the real names, the user confirms the exact text before it is sent and again before the publish, and it is logged in `MCP/Reports/interventions.md`.
+- There are no test-writing tasks in this plan.
+## Tasks
+- [x] 1. User task: confirm the timer budget is available (before Prompt A)
+  - **For the user.** Kiro does not do this and does not touch other apps.
+  - Confirm that the Development stage timer budget is available (incident P-2): the time is after 11:00 AEDT (00:00 UTC, the reset seen once), and the five 5-minute timers in other apps are slowed or off.
+  - Reply "timer budget confirmed". Kiro does not start task 2 before that reply.
+  - This is setup, not an intervention. It is not logged in `interventions.md`.
+  - _Requirements: AC-07_
+- [x] 2. Prompt A: data (Department, DepartmentId, one-time update, seed)
+  - Pre-flight, read-only: `app_revisions` shows revision 4 as the latest. If it does not, stop and report. Check that `MCP/Reports/graphdiff/4.xre` exists and is the baseline.
+  - Save design.md "Prompt A" exactly as `MCP/Prompts/006-add-department-data.md`.
+  - **[CONFIRM]** Restate "send the data prompt (006) to a new Mentor session on EmployeeCatalogMCP, which changes the model in the session and does not publish". Wait for an explicit yes.
+  - Open one Mentor session on the strongest model tier available. Send prompt A. Poll to terminal. Keep `sessionId` and `runId`. Save the run as `MCP/Reports/add-department/result-data.json`.
+  - Check the result: attemptedChange true, changeApplied true, validation errors 0, no turn-level error. Mentor's summary names the delete rule of DepartmentId. Mentor did not publish (no publication key; `app_revisions` still shows revision 4).
+  - Check from Mentor's summary, as far as it allows: Department with 4 records, DepartmentId on Employee (not mandatory), the update in `BootstrapData`, the seed change in `BootstrapEmployee`, and nothing else changed. The model cannot be read back before publish, so task 4 settles it.
+  - If the turn did not land: write one fix prompt, **[CONFIRM]** its exact text, send one fix turn. If that does not land either, stop and report the Landed lines and the `sessionId`.
+  - _Requirements: AC-07_
+- [x] 3. Publish 1
+  - Save design.md "Publish prompt A2" as `MCP/Prompts/007-publish-add-department-data.md`.
+  - **[CONFIRM]** Restate "publish EmployeeCatalogMCP to its development environment (data part of add-department)". Wait for an explicit yes.
+  - Send the publish turn in the same session. Read the outcome from the run and from `publish_status` (publication key). If the outcome is unknown, check by publication key or revision history. Never publish again while it is unknown. Save `MCP/Reports/add-department/result-publish-data.json`.
+  - Note the new revision number. `BootstrapTimer` runs `BootstrapData` on publish. If it cannot run (P-2, OS-TMR-42900), that is reported, not fixed. The update is run later with RunTimer if the browser check needs it (task 8).
+  - _Requirements: AC-07_
+- [x] 4. Graph check after publish 1
+  - Read the whole-app graph (no `root`), follow `next_cursor` until `has_more` is false, check that the header `revision` is the one just published. Save it as `MCP/Reports/graphdiff/<revision>.xre`.
+  - Diff it against `4.xre`. Save `MCP/Reports/graphdiff/4-to-<revision>.diff` and a notes file next to it. Report every difference outside the scope in design.md (publish 1 row), with nothing outside it left out.
+  - Entities lookup: Department is a static entity with 4 records, in the order and with the Labels of `requirements.md`. Employee has DepartmentId (Department Identifier, not mandatory) and its other attributes are unchanged (Email stays at length 256, D-3).
+  - Assignment match: read the JSON literals in `BootstrapEmployee` (seed) and in `BootstrapData` (update) from the saved graph. Compare each with the assignment table in `requirements.md`: 20 rows, every Email, every Department. Compare the two literals with each other. Report any difference.
+  - D-2 re-check with the note: the calls to Employee create, update or delete actions are `CreateEmployee` in `BootstrapEmployee` and `UpdateEmployee` in `BootstrapData`, and nothing else. `UpdateEmployee` in `BootstrapData` is a second allowed write path, run by `BootstrapTimer` or RunTimer.
+  - If anything is outside the scope, or the seed or update do not match the table, stop. Report it to the user. Do not start task 5.
+  - _Requirements: AC-07_
+- [ ] 5. Prompt B: screens (Department column, filter, detail)
+  - Pre-flight, read-only: `app_revisions` shows the revision of task 3 as the latest. If the session was lost, start a new session from the published revision.
+  - Save design.md "Prompt B" exactly as `MCP/Prompts/008-add-department-screens.md`.
+  - **[CONFIRM]** Restate "send the screens prompt (008) to the Mentor session on EmployeeCatalogMCP, which changes the model in the session and does not publish". Wait for an explicit yes.
+  - Send prompt B. Poll to terminal. Save `MCP/Reports/add-department/result-screens.json`. Same checks as task 2. Mentor's summary names what changed. Check that it changed only Employee_List and Employee_Detail, and that it did not publish.
+  - If the turn did not land: write one fix prompt, **[CONFIRM]** its exact text, send one fix turn. If that does not land either, stop and report.
+  - _Requirements: AC-07, AC-08_
+- [ ] 6. Publish 2
+  - Save design.md "Publish prompt B2" as `MCP/Prompts/009-publish-add-department-screens.md`.
+  - **[CONFIRM]** Restate "publish EmployeeCatalogMCP to its development environment (screens part of add-department)". Wait for an explicit yes.
+  - Send the publish turn in the same session. Read the outcome as in task 3. Save `MCP/Reports/add-department/result-publish-screens.json`. Release the Mentor session once the publish landed.
+  - `BootstrapTimer` runs `BootstrapData` again on this publish, which is a second run of the update. If it cannot run (P-2), that is reported, not fixed.
+  - _Requirements: AC-07, AC-08_
+- [ ] 7. Graph check after publish 2
+  - Read and save the whole-app graph as in task 4, as `MCP/Reports/graphdiff/<revision>.xre`. Diff it against the revision of task 4. Save `<previous>-to-<revision>.diff` and a notes file.
+  - Report every difference outside the scope in design.md (publish 2 row): only Employee_List and Employee_Detail may change. Any change to the data model, a server action, `BootstrapTimer`, RunTimer, the menu, roles, the existing columns, fields, sort, search or the IsActive filter is reported.
+  - Check that `GetEmployees` on Employee_List still has the IsActive filter and the search on `SearchKeyword`, and that the department filter is combined with them by AND, as far as the graph shows.
+  - If anything is outside the scope, report it to the user before the browser checks.
+  - _Requirements: AC-07, AC-08_
+- [ ] 8. Browser checks: AC-07, AC-08 and the short re-check of AC-01 to AC-06
+  - **For the user, with Kiro recording.** Kiro gives the user the app URL (from `env_app`) and the checklist in design.md "Checks". The user signs in as the Staff test user and reports what they see. Kiro records each result.
+  - **AC-07.** Employee_List shows a Department column for the 17 active employees, each as in the assignment table. Employee_Detail shows the department for Alice Anderson (Engineering), Grace Lindholm (Human Resources) and Liam Oduya (Sales). Employee_Detail for EmployeeId 8 shows Hugo Brandt, Finance. EmployeeId 13 shows Maya Petrov, Engineering. EmployeeId 17 shows Quinn Abara, Finance.
+  - **AC-08.** Finance shows only Elena Novak and Kara Whitfield. Finance with search "Kara" shows only Kara Whitfield. Finance with search "Alice" shows no rows. "All departments" with the search cleared shows the 17 rows. Sales shows 5 rows, Engineering 7.
+  - **Short re-check of AC-01 to AC-06.** AC-01: the four columns and Department, 17 rows. AC-02: "Alice" shows only Alice Anderson. AC-03: Hugo Brandt, Maya Petrov and Quinn Abara are not listed. AC-04: Alice Anderson's detail shows the five values and Department, read-only. AC-05: "zzzz" shows no rows and "No employees found.". AC-06: 17 visible rows plus EmployeeId 8, 13 and 17 shown with Active = No give 20 records, 3 inactive, Alice active.
+  - **If a Department is empty:** the timer did not run or did not finish. The user clicks the button on the existing RunTimer screen and checks again. This is an operational step, not a model change, and it is safe to repeat. The message "Employees Bootstrapped." appears whether or not anything changed, so the browser decides.
+  - **If a Department is wrong after that:** the update is wrong. Kiro writes one Mentor prompt for it with the real names and shows it to the user. Then **[CONFIRM]** the exact prompt and send it (one prompt, one session on EmployeeCatalogMCP, ending with "Do NOT publish the app in this turn."), **[CONFIRM]** the publish and publish it, run the graph verification for that publish (scope: only the element the fix names), log it in `MCP/Reports/interventions.md` with the exact prompt, `sessionId`, `runId`, outcome, revision and graph result, and repeat the browser checks that failed. Each fix is its own step, one at a time.
+  - Any other failure of AC-07, AC-08 or AC-01 to AC-06 is handled the same way. No fix prompt is written in advance.
+  - _Requirements: AC-01, AC-02, AC-03, AC-04, AC-05, AC-06, AC-07, AC-08_
+- [ ] 9. Read the delete rule of DepartmentId and write the check report
+  - Read the delete rule of DepartmentId from the saved graph of task 4 (or the latest one) and from Mentor's summary of task 2. Report it to the user as found. Do not change it without a decision.
+  - Write `MCP/Reports/check-add-department-<yyyy-mm-dd>.md`: the result of each AC-07 and AC-08 step, the short re-check of AC-01 to AC-06, the delete rule, the assignment match of task 4, the D-2 note, every deviation and every intervention, with the evidence for each. The report does not change the app or either requirements.md. If the app and the requirements disagree, the report says so.
+  - Read-only checks: EmployeeCatalogMW's latest revision is unchanged (6), and no other app was touched by this change. Report each as pass or fail with the evidence. SDD Base unchanged: search it for files newer than this `tasks.md` and report any.
+  - _Requirements: AC-01, AC-02, AC-03, AC-04, AC-05, AC-06, AC-07, AC-08_
+- [ ] 10. Update employee-catalog/requirements.md and regenerate spec.md
+  - Runs only after tasks 8 and 9 passed, or after the user accepts the reported failures. No tenant call, no prompt.
+  - Update `MCP/.kiro/specs/employee-catalog/requirements.md` as listed in `requirements.md` of this spec, section "Changes to the employee-catalog requirements.md": add Department and DepartmentId to the Glossary, add Requirements 6 and 7 with AC-07 and AC-08, add Department to the columns named in AC-01 and to the attributes named in AC-04, remove "Departments (no Department entity in this version)" from Out of scope, and add the Department assignment table. Keep a copy of the old file in `MCP/Reports/scratch/` first.
+  - Regenerate `MCP/spec-driven-build/EmployeeCatalogMCP/spec.md` from it with the outsystems-spec-driven-build skill in Mode A, never by hand. Section 3 gets the Department static entity and DepartmentId, section 8 loses "Departments", section 9 holds AC-01 to AC-08 verbatim, and the sample data in section 10 gets the department of each employee from the assignment table. As in the first build, the 20 records are copied again from build A's BRD (`Employee Catalog/MentorWeb/BRD/EmployeeCatalogMW-BRD.md`) for that one purpose, with the same checks as in the employee-catalog design.md "Sample data". Keep a copy of the old spec.md in `MCP/Reports/scratch/` first.
+  - Run `validate-spec`. Errors must be zero. Show any warnings to the user.
+  - Do not change the employee-catalog `design.md` or `tasks.md`. Do not send anything to the tenant.
+  - _Requirements: AC-01, AC-02, AC-03, AC-04, AC-05, AC-06, AC-07, AC-08_

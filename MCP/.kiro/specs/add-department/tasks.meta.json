@@ -1,0 +1,130 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. User task: confirm the timer budget is available (before Prompt A)": [
+      {
+        "executionId": "c08413c6-6821-30bc-bf57-91ea88be756a",
+        "chatSessionId": "sess_36871483-2307-ac4a-bd7f-631dd63bdc8a",
+        "timestamp": 1795299730983
+      },
+      {
+        "executionId": "31679f1c-b057-6c3b-a678-d5ee9d379d05",
+        "chatSessionId": "sess_36871483-2307-ac4a-bd7f-631dd63bdc8a",
+        "timestamp": 1795299964763
+      }
+    ],
+    "2. Prompt A: data (Department, DepartmentId, one-time update, seed)": [
+      {
+        "executionId": "b88de325-e15e-0182-79c2-94a43c528cff",
+        "chatSessionId": "sess_7d64a5a6-39c6-dc1a-71b5-9713ac5f69e9",
+        "timestamp": 1795300014467
+      },
+      {
+        "executionId": "b88de325-e15e-0182-79c2-94a43c528cff",
+        "chatSessionId": "sess_7d64a5a6-39c6-dc1a-71b5-9713ac5f69e9",
+        "timestamp": 1795300502789
+      }
+    ],
+    "3. Publish 1": [
+      {
+        "executionId": "90376019-2393-c934-dd50-5e67142e2295",
+        "chatSessionId": "sess_7ecc013b-6cf7-3d9b-f6aa-652a85cb7c0a",
+        "timestamp": 1795300738187
+      },
+      {
+        "executionId": "90376019-2393-c934-dd50-5e67142e2295",
+        "chatSessionId": "sess_7ecc013b-6cf7-3d9b-f6aa-652a85cb7c0a",
+        "timestamp": 1795300979451
+      }
+    ],
+    "4. Graph check after publish 1": [
+      {
+        "executionId": "8442e63f-953e-1c14-72d7-405b0e6e9145",
+        "chatSessionId": "sess_5a6482ea-bc9c-f4d6-319b-312766e576c2",
+        "timestamp": 1795301198370
+      },
+      {
+        "executionId": "8442e63f-953e-1c14-72d7-405b0e6e9145",
+        "chatSessionId": "sess_5a6482ea-bc9c-f4d6-319b-312766e576c2",
+        "timestamp": 1795301604210
+      }
+    ],
+    "5. Prompt B: screens (Department column, filter, detail)": [
+      {
+        "executionId": "42399d92-c544-780f-1df3-2db6986ef7de",
+        "chatSessionId": "sess_a180eba0-4ac3-3430-c778-87d0af955a86",
+        "timestamp": 1795302215202
+      },
+      {
+        "executionId": "42399d92-c544-780f-1df3-2db6986ef7de",
+        "chatSessionId": "sess_a180eba0-4ac3-3430-c778-87d0af955a86",
+        "timestamp": 1795302399836
+      }
+    ],
+    "6. Publish 2": [
+      {
+        "executionId": "e8ce00eb-b4c3-fc58-71b5-784558d9e7bb",
+        "chatSessionId": "sess_2be0aee0-bb3e-5b37-9e1c-86613a6c2b02",
+        "timestamp": 1795302498542
+      },
+      {
+        "executionId": "e8ce00eb-b4c3-fc58-71b5-784558d9e7bb",
+        "chatSessionId": "sess_2be0aee0-bb3e-5b37-9e1c-86613a6c2b02",
+        "timestamp": 1795302649190
+      }
+    ],
+    "7. Graph check after publish 2": [
+      {
+        "executionId": "3b8c0e39-c0de-25e5-9f8e-9f59056c5722",
+        "chatSessionId": "sess_d5444b37-ad02-2d6c-6469-9d9e37e7a3e9",
+        "timestamp": 1795302738778
+      },
+      {
+        "executionId": "3b8c0e39-c0de-25e5-9f8e-9f59056c5722",
+        "chatSessionId": "sess_d5444b37-ad02-2d6c-6469-9d9e37e7a3e9",
+        "timestamp": 1795303129575
+      }
+    ],
+    "8. Browser checks: AC-07, AC-08 and the short re-check of AC-01 to AC-06": [
+      {
+        "executionId": "83131be2-e800-2cab-03a1-8b0edd2f645c",
+        "chatSessionId": "sess_d5444b37-ad02-2d6c-6469-9d9e37e7a3e9",
+        "timestamp": 1795309706717
+      }
+    ],
+    "9. Read the delete rule of DepartmentId and write the check report": [
+      {
+        "executionId": "c6eacc20-16aa-5c4f-736c-ead57e55117f",
+        "chatSessionId": "sess_d4ffd5b9-fcab-bb45-eb70-2e2a8aeaddef",
+        "timestamp": 1795309731614
+      },
+      {
+        "executionId": "b747de18-7dca-5c01-c958-f717ee69ffee",
+        "chatSessionId": "sess_d4ffd5b9-fcab-bb45-eb70-2e2a8aeaddef",
+        "timestamp": 1795310902670
+      },
+      {
+        "executionId": "d308f8f2-23e6-9c16-ffe5-248c21e75478",
+        "chatSessionId": "sess_d4ffd5b9-fcab-bb45-eb70-2e2a8aeaddef",
+        "timestamp": 1795311128774
+      },
+      {
+        "executionId": "d308f8f2-23e6-9c16-ffe5-248c21e75478",
+        "chatSessionId": "sess_d4ffd5b9-fcab-bb45-eb70-2e2a8aeaddef",
+        "timestamp": 1795311277746
+      }
+    ],
+    "10. Update employee-catalog/requirements.md and regenerate spec.md": [
+      {
+        "executionId": "d308f8f2-23e6-9c16-ffe5-248c21e75478",
+        "chatSessionId": "sess_d4ffd5b9-fcab-bb45-eb70-2e2a8aeaddef",
+        "timestamp": 1795311284099
+      },
+      {
+        "executionId": "d308f8f2-23e6-9c16-ffe5-248c21e75478",
+        "chatSessionId": "sess_d4ffd5b9-fcab-bb45-eb70-2e2a8aeaddef",
+        "timestamp": 1795311590980
+      }
+    ]
+  }
+}

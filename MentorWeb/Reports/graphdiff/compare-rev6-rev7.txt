@@ -1,0 +1,278 @@
+=== scope.py rev6 rev7 ===
+IESpace:EmployeeCatalogMW                                    {'added': 1}
+IEntity:Department                                           {'added': 61}
+IEntity:Employee                                             {'changed': 1, 'added': 1}
+IMobileFlow:MainFlow                                         {'changed': 1}
+IMobileScreen:Employee_Details                               {'changed': 2}
+IMobileScreen:Employees                                      {'changed': 1}
+IServerAction:DownloadEmployeeExcel                          {'changed': 2}
+IServerAction:LoadSampleData                                 {'changed': 3, 'added': 27, 'changed(layout X/Y only)': 1, 'removed': 1}
+IServerAction:LoadSampleDataForEmployee                      {'changed': 1, 'added': 281, 'removed': 38}
+IServerAction:UploadEmployeeExcel                            {'changed': 2, 'added': 4}
+LIBRARY/2UmDme                                               {'added': 9}
+LIBRARY/NullId                                               {'added': 1}
+
+=== diff.py rev6 rev7 (first 200 detail lines) ===
+A 6 11101 20247 B 7 11447 21165
+dup keys A 0 B 0
+nodes added 385 removed 39 changed 14
+top-level keys equal: {'v': True, 'key': True, 'roots': False}
+ADDED {'BuiltInFunction': 1, 'IBasicType': 1, 'IEntity': 1, 'IAnonymousStructure': 1, 'IListType': 1, 'RuntimeProperty': 8, 'ISQLNode': 1, 'IIfNode': 1, 'IEntityAttribute': 5, 'IStaticEntityRecord': 4, 'IIdentifierType': 1, 'IEntityAction': 1, 'IAttribute': 1, 'ISQLInputParameter': 4, 'ISQLOutput': 1, 'IArgument': 4, 'ExpressionAST': 29, 'Call': 22, 'IRecordAttributeValue': 16, 'IInputParameter': 1, 'IOutputParameter
+ owners {'zys2dDgABBOzR02SHBXuqY': 243, 'NsMliKgDgohuOs2f9kI2oD': 6, '6SjPrZR25aEsStvBtlHEGV': 6, 'hbMi4we366ibX9FXAj02Fn': 6, '0lFCIbbr7jh8O_j4D7Glez': 6, 'BDErdaYdooPzoqphFHpZFR': 6, 'rYB06SoD9LCmEaVK4gq3Bk': 6, 'bY4ZgsL42rRRTWPFpOGU6k': 5, 'TFs0mShPNKhCXIXzzcXAuw': 4, 'B9wq5YIa71KS7_iU5ZFh_L': 4, 'lGsMv5nQJMZ6AllZeQIk7w': 4, '1mdK5BacpHtruoK2asDipZ': 4, 'FYe1_gbURfE9ZudupqwPJB': 4, 'EwaKubFjlHJWt6AYJfNL6M': 3, '9r
+REMOVED {'IEndNode': 1, 'IRecordLiteralField': 7, 'IRecordLiteralExpression': 1, 'ExpressionAST': 6, 'CompoundIdentifier': 18, 'Identifier': 6}
+ owners {'7WlcKezZNUa_K4mTMM1zC6': 6, 'nYDsTGnUlCbDJGqO1xu2F2': 6, 'jKoOkL1k9F6iEaPphBfUKT': 6, 'AIf5g3p0Pj3P_zfp6uyWBo': 6, 'cek5I7ERhtFjHZbMuVP556': 6, 'N7LVdWg58AK5ON2jzFtTPH': 6, '4wZsi0AtyE1FYD8KIQ3PsZ': 2, 'B9vZEQHGB9hUlUCFMEn0n8': 1}
+CHANGED {'IMobileFlow': 1, 'IServerAction': 4, 'IEntity': 1, 'IScreenAggregate': 2, 'IMobileScreen': 1, 'IAggregateNode': 4, 'IEndNode': 1}
+ owners {'hOwu163Mv8uheCYjXsJ7CZ': 1, 'TrPBmuECCpV_DnHokRP9Sq': 1, '77vIS8Ls051IW5hIBx4SyG': 1, '_JwAdit76d1OKFbFeVXyLN': 1, 'cXnsHJOutmMNCDfYst7JfC': 1, '2M9b5F0ac9Rjm8haCPmQGy': 1, 'YTC5lcKnT_0XcGjNampZge': 1, 'rmym93ZTl3mHj05LJWZTmn': 1, 'jHgW1rLzoZix6mrX04VYbr': 1, 'CkDKPBGdKES72H3qp9Kt6K': 1, '4UKeyWZRCgDSX7iEm9slkj': 1, '_IOHcWwtcSI8EnzhdmD2lj': 1, 'vD1rnPRY9LHiwOZZ3nYUQb': 1, '79fYVlz6B_4suG1Gq8Ase2': 1}
+edges added 1249 removed 331
+ edge owners added {'zys2dDgABBOzR02SHBXuqY': 686, '7skC5R_8TVsV6FYAotkxDn': 225, 'h54iBleHHdjJ_cHLxpn5Fh': 32, 'bY4ZgsL42rRRTWPFpOGU6k': 18, 'NsMliKgDgohuOs2f9kI2oD': 15, '6SjPrZR25aEsStvBtlHEGV': 15, 'hbMi4we366ibX9FXAj02Fn': 15, '0lFCIbbr7jh8O_j4D7Glez': 15, 'BDErdaYdooPzoqphFHpZFR': 15, 'rYB06SoD9LCmEaVK4gq3Bk': 15, '_JwAdit76d1OKFbFeVXyLN': 9, 'TFs0mShPNKhCXIXzzcXAuw': 9, 'B9wq5YIa71KS7_iU5ZFh_L': 9, 'M0w112WJoU
+ edge owners removed {'7skC5R_8TVsV6FYAotkxDn': 222, '7WlcKezZNUa_K4mTMM1zC6': 15, 'nYDsTGnUlCbDJGqO1xu2F2': 15, 'jKoOkL1k9F6iEaPphBfUKT': 15, 'AIf5g3p0Pj3P_zfp6uyWBo': 15, 'cek5I7ERhtFjHZbMuVP556': 15, 'N7LVdWg58AK5ON2jzFtTPH': 15, '_JwAdit76d1OKFbFeVXyLN': 8, '4wZsi0AtyE1FYD8KIQ3PsZ': 8, 'wWvT6PaNbLIHoojD9GnAWD': 1, 'xTBZmDqU7iWFb7sJIx1Yx_': 1, '6w7YBynw1H7Zijo6kz5I0D': 1}
+NullIdentifier {"Class": "DataConversion", "Description": "Returns a null Identifier valid for Integer and Long Integer Identifiers.", "Examples": "<code>NullIdentifier() = 0</code>", "Name": "NullIdentifier", "ReturnType": "TypeKind.EntityReference", "RuntimeKind": "RuntimeKind.Any", "_key": "NullIdentifier", "_t
+2tPDqSxvR9SEU6uqLpdNMB*cdTZshJJAcsCq8Vs6ZG213 {"DisplayName": "Integer Identifier", "IsDisabled": false, "Name": "Integer Identifier", "UnderlyingType": "EntityReference", "_key": "2tPDqSxvR9SEU6uqLpdNMB*cdTZshJJAcsCq8Vs6ZG213", "_type": "IBasicType"}
+7skC5R_8TVsV6FYAotkxDn*bY4ZgsL42rRRTWPFpOGU6k {"CreatedBy": "developer@example.com", "CreatedByAgent": "node odc-mcp-remote", "CreatedByTool": "AgentExperience", "Description": null, "DisplayName": "Department", "ExposeProcessEvents": false, "ExposeReadOnly": true, "IsClientEntity": false, "IsDisabled": false, "IsHidden": false, "Is
+2tPDqSxvR9SEU6uqLpdNMB*YVYbtO2HKkBn9L3jUTy5x0 {"DisplayName": "Department Record", "IsDisabled": false, "Name": "Department Record", "UnderlyingType": "Record", "_key": "2tPDqSxvR9SEU6uqLpdNMB*YVYbtO2HKkBn9L3jUTy5x0", "_type": "IAnonymousStructure"}
+2tPDqSxvR9SEU6uqLpdNMB*nIx1VyicGO8d10n4z_2tG5 {"DisplayName": "Department Record List", "IsDisabled": false, "Name": "Department Record List", "UnderlyingType": "RecordList", "_key": "2tPDqSxvR9SEU6uqLpdNMB*nIx1VyicGO8d10n4z_2tG5", "_type": "IListType"}
+2tPDqSxvR9SEU6uqLpdNMB*nIx1VyicGO8d10n4z_2tG5::Current {"Name": "Current", "_key": "2tPDqSxvR9SEU6uqLpdNMB*nIx1VyicGO8d10n4z_2tG5::Current", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*nIx1VyicGO8d10n4z_2tG5::EOF {"Name": "EOF", "_key": "2tPDqSxvR9SEU6uqLpdNMB*nIx1VyicGO8d10n4z_2tG5::EOF", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*nIx1VyicGO8d10n4z_2tG5::BOF {"Name": "BOF", "_key": "2tPDqSxvR9SEU6uqLpdNMB*nIx1VyicGO8d10n4z_2tG5::BOF", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*nIx1VyicGO8d10n4z_2tG5::CurrentRowNumber {"Name": "CurrentRowNumber", "_key": "2tPDqSxvR9SEU6uqLpdNMB*nIx1VyicGO8d10n4z_2tG5::CurrentRowNumber", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*nIx1VyicGO8d10n4z_2tG5::Length {"Name": "Length", "_key": "2tPDqSxvR9SEU6uqLpdNMB*nIx1VyicGO8d10n4z_2tG5::Length", "_type": "RuntimeProperty"}
+2tPDqSxvR9SEU6uqLpdNMB*nIx1VyicGO8d10n4z_2tG5::Empty {"Name": "Empty", "_key": "2tPDqSxvR9SEU6uqLpdNMB*nIx1VyicGO8d10n4z_2tG5::Empty", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*h54iBleHHdjJ_cHLxpn5Fh {"CacheInMinutes": null, "CreatedBy": "developer@example.com", "Description": null, "DisplayName": "SetEmployeeDepartments", "IsDisabled": false, "LastMergedBy": null, "LastMergedDate": "0001-01-01T00:00:00", "LastModifiedBy": "developer@example.com", "LastModifiedDate": "202
+7skC5R_8TVsV6FYAotkxDn*h54iBleHHdjJ_cHLxpn5Fh::List {"Name": "List", "_key": "7skC5R_8TVsV6FYAotkxDn*h54iBleHHdjJ_cHLxpn5Fh::List", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*h54iBleHHdjJ_cHLxpn5Fh::Count {"Name": "Count", "_key": "7skC5R_8TVsV6FYAotkxDn*h54iBleHHdjJ_cHLxpn5Fh::Count", "_type": "RuntimeProperty"}
+7skC5R_8TVsV6FYAotkxDn*EwaKubFjlHJWt6AYJfNL6M {"DisplayName": "IsInDevStage()?", "IsDisabled": false, "Label": null, "X": 6196, "Y": 9692, "_key": "7skC5R_8TVsV6FYAotkxDn*EwaKubFjlHJWt6AYJfNL6M", "_type": "IIfNode"}
+7skC5R_8TVsV6FYAotkxDn*MJzFZgOQZaN5yZ6w8irhwY {"Decimals": null, "DeleteRule": "Protect", "Description": null, "DisplayName": "DepartmentId", "IsAutoNumber": "No", "IsMandatory": false, "IsSearchable": false, "Label": "Department", "Length": null, "Name": "DepartmentId", "OriginalName": null, "OriginalType": null, "_key": "xxxxxxxxxxxx
+7skC5R_8TVsV6FYAotkxDn*Pe_Nhczx1ysV3O97_FVMU8 {"Decimals": null, "DeleteRule": "Ignore", "Description": null, "DisplayName": "Id", "IsAutoNumber": "No", "IsMandatory": true, "IsSearchable": false, "Label": "Id", "Length": null, "Name": "Id", "OriginalName": null, "OriginalType": null, "_key": "7skC5R_8TVsV6FYAotkxDn*Pe_Nhczx1ysV3O97_FVMU8", "_t
+7skC5R_8TVsV6FYAotkxDn*A1iWqCJSutriCyq0vPa0gD {"Decimals": null, "DeleteRule": "Ignore", "Description": null, "DisplayName": "Label", "IsAutoNumber": "No", "IsMandatory": true, "IsSearchable": false, "Label": "Label", "Length": 50, "Name": "Label", "OriginalName": null, "OriginalType": null, "_key": "7skC5R_8TVsV6FYAotkxDn*V+RnxAq2i062K+yYYPGJS
+7skC5R_8TVsV6FYAotkxDn*F_XVD4RmFrduuELrWB5e2h {"Decimals": null, "DeleteRule": "Ignore", "Description": null, "DisplayName": "Order", "IsAutoNumber": "No", "IsMandatory": false, "IsSearchable": false, "Label": "Order", "Length": null, "Name": "Order", "OriginalName": null, "OriginalType": null, "_key": "7skC5R_8TVsV6FYAotkxDn*eWSzmSGpz0W9wEKBg5
+7skC5R_8TVsV6FYAotkxDn*nTn5C9aHlVSNv6i4wByUL1 {"Decimals": null, "DeleteRule": "Ignore", "Description": null, "DisplayName": "Is_Active", "IsAutoNumber": "No", "IsMandatory": true, "IsSearchable": false, "Label": "Is Active", "Length": null, "Name": "Is_Active", "OriginalName": null, "OriginalType": null, "_key": "7skC5R_8TVsV6FYAotkxDn*z1s4xeY
+7skC5R_8TVsV6FYAotkxDn*TChqj3YOpR6JyBhZOKeGlO {"CreatedBy": "developer@example.com", "DisplayName": "Sales", "Icon": null, "Identifier": "Sales", "LastMergedBy": null, "LastMergedDate": "0001-01-01T00:00:00", "LastModifiedBy": "developer@example.com", "LastModifiedDate": "2026-11-22T02:05:51", "_key": "xxxxxxxxxxxx
+7skC5R_8TVsV6FYAotkxDn*goZDOwOsyouwVZS_raxuxu {"CreatedBy": "developer@example.com", "DisplayName": "Engineering", "Icon": null, "Identifier": "Engineering", "LastMergedBy": null, "LastMergedDate": "0001-01-01T00:00:00", "LastModifiedBy": "developer@example.com", "LastModifiedDate": "2026-11-22T02:05:51", "_key": "lTyFnU
+7skC5R_8TVsV6FYAotkxDn*J5EPUgUieWX0nHmcdVSx8X {"CreatedBy": "developer@example.com", "DisplayName": "HumanResources", "Icon": null, "Identifier": "HumanResources", "LastMergedBy": null, "LastMergedDate": "0001-01-01T00:00:00", "LastModifiedBy": "developer@example.com", "LastModifiedDate": "2026-11-22T02:05:51", "_key": "
+7skC5R_8TVsV6FYAotkxDn*5MWDZqMzfe24pSuRNPlEKC {"CreatedBy": "developer@example.com", "DisplayName": "Finance", "Icon": null, "Identifier": "Finance", "LastMergedBy": null, "LastMergedDate": "0001-01-01T00:00:00", "LastModifiedBy": "developer@example.com", "LastModifiedDate": "2026-11-22T02:05:51", "_key": "xxxxxxxxxxxx
+7skC5R_8TVsV6FYAotkxDn*bY4ZgsL42rRRTWPFpOGU6k.#IdentifierType {"DisplayName": "Department Identifier", "IsDisabled": false, "Name": "Department Identifier", "UnderlyingType": "EntityReference", "_key": "7skC5R_8TVsV6FYAotkxDn*bY4ZgsL42rRRTWPFpOGU6k.#IdentifierType", "_type": "IIdentifierType"}
+7skC5R_8TVsV6FYAotkxDn*bY4ZgsL42rRRTWPFpOGU6k.#GetEntity {"Kind": "EntityActions.GetEntity", "Name": "GetDepartment", "_key": "7skC5R_8TVsV6FYAotkxDn*bY4ZgsL42rRRTWPFpOGU6k.#GetEntity", "_type": "IEntityAction"}
+7skC5R_8TVsV6FYAotkxDn*OMC4nWp4FJ7Zt1AHM6h5fZ {"Decimals": null, "Description": null, "DisplayName": "Department", "IsMandatory": false, "Length": null, "Name": "Department", "_key": "7skC5R_8TVsV6FYAotkxDn*OMC4nWp4FJ7Zt1AHM6h5fZ", "_type": "IAttribute"}
+7skC5R_8TVsV6FYAotkxDn*eKqs5FtgrzozKhJSVZVJw4 {"CreatedBy": "developer@example.com", "Description": null, "DisplayName": "EngineeringId", "ExpandInline": false, "LastMergedBy": null, "LastMergedDate": "0001-01-01T00:00:00", "LastModifiedBy": "developer@example.com", "LastModifiedDate": "2026-11-22T02:06:43", "Name": "Eng
+7skC5R_8TVsV6FYAotkxDn*aLHgxMrFJQHQkfqMHPWzZs {"CreatedBy": "developer@example.com", "Description": null, "DisplayName": "FinanceId", "ExpandInline": false, "LastMergedBy": null, "LastMergedDate": "0001-01-01T00:00:00", "LastModifiedBy": "developer@example.com", "LastModifiedDate": "2026-11-22T02:06:43", "Name": "Finance
+7skC5R_8TVsV6FYAotkxDn*OtBKr0iUjqi3v60gz69ID2 {"CreatedBy": "developer@example.com", "Description": null, "DisplayName": "HumanResourcesId", "ExpandInline": false, "LastMergedBy": null, "LastMergedDate": "0001-01-01T00:00:00", "LastModifiedBy": "developer@example.com", "LastModifiedDate": "2026-11-22T02:06:43", "Name": "
+7skC5R_8TVsV6FYAotkxDn*qzC8BbnGka65_IBzQff_cf {"CreatedBy": "developer@example.com", "Description": null, "DisplayName": "SalesId", "ExpandInline": false, "LastMergedBy": null, "LastMergedDate": "0001-01-01T00:00:00", "LastModifiedBy": "developer@example.com", "LastModifiedDate": "2026-11-22T02:06:43", "Name": "SalesId",
+7skC5R_8TVsV6FYAotkxDn*MbDOTzhg7YZNJ1QfowBwsE {"CreatedBy": "developer@example.com", "DisplayName": "Employee", "LastMergedBy": null, "LastMergedDate": "0001-01-01T00:00:00", "LastModifiedBy": "developer@example.com", "LastModifiedDate": "2026-11-22T02:06:47", "Name": "Employee", "_key": "7skC5R_8TVsV6FYAotkxDn*PYB9+PAtx
+7skC5R_8TVsV6FYAotkxDn*TFs0mShPNKhCXIXzzcXAuw {"DisplayName": "EngineeringId", "IsUnused": false, "_key": "7skC5R_8TVsV6FYAotkxDn*TFs0mShPNKhCXIXzzcXAuw", "_type": "IArgument"}
+7skC5R_8TVsV6FYAotkxDn*B9wq5YIa71KS7_iU5ZFh_L {"DisplayName": "FinanceId", "IsUnused": false, "_key": "7skC5R_8TVsV6FYAotkxDn*B9wq5YIa71KS7_iU5ZFh_L", "_type": "IArgument"}
+7skC5R_8TVsV6FYAotkxDn*lGsMv5nQJMZ6AllZeQIk7w {"DisplayName": "HumanResourcesId", "IsUnused": false, "_key": "7skC5R_8TVsV6FYAotkxDn*lGsMv5nQJMZ6AllZeQIk7w", "_type": "IArgument"}
+7skC5R_8TVsV6FYAotkxDn*1mdK5BacpHtruoK2asDipZ {"DisplayName": "SalesId", "IsUnused": false, "_key": "7skC5R_8TVsV6FYAotkxDn*1mdK5BacpHtruoK2asDipZ", "_type": "IArgument"}
+7skC5R_8TVsV6FYAotkxDn*EwaKubFjlHJWt6AYJfNL6M.#Condition {"_key": "7skC5R_8TVsV6FYAotkxDn*EwaKubFjlHJWt6AYJfNL6M.#Condition", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*EwaKubFjlHJWt6AYJfNL6M.#Condition::0 {"_key": "7skC5R_8TVsV6FYAotkxDn*EwaKubFjlHJWt6AYJfNL6M.#Condition::0", "_type": "Call"}
+7skC5R_8TVsV6FYAotkxDn*EF7Wosh62Xfj2oK4fRzZXh {"DisplayName": "Id", "_key": "7skC5R_8TVsV6FYAotkxDn*EF7Wosh62Xfj2oK4fRzZXh", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*F5jVGBqrHu4qa4ZIZkgXlM {"DisplayName": "Is_Active", "_key": "7skC5R_8TVsV6FYAotkxDn*F5jVGBqrHu4qa4ZIZkgXlM", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*fUFtEK4FPCcICbM0GKf67Z {"DisplayName": "Label", "_key": "7skC5R_8TVsV6FYAotkxDn*fUFtEK4FPCcICbM0GKf67Z", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*ltwumiyYoXVyOmrmTPlXco {"DisplayName": "Order", "_key": "7skC5R_8TVsV6FYAotkxDn*ltwumiyYoXVyOmrmTPlXco", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*dhxiDQQiLwBUm4CaS5la71 {"DisplayName": "Is_Active", "_key": "7skC5R_8TVsV6FYAotkxDn*dhxiDQQiLwBUm4CaS5la71", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*gU4Ts2zxCKsrIaN4lUWPIw {"DisplayName": "Order", "_key": "7skC5R_8TVsV6FYAotkxDn*gU4Ts2zxCKsrIaN4lUWPIw", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*RABW2WWaOMctWHb0V14wpV {"DisplayName": "Id", "_key": "7skC5R_8TVsV6FYAotkxDn*RABW2WWaOMctWHb0V14wpV", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*YMSWLD7aKf3C7yYU9r8fvr {"DisplayName": "Label", "_key": "7skC5R_8TVsV6FYAotkxDn*YMSWLD7aKf3C7yYU9r8fvr", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*9q3T0NUenBhI1v3AajTKzg {"DisplayName": "Is_Active", "_key": "7skC5R_8TVsV6FYAotkxDn*9q3T0NUenBhI1v3AajTKzg", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*E5yO80Ahw_AiB1EfW5mzx1 {"DisplayName": "Order", "_key": "7skC5R_8TVsV6FYAotkxDn*E5yO80Ahw_AiB1EfW5mzx1", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*mj3l10dL1YTIaTO9AjDoSY {"DisplayName": "Label", "_key": "7skC5R_8TVsV6FYAotkxDn*mj3l10dL1YTIaTO9AjDoSY", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*WUPsJ_aNDxWvnCSPeQEhva {"DisplayName": "Id", "_key": "7skC5R_8TVsV6FYAotkxDn*WUPsJ_aNDxWvnCSPeQEhva", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*9IWwVDbAGtqWreCHcxXcsO {"DisplayName": "Is_Active", "_key": "7skC5R_8TVsV6FYAotkxDn*9IWwVDbAGtqWreCHcxXcsO", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*2PFpxQFKZq1AX06ko8N7I1 {"DisplayName": "Order", "_key": "7skC5R_8TVsV6FYAotkxDn*2PFpxQFKZq1AX06ko8N7I1", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*N00PmB6fO1aU45pjVbEn1H {"DisplayName": "Id", "_key": "7skC5R_8TVsV6FYAotkxDn*N00PmB6fO1aU45pjVbEn1H", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*ZnExGFjDVLslTIrtgNuoyW {"DisplayName": "Label", "_key": "7skC5R_8TVsV6FYAotkxDn*ZnExGFjDVLslTIrtgNuoyW", "_type": "IRecordAttributeValue"}
+7skC5R_8TVsV6FYAotkxDn*bY4ZgsL42rRRTWPFpOGU6k.#GetEntity.#Id {"Description": null, "DisplayName": "Id", "IsMandatory": true, "Name": "Id", "_key": "7skC5R_8TVsV6FYAotkxDn*bY4ZgsL42rRRTWPFpOGU6k.#GetEntity.#Id", "_type": "IInputParameter"}
+7skC5R_8TVsV6FYAotkxDn*bY4ZgsL42rRRTWPFpOGU6k.#GetEntity.#Record {"Description": null, "DisplayName": "Record", "Name": "Record", "_key": "7skC5R_8TVsV6FYAotkxDn*bY4ZgsL42rRRTWPFpOGU6k.#GetEntity.#Record", "_type": "IOutputParameter"}
+7skC5R_8TVsV6FYAotkxDn*TFs0mShPNKhCXIXzzcXAuw.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*TFs0mShPNKhCXIXzzcXAuw.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*TFs0mShPNKhCXIXzzcXAuw.#Value::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*TFs0mShPNKhCXIXzzcXAuw.#Value::1", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*TFs0mShPNKhCXIXzzcXAuw.#Value::2 {"_key": "7skC5R_8TVsV6FYAotkxDn*TFs0mShPNKhCXIXzzcXAuw.#Value::2", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*B9wq5YIa71KS7_iU5ZFh_L.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*B9wq5YIa71KS7_iU5ZFh_L.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*B9wq5YIa71KS7_iU5ZFh_L.#Value::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*B9wq5YIa71KS7_iU5ZFh_L.#Value::1", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*B9wq5YIa71KS7_iU5ZFh_L.#Value::2 {"_key": "7skC5R_8TVsV6FYAotkxDn*B9wq5YIa71KS7_iU5ZFh_L.#Value::2", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*lGsMv5nQJMZ6AllZeQIk7w.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*lGsMv5nQJMZ6AllZeQIk7w.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*lGsMv5nQJMZ6AllZeQIk7w.#Value::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*lGsMv5nQJMZ6AllZeQIk7w.#Value::1", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*lGsMv5nQJMZ6AllZeQIk7w.#Value::2 {"_key": "7skC5R_8TVsV6FYAotkxDn*lGsMv5nQJMZ6AllZeQIk7w.#Value::2", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*1mdK5BacpHtruoK2asDipZ.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*1mdK5BacpHtruoK2asDipZ.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*1mdK5BacpHtruoK2asDipZ.#Value::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*1mdK5BacpHtruoK2asDipZ.#Value::1", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*1mdK5BacpHtruoK2asDipZ.#Value::2 {"_key": "7skC5R_8TVsV6FYAotkxDn*1mdK5BacpHtruoK2asDipZ.#Value::2", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*EF7Wosh62Xfj2oK4fRzZXh.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*EF7Wosh62Xfj2oK4fRzZXh.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*EF7Wosh62Xfj2oK4fRzZXh.#Value::0 {"Value": "4", "_key": "7skC5R_8TVsV6FYAotkxDn*EF7Wosh62Xfj2oK4fRzZXh.#Value::0", "_type": "Integer"}
+7skC5R_8TVsV6FYAotkxDn*F5jVGBqrHu4qa4ZIZkgXlM.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*F5jVGBqrHu4qa4ZIZkgXlM.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*F5jVGBqrHu4qa4ZIZkgXlM.#Value::0 {"Value": "True", "_key": "7skC5R_8TVsV6FYAotkxDn*F5jVGBqrHu4qa4ZIZkgXlM.#Value::0", "_type": "Boolean"}
+7skC5R_8TVsV6FYAotkxDn*fUFtEK4FPCcICbM0GKf67Z.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*fUFtEK4FPCcICbM0GKf67Z.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*fUFtEK4FPCcICbM0GKf67Z.#Value::0 {"TextCategory": "Others", "TextHash": "d0edfb6e8c", "TextLength": 5, "_key": "7skC5R_8TVsV6FYAotkxDn*fUFtEK4FPCcICbM0GKf67Z.#Value::0", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*ltwumiyYoXVyOmrmTPlXco.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*ltwumiyYoXVyOmrmTPlXco.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*ltwumiyYoXVyOmrmTPlXco.#Value::0 {"Value": "4", "_key": "7skC5R_8TVsV6FYAotkxDn*ltwumiyYoXVyOmrmTPlXco.#Value::0", "_type": "Integer"}
+7skC5R_8TVsV6FYAotkxDn*dhxiDQQiLwBUm4CaS5la71.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*dhxiDQQiLwBUm4CaS5la71.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*dhxiDQQiLwBUm4CaS5la71.#Value::0 {"Value": "True", "_key": "7skC5R_8TVsV6FYAotkxDn*dhxiDQQiLwBUm4CaS5la71.#Value::0", "_type": "Boolean"}
+7skC5R_8TVsV6FYAotkxDn*gU4Ts2zxCKsrIaN4lUWPIw.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*gU4Ts2zxCKsrIaN4lUWPIw.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*gU4Ts2zxCKsrIaN4lUWPIw.#Value::0 {"Value": "1", "_key": "7skC5R_8TVsV6FYAotkxDn*gU4Ts2zxCKsrIaN4lUWPIw.#Value::0", "_type": "Integer"}
+7skC5R_8TVsV6FYAotkxDn*RABW2WWaOMctWHb0V14wpV.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*RABW2WWaOMctWHb0V14wpV.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*RABW2WWaOMctWHb0V14wpV.#Value::0 {"Value": "1", "_key": "7skC5R_8TVsV6FYAotkxDn*RABW2WWaOMctWHb0V14wpV.#Value::0", "_type": "Integer"}
+7skC5R_8TVsV6FYAotkxDn*YMSWLD7aKf3C7yYU9r8fvr.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*YMSWLD7aKf3C7yYU9r8fvr.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*YMSWLD7aKf3C7yYU9r8fvr.#Value::0 {"TextCategory": "Others", "TextHash": "4143d04801", "TextLength": 11, "_key": "7skC5R_8TVsV6FYAotkxDn*YMSWLD7aKf3C7yYU9r8fvr.#Value::0", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*9q3T0NUenBhI1v3AajTKzg.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*9q3T0NUenBhI1v3AajTKzg.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*9q3T0NUenBhI1v3AajTKzg.#Value::0 {"Value": "True", "_key": "7skC5R_8TVsV6FYAotkxDn*9q3T0NUenBhI1v3AajTKzg.#Value::0", "_type": "Boolean"}
+7skC5R_8TVsV6FYAotkxDn*E5yO80Ahw_AiB1EfW5mzx1.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*E5yO80Ahw_AiB1EfW5mzx1.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*E5yO80Ahw_AiB1EfW5mzx1.#Value::0 {"Value": "3", "_key": "7skC5R_8TVsV6FYAotkxDn*E5yO80Ahw_AiB1EfW5mzx1.#Value::0", "_type": "Integer"}
+7skC5R_8TVsV6FYAotkxDn*mj3l10dL1YTIaTO9AjDoSY.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*mj3l10dL1YTIaTO9AjDoSY.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*mj3l10dL1YTIaTO9AjDoSY.#Value::0 {"TextCategory": "Others", "TextHash": "9b864cbc52", "TextLength": 15, "_key": "7skC5R_8TVsV6FYAotkxDn*mj3l10dL1YTIaTO9AjDoSY.#Value::0", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*WUPsJ_aNDxWvnCSPeQEhva.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*WUPsJ_aNDxWvnCSPeQEhva.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*WUPsJ_aNDxWvnCSPeQEhva.#Value::0 {"Value": "3", "_key": "7skC5R_8TVsV6FYAotkxDn*WUPsJ_aNDxWvnCSPeQEhva.#Value::0", "_type": "Integer"}
+7skC5R_8TVsV6FYAotkxDn*9IWwVDbAGtqWreCHcxXcsO.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*9IWwVDbAGtqWreCHcxXcsO.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*9IWwVDbAGtqWreCHcxXcsO.#Value::0 {"Value": "True", "_key": "7skC5R_8TVsV6FYAotkxDn*9IWwVDbAGtqWreCHcxXcsO.#Value::0", "_type": "Boolean"}
+7skC5R_8TVsV6FYAotkxDn*2PFpxQFKZq1AX06ko8N7I1.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*2PFpxQFKZq1AX06ko8N7I1.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*2PFpxQFKZq1AX06ko8N7I1.#Value::0 {"Value": "2", "_key": "7skC5R_8TVsV6FYAotkxDn*2PFpxQFKZq1AX06ko8N7I1.#Value::0", "_type": "Integer"}
+7skC5R_8TVsV6FYAotkxDn*N00PmB6fO1aU45pjVbEn1H.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*N00PmB6fO1aU45pjVbEn1H.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*N00PmB6fO1aU45pjVbEn1H.#Value::0 {"Value": "2", "_key": "7skC5R_8TVsV6FYAotkxDn*N00PmB6fO1aU45pjVbEn1H.#Value::0", "_type": "Integer"}
+7skC5R_8TVsV6FYAotkxDn*ZnExGFjDVLslTIrtgNuoyW.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*ZnExGFjDVLslTIrtgNuoyW.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*ZnExGFjDVLslTIrtgNuoyW.#Value::0 {"TextCategory": "Others", "TextHash": "1b48d3f014", "TextLength": 7, "_key": "7skC5R_8TVsV6FYAotkxDn*ZnExGFjDVLslTIrtgNuoyW.#Value::0", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*FYe1_gbURfE9ZudupqwPJB {"DisplayName": "AttributeMapping", "IsMandatory": false, "_key": "7skC5R_8TVsV6FYAotkxDn*FYe1_gbURfE9ZudupqwPJB", "_type": "IAttributeMapping"}
+7skC5R_8TVsV6FYAotkxDn*RRRlDIMX3mgZURrCUCifNB {"DisplayName": "Attribute", "_key": "7skC5R_8TVsV6FYAotkxDn*RRRlDIMX3mgZURrCUCifNB", "_type": "IRecordLiteralField"}
+7skC5R_8TVsV6FYAotkxDn*FYe1_gbURfE9ZudupqwPJB.#TargetValue.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*FYe1_gbURfE9ZudupqwPJB.#TargetValue.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*FYe1_gbURfE9ZudupqwPJB.#TargetValue.#Value::0 {"_key": "7skC5R_8TVsV6FYAotkxDn*FYe1_gbURfE9ZudupqwPJB.#TargetValue.#Value::0", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*FYe1_gbURfE9ZudupqwPJB.#TargetValue.#Value::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*FYe1_gbURfE9ZudupqwPJB.#TargetValue.#Value::1", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*RRRlDIMX3mgZURrCUCifNB.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*RRRlDIMX3mgZURrCUCifNB.#Value", "_type": "IRecordLiteralExpression"}
+7skC5R_8TVsV6FYAotkxDn*NsMliKgDgohuOs2f9kI2oD {"DisplayName": "Attribute", "_key": "7skC5R_8TVsV6FYAotkxDn*NsMliKgDgohuOs2f9kI2oD", "_type": "IRecordLiteralField"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY {"DisplayName": "Attribute", "_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY", "_type": "IRecordLiteralField"}
+7skC5R_8TVsV6FYAotkxDn*6SjPrZR25aEsStvBtlHEGV {"DisplayName": "Attribute", "_key": "7skC5R_8TVsV6FYAotkxDn*6SjPrZR25aEsStvBtlHEGV", "_type": "IRecordLiteralField"}
+7skC5R_8TVsV6FYAotkxDn*hbMi4we366ibX9FXAj02Fn {"DisplayName": "Attribute", "_key": "7skC5R_8TVsV6FYAotkxDn*hbMi4we366ibX9FXAj02Fn", "_type": "IRecordLiteralField"}
+7skC5R_8TVsV6FYAotkxDn*0lFCIbbr7jh8O_j4D7Glez {"DisplayName": "Attribute", "_key": "7skC5R_8TVsV6FYAotkxDn*0lFCIbbr7jh8O_j4D7Glez", "_type": "IRecordLiteralField"}
+7skC5R_8TVsV6FYAotkxDn*BDErdaYdooPzoqphFHpZFR {"DisplayName": "Attribute", "_key": "7skC5R_8TVsV6FYAotkxDn*BDErdaYdooPzoqphFHpZFR", "_type": "IRecordLiteralField"}
+7skC5R_8TVsV6FYAotkxDn*rYB06SoD9LCmEaVK4gq3Bk {"DisplayName": "Attribute", "_key": "7skC5R_8TVsV6FYAotkxDn*rYB06SoD9LCmEaVK4gq3Bk", "_type": "IRecordLiteralField"}
+7skC5R_8TVsV6FYAotkxDn*NsMliKgDgohuOs2f9kI2oD.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*NsMliKgDgohuOs2f9kI2oD.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*NsMliKgDgohuOs2f9kI2oD.#Value::0 {"_key": "7skC5R_8TVsV6FYAotkxDn*NsMliKgDgohuOs2f9kI2oD.#Value::0", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*NsMliKgDgohuOs2f9kI2oD.#Value::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*NsMliKgDgohuOs2f9kI2oD.#Value::1", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*NsMliKgDgohuOs2f9kI2oD.#Value::2 {"_key": "7skC5R_8TVsV6FYAotkxDn*NsMliKgDgohuOs2f9kI2oD.#Value::2", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*NsMliKgDgohuOs2f9kI2oD.#Value::3 {"_key": "7skC5R_8TVsV6FYAotkxDn*NsMliKgDgohuOs2f9kI2oD.#Value::3", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value", "_type": "ExpressionAST"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::0 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::0", "_type": "Call"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::1 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::1", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::2 {"Operator": "Eq", "_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::2", "_type": "BinaryOperation"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::3 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::3", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::4 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::4", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::5 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::5", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::6 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::6", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::7 {"TextCategory": "Others", "TextHash": "f3d93a85c7", "TextLength": 26, "_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::7", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::8 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::8", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::10 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::10", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::11 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::11", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::12 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::12", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::13 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::13", "_type": "Call"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::14 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::14", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::15 {"Operator": "Eq", "_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::15", "_type": "BinaryOperation"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::16 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::16", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::17 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::17", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::18 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::18", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::19 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::19", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::20 {"TextCategory": "Others", "TextHash": "1101012000", "TextLength": 26, "_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::20", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::21 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::21", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::23 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::23", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::24 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::24", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::25 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::25", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::26 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::26", "_type": "Call"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::27 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::27", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::28 {"Operator": "Eq", "_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::28", "_type": "BinaryOperation"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::29 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::29", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::30 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::30", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::31 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::31", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::32 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::32", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::33 {"TextCategory": "Others", "TextHash": "63480c7ccb", "TextLength": 24, "_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::33", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::34 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::34", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::36 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::36", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::37 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::37", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::38 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::38", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::39 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::39", "_type": "Call"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::40 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::40", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::41 {"Operator": "Eq", "_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::41", "_type": "BinaryOperation"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::42 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::42", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::43 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::43", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::44 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::44", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::45 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::45", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::46 {"TextCategory": "Others", "TextHash": "c57551db1c", "TextLength": 23, "_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::46", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::47 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::47", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::49 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::49", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::50 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::50", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::51 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::51", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::52 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::52", "_type": "Call"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::53 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::53", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::54 {"Operator": "Eq", "_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::54", "_type": "BinaryOperation"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::55 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::55", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::56 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::56", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::57 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::57", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::58 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::58", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::59 {"TextCategory": "Others", "TextHash": "85134a365a", "TextLength": 23, "_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::59", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::60 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::60", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::62 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::62", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::63 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::63", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::64 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::64", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::65 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::65", "_type": "Call"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::66 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::66", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::67 {"Operator": "Eq", "_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::67", "_type": "BinaryOperation"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::68 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::68", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::69 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::69", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::70 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::70", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::71 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::71", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::72 {"TextCategory": "Others", "TextHash": "08983c9079", "TextLength": 24, "_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::72", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::73 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::73", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::75 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::75", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::76 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::76", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::77 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::77", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::78 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::78", "_type": "Call"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::79 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::79", "_type": "Argument"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::80 {"Operator": "Eq", "_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::80", "_type": "BinaryOperation"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::81 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::81", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::82 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::82", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::83 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::83", "_type": "CompoundIdentifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::84 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::84", "_type": "Identifier"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::85 {"TextCategory": "Others", "TextHash": "c0bd3dbcdf", "TextLength": 26, "_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::85", "_type": "Text"}
+7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::86 {"_key": "7skC5R_8TVsV6FYAotkxDn*zys2dDgABBOzR02SHBXuqY.#Value::86", "_type": "Argument"}
+
+=== flow.py rev7 LoadSampleData ===
+== action LoadSampleData
+ child obj.Nodes IIfNode GetEmployeeRecords.List.Empty and IsInDevStage()? wWvT6PaNbLIHoojD9GnAWD {'X': 3696, 'Y': 7919}
+ child obj.Nodes IIfNode GetAliceRecord.List.Empty and IsInDevStage()? WV1c4JeEAAwFkKtqIGD7qv {'X': 3696, 'Y': 4846}
+ child obj.Nodes IExecuteServerActionNode LoadSampleDataForEmployee xTBZmDqU7iWFb7sJIx1Yx_ {'X': 3696, 'Y': 9692}
+ child obj.Nodes IStartNode Start mDQ0EvjAvX_tf3H9ToUrFX {'X': 3696, 'Y': 1300}
+ child obj.Nodes IComment Load Sample Data Generated by AI NmwdB23KzcMwmhb3cTFZE_ {'X': 600, 'Y': 600}
+ child obj.Nodes IAggregateNode GetEmployeeRecords 4UKeyWZRCgDSX7iEm9slkj {'X': 3696, 'Y': 6146}
+ child obj.Nodes ISQLNode SetEmployeeDepartments h54iBleHHdjJ_cHLxpn5Fh {'X': 8196, 'Y': 9692}
+ child obj.Nodes IExecuteServerActionNode DeleteAllEmployees dBd6W7oldg13VgRjOkPIE5 {'X': 1923, 'Y': 4846}
+ child obj.Nodes IIfNode IsInDevStage()? EwaKubFjlHJWt6AYJfNL6M {'X': 6196, 'Y': 9692}
+ child obj.Nodes IAggregateNode GetAliceRecord _IOHcWwtcSI8EnzhdmD2lj {'X': 3696, 'Y': 3073}
+ child obj.Nodes IEndNode End vD1rnPRY9LHiwOZZ3nYUQb {'X': 9696, 'Y': 9692}
+ child Folder IFolder SampleData yP7UlPoGOAdxbqDt3yZBI5 {}
+
+=== flow.py rev7 LoadSampleDataForEmployee ===
+== action LoadSampleDataForEmployee
+ child obj.Nodes IStartNode Start 5GCnfGyawiUzBlnIATbF5d {'X': 3196, 'Y': 800}
+ child obj.Nodes IJSONDeserializeNode JSONDeserializeEmployeeList Ut71oYPrKowDXMrHZsM_Pa {'X': 3196, 'Y': 2573}
+ child obj.Nodes IForEachNode JSONDeserializeEmployeeList.Data vK38P59stUkA7xHBXIyKlo {'X': 3196, 'Y': 4346}
+ child obj.Nodes IExecuteServerActionNode CreateEmployee KfjHl4eOjvT7AnOzkcIDDK {'X': 4969, 'Y': 4346}
+ child obj.Nodes IExceptionHandlerNode AllExceptions CJBhMqp1YeImkV7ElR7MgD {'X': 6392, 'Y': 800}
+ child obj.Nodes IEndNode End kaeG170EhOSHagTBNRRwvT {'X': 3196, 'Y': 6119}
+ child obj.Nodes IEndNode End pYnuvPAfFTlhZU1hl5FZHG {'X': 6392, 'Y': 2573}
+ child obj.Nodes IComment Load Sample Data for Employee, Generated by AI r3NF8cK6pxhteTaTnyS09U {'X': 100, 'Y': 100}
+ child Folder IFolder SampleData yP7UlPoGOAdxbqDt3yZBI5 {}
+
+=== Task 4 notes (add-department, publish 1: rev6 -> rev7) ===
+Written by Kiro from the stored graph of rev7 (read-only). Scope: design.md, "Graph comparison after each publish", publish 1.
+Other facts read from the graph (inline analysis, no extra files):
+- LoadSampleData control flow, rev7. Start -> GetAliceRecord -> If GetAliceRecord.List.Empty and IsInDevStage()
+  True -> DeleteAllEmployees -> GetEmployeeRecords; False -> GetEmployeeRecords.
+  GetEmployeeRecords -> If GetEmployeeRecords.List.Empty and IsInDevStage()
+  True -> LoadSampleDataForEmployee -> If IsInDevStage()?; False -> If IsInDevStage()?.
+  If IsInDevStage()? (condition is the call IsInDevStage() alone) True -> SetEmployeeDepartments (Advanced SQL) -> End; False -> End.
+  One End node only (rev6 had two). No other inbound edge to End. No exception handler in the action.
+- SetEmployeeDepartments SQL (the SQL text is stored in the graph and is readable):
+  UPDATE {Employee} SET [DepartmentId] = CASE WHEN LOWER([Email]) IN (...) THEN @EngineeringId / @FinanceId / @HumanResourcesId / @SalesId END
+  WHERE ([DepartmentId] IS NULL OR [DepartmentId] = 0) AND LOWER([Email]) IN (the 20 emails).
+  CASE mapping checked against the Department assignment table: 20 of 20 equal. The 4 SQL parameters are bound to the static records
+  Department.Engineering, Department.Finance, Department.HumanResources, Department.Sales (not to numeric literals).
+- LoadSampleDataForEmployee: CreateEmployee Source gets a DepartmentId field = nested If() chain on JSONDeserializeEmployeeList.Data ... .Email
+  = <email>. The email Text literals are hashed in the graph (TextHash = first 10 hex chars of SHA-1). Matching the 20 candidate emails
+  by hash: 20 of 20 found, each returning the record of the table; final else = NullIdentifier(). The six other field assignments were
+  deleted and re-created (new keys), with the same source (JSONDeserializeEmployeeList.Data ... attribute) for each. The JSON string node is unchanged.
+- Department records (hash-checked labels): Engineering Id 1, Finance Id 2, Human Resources Id 3 (record Identifier "HumanResources"), Sales Id 4.
+  Id has IsAutoNumber = No. Order 1 to 4, Is_Active True. Attributes Id, Label, Order, Is_Active only.
+- Employee.DepartmentId: Department Identifier, Foreign Key to Department, IsMandatory false, DeleteRule = Protect.
+- UploadEmployeeExcel: its TypeConversion gained an 8th AttributeMapping with TargetValue Employee.DepartmentId and no SourceValue.
